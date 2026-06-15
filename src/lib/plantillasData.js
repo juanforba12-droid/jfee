@@ -2687,6 +2687,1183 @@ export const PLANTILLAS = [
     {pos:"FW",nombre:"Isaac Romero"},{pos:"FW",nombre:"Chidera Ejuke"},
     {pos:"FW",nombre:"Ejuke Peque"}
   ]},
+
+
+  // ══════════════════════════════════════════════════════════════════════════
+  // SELECCIONES NACIONALES
+  // ══════════════════════════════════════════════════════════════════════════
+
+  // ── ESPAÑA ────────────────────────────────────────────────────────────────
+  { id:"esp_euro1996", equipo:"España", temporada:"Euro 1996", jugadores:[
+    {pos:"GK",nombre:"Andoni Zubizarreta"},{pos:"DF",nombre:"Abelardo"},
+    {pos:"DF",nombre:"Fernando Hierro"},{pos:"DF",nombre:"Miguel Ángel Nadal"},
+    {pos:"DF",nombre:"Sergi Barjuan"},{pos:"MF",nombre:"Luis Enrique"},
+    {pos:"MF",nombre:"Guillermo Amor"},{pos:"MF",nombre:"José Luis Caminero"},
+    {pos:"FW",nombre:"Raúl"},{pos:"FW",nombre:"Kiko"},
+    {pos:"FW",nombre:"Alfonso"}
+  ]},
+  { id:"esp_mundial1998", equipo:"España", temporada:"Mundial 1998", jugadores:[
+    {pos:"GK",nombre:"Andoni Zubizarreta"},{pos:"DF",nombre:"Abelardo"},
+    {pos:"DF",nombre:"Fernando Hierro"},{pos:"DF",nombre:"Miguel Ángel Nadal"},
+    {pos:"DF",nombre:"Sergi Barjuan"},{pos:"MF",nombre:"Luis Enrique"},
+    {pos:"MF",nombre:"Pep Guardiola"},{pos:"MF",nombre:"Alfonso"},
+    {pos:"FW",nombre:"Raúl"},{pos:"FW",nombre:"Fernando Morientes"},
+    {pos:"FW",nombre:"Kiko"}
+  ]},
+  { id:"esp_euro2000", equipo:"España", temporada:"Euro 2000", jugadores:[
+    {pos:"GK",nombre:"Iker Casillas"},{pos:"DF",nombre:"Abelardo"},
+    {pos:"DF",nombre:"Fernando Hierro"},{pos:"DF",nombre:"Paco Llorente"},
+    {pos:"DF",nombre:"Sergi Barjuan"},{pos:"MF",nombre:"Luis Enrique"},
+    {pos:"MF",nombre:"Gaizka Mendieta"},{pos:"MF",nombre:"José María Gutiérrez"},
+    {pos:"FW",nombre:"Raúl"},{pos:"FW",nombre:"Fernando Morientes"},
+    {pos:"FW",nombre:"Alfonso"}
+  ]},
+  { id:"esp_mundial2002", equipo:"España", temporada:"Mundial 2002", jugadores:[
+    {pos:"GK",nombre:"Iker Casillas"},{pos:"DF",nombre:"Carles Puyol"},
+    {pos:"DF",nombre:"Fernando Hierro"},{pos:"DF",nombre:"Juanfran"},
+    {pos:"DF",nombre:"Sergio"},{pos:"MF",nombre:"Xavi"},
+    {pos:"MF",nombre:"Rubén Baraja"},{pos:"MF",nombre:"Juan Carlos Valerón"},
+    {pos:"FW",nombre:"Raúl"},{pos:"FW",nombre:"Fernando Morientes"},
+    {pos:"FW",nombre:"Gaizka Mendieta"}
+  ]},
+  { id:"esp_euro2004", equipo:"España", temporada:"Euro 2004", jugadores:[
+    {pos:"GK",nombre:"Iker Casillas"},{pos:"DF",nombre:"Carles Puyol"},
+    {pos:"DF",nombre:"Marchena"},{pos:"DF",nombre:"Juanito"},
+    {pos:"DF",nombre:"Sergio"},{pos:"MF",nombre:"Xavi"},
+    {pos:"MF",nombre:"Rubén Baraja"},{pos:"MF",nombre:"Joaquín"},
+    {pos:"FW",nombre:"Raúl"},{pos:"FW",nombre:"Fernando Morientes"},
+    {pos:"FW",nombre:"Fernando Torres"}
+  ]},
+  { id:"esp_mundial2006", equipo:"España", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Iker Casillas"},{pos:"DF",nombre:"Carles Puyol"},
+    {pos:"DF",nombre:"Sergio Ramos"},{pos:"DF",nombre:"Marchena"},
+    {pos:"DF",nombre:"Albiol"},{pos:"MF",nombre:"Xavi"},
+    {pos:"MF",nombre:"Marcos Senna"},{pos:"MF",nombre:"David Villa"},
+    {pos:"FW",nombre:"Raúl"},{pos:"FW",nombre:"Fernando Torres"},
+    {pos:"FW",nombre:"Luis García"}
+  ]},
+  { id:"esp_euro2008", equipo:"España", temporada:"Euro 2008", jugadores:[
+    {pos:"GK",nombre:"Iker Casillas"},{pos:"DF",nombre:"Sergio Ramos"},
+    {pos:"DF",nombre:"Carles Puyol"},{pos:"DF",nombre:"Marchena"},
+    {pos:"DF",nombre:"Joan Capdevila"},{pos:"MF",nombre:"Xavi"},
+    {pos:"MF",nombre:"Marcos Senna"},{pos:"MF",nombre:"Andrés Iniesta"},
+    {pos:"FW",nombre:"David Villa"},{pos:"FW",nombre:"Fernando Torres"},
+    {pos:"FW",nombre:"David Silva"}
+  ]},
+  { id:"esp_mundial2010", equipo:"España", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"Iker Casillas"},{pos:"DF",nombre:"Sergio Ramos"},
+    {pos:"DF",nombre:"Carles Puyol"},{pos:"DF",nombre:"Gerard Piqué"},
+    {pos:"DF",nombre:"Joan Capdevila"},{pos:"MF",nombre:"Xavi"},
+    {pos:"MF",nombre:"Sergio Busquets"},{pos:"MF",nombre:"Andrés Iniesta"},
+    {pos:"FW",nombre:"David Villa"},{pos:"FW",nombre:"David Silva"},
+    {pos:"FW",nombre:"Fernando Torres"}
+  ]},
+  { id:"esp_euro2012", equipo:"España", temporada:"Euro 2012", jugadores:[
+    {pos:"GK",nombre:"Iker Casillas"},{pos:"DF",nombre:"Sergio Ramos"},
+    {pos:"DF",nombre:"Gerard Piqué"},{pos:"DF",nombre:"Jordi Alba"},
+    {pos:"DF",nombre:"Álvaro Arbeloa"},{pos:"MF",nombre:"Xavi"},
+    {pos:"MF",nombre:"Sergio Busquets"},{pos:"MF",nombre:"Andrés Iniesta"},
+    {pos:"FW",nombre:"David Silva"},{pos:"FW",nombre:"David Villa"},
+    {pos:"FW",nombre:"Fernando Torres"}
+  ]},
+  { id:"esp_mundial2014", equipo:"España", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Iker Casillas"},{pos:"DF",nombre:"Sergio Ramos"},
+    {pos:"DF",nombre:"Gerard Piqué"},{pos:"DF",nombre:"Jordi Alba"},
+    {pos:"DF",nombre:"Juanfran"},{pos:"MF",nombre:"Xavi"},
+    {pos:"MF",nombre:"Sergio Busquets"},{pos:"MF",nombre:"Andrés Iniesta"},
+    {pos:"FW",nombre:"David Silva"},{pos:"FW",nombre:"Diego Costa"},
+    {pos:"FW",nombre:"Juan Mata"}
+  ]},
+  { id:"esp_euro2016", equipo:"España", temporada:"Euro 2016", jugadores:[
+    {pos:"GK",nombre:"David de Gea"},{pos:"DF",nombre:"Sergio Ramos"},
+    {pos:"DF",nombre:"Gerard Piqué"},{pos:"DF",nombre:"Jordi Alba"},
+    {pos:"DF",nombre:"Juanfran"},{pos:"MF",nombre:"Sergio Busquets"},
+    {pos:"MF",nombre:"Andrés Iniesta"},{pos:"MF",nombre:"Cesc Fàbregas"},
+    {pos:"FW",nombre:"David Silva"},{pos:"FW",nombre:"Álvaro Morata"},
+    {pos:"FW",nombre:"Nolito"}
+  ]},
+  { id:"esp_mundial2018", equipo:"España", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"David de Gea"},{pos:"DF",nombre:"Sergio Ramos"},
+    {pos:"DF",nombre:"Gerard Piqué"},{pos:"DF",nombre:"Jordi Alba"},
+    {pos:"DF",nombre:"Nacho"},{pos:"MF",nombre:"Sergio Busquets"},
+    {pos:"MF",nombre:"Andrés Iniesta"},{pos:"MF",nombre:"David Silva"},
+    {pos:"FW",nombre:"Diego Costa"},{pos:"FW",nombre:"Marco Asensio"},
+    {pos:"FW",nombre:"Isco"}
+  ]},
+  { id:"esp_euro2020", equipo:"España", temporada:"Euro 2020", jugadores:[
+    {pos:"GK",nombre:"Unai Simón"},{pos:"DF",nombre:"Marcos Llorente"},
+    {pos:"DF",nombre:"Pau Torres"},{pos:"DF",nombre:"Aymeric Laporte"},
+    {pos:"DF",nombre:"Jordi Alba"},{pos:"MF",nombre:"Sergio Busquets"},
+    {pos:"MF",nombre:"Pedri"},{pos:"MF",nombre:"Koke"},
+    {pos:"FW",nombre:"Ferran Torres"},{pos:"FW",nombre:"Álvaro Morata"},
+    {pos:"FW",nombre:"Dani Olmo"}
+  ]},
+  { id:"esp_mundial2022", equipo:"España", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Unai Simón"},{pos:"DF",nombre:"César Azpilicueta"},
+    {pos:"DF",nombre:"Pau Torres"},{pos:"DF",nombre:"Aymeric Laporte"},
+    {pos:"DF",nombre:"Jordi Alba"},{pos:"MF",nombre:"Sergio Busquets"},
+    {pos:"MF",nombre:"Pedri"},{pos:"MF",nombre:"Gavi"},
+    {pos:"FW",nombre:"Ferran Torres"},{pos:"FW",nombre:"Álvaro Morata"},
+    {pos:"FW",nombre:"Marco Asensio"}
+  ]},
+  { id:"esp_euro2024", equipo:"España", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Unai Simón"},{pos:"DF",nombre:"Daniel Carvajal"},
+    {pos:"DF",nombre:"Robin Le Normand"},{pos:"DF",nombre:"Aymeric Laporte"},
+    {pos:"DF",nombre:"Marc Cucurella"},{pos:"MF",nombre:"Rodri"},
+    {pos:"MF",nombre:"Pedri"},{pos:"MF",nombre:"Fabián Ruiz"},
+    {pos:"FW",nombre:"Lamine Yamal"},{pos:"FW",nombre:"Álvaro Morata"},
+    {pos:"FW",nombre:"Nico Williams"}
+  ]},
+  { id:"esp_mundial2026", equipo:"España", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Unai Simón"},{pos:"DF",nombre:"Daniel Carvajal"},
+    {pos:"DF",nombre:"Aymeric Laporte"},{pos:"DF",nombre:"Robin Le Normand"},
+    {pos:"DF",nombre:"Marc Cucurella"},{pos:"MF",nombre:"Rodri"},
+    {pos:"MF",nombre:"Pedri"},{pos:"MF",nombre:"Fabián Ruiz"},
+    {pos:"FW",nombre:"Lamine Yamal"},{pos:"FW",nombre:"Álvaro Morata"},
+    {pos:"FW",nombre:"Nico Williams"}
+  ]},
+
+  // ── FRANCIA ───────────────────────────────────────────────────────────────
+  { id:"fra_mundial1998", equipo:"Francia", temporada:"Mundial 1998", jugadores:[
+    {pos:"GK",nombre:"Fabien Barthez"},{pos:"DF",nombre:"Lilian Thuram"},
+    {pos:"DF",nombre:"Marcel Desailly"},{pos:"DF",nombre:"Laurent Blanc"},
+    {pos:"DF",nombre:"Bixente Lizarazu"},{pos:"MF",nombre:"Zinedine Zidane"},
+    {pos:"MF",nombre:"Didier Deschamps"},{pos:"MF",nombre:"Emmanuel Petit"},
+    {pos:"FW",nombre:"Thierry Henry"},{pos:"FW",nombre:"David Trezeguet"},
+    {pos:"FW",nombre:"Stéphane Guivarc'h"}
+  ]},
+  { id:"fra_euro2000", equipo:"Francia", temporada:"Euro 2000", jugadores:[
+    {pos:"GK",nombre:"Fabien Barthez"},{pos:"DF",nombre:"Lilian Thuram"},
+    {pos:"DF",nombre:"Marcel Desailly"},{pos:"DF",nombre:"Frank Leboeuf"},
+    {pos:"DF",nombre:"Bixente Lizarazu"},{pos:"MF",nombre:"Zinedine Zidane"},
+    {pos:"MF",nombre:"Didier Deschamps"},{pos:"MF",nombre:"Patrick Vieira"},
+    {pos:"FW",nombre:"Thierry Henry"},{pos:"FW",nombre:"David Trezeguet"},
+    {pos:"FW",nombre:"Sylvain Wiltord"}
+  ]},
+  { id:"fra_mundial2002", equipo:"Francia", temporada:"Mundial 2002", jugadores:[
+    {pos:"GK",nombre:"Fabien Barthez"},{pos:"DF",nombre:"Lilian Thuram"},
+    {pos:"DF",nombre:"Marcel Desailly"},{pos:"DF",nombre:"Mikael Silvestre"},
+    {pos:"DF",nombre:"Bixente Lizarazu"},{pos:"MF",nombre:"Zinedine Zidane"},
+    {pos:"MF",nombre:"Patrick Vieira"},{pos:"MF",nombre:"Claude Makélélé"},
+    {pos:"FW",nombre:"Thierry Henry"},{pos:"FW",nombre:"David Trezeguet"},
+    {pos:"FW",nombre:"Djibril Cissé"}
+  ]},
+  { id:"fra_euro2004", equipo:"Francia", temporada:"Euro 2004", jugadores:[
+    {pos:"GK",nombre:"Fabien Barthez"},{pos:"DF",nombre:"Lilian Thuram"},
+    {pos:"DF",nombre:"Marcel Desailly"},{pos:"DF",nombre:"Mikael Silvestre"},
+    {pos:"DF",nombre:"Bixente Lizarazu"},{pos:"MF",nombre:"Zinedine Zidane"},
+    {pos:"MF",nombre:"Patrick Vieira"},{pos:"MF",nombre:"Claude Makélélé"},
+    {pos:"FW",nombre:"Thierry Henry"},{pos:"FW",nombre:"David Trezeguet"},
+    {pos:"FW",nombre:"Louis Saha"}
+  ]},
+  { id:"fra_mundial2006", equipo:"Francia", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Fabien Barthez"},{pos:"DF",nombre:"Lilian Thuram"},
+    {pos:"DF",nombre:"William Gallas"},{pos:"DF",nombre:"Pascal Chimbonda"},
+    {pos:"DF",nombre:"Éric Abidal"},{pos:"MF",nombre:"Zinedine Zidane"},
+    {pos:"MF",nombre:"Patrick Vieira"},{pos:"MF",nombre:"Claude Makélélé"},
+    {pos:"FW",nombre:"Thierry Henry"},{pos:"FW",nombre:"Franck Ribéry"},
+    {pos:"FW",nombre:"David Trezeguet"}
+  ]},
+  { id:"fra_euro2008", equipo:"Francia", temporada:"Euro 2008", jugadores:[
+    {pos:"GK",nombre:"Steve Mandanda"},{pos:"DF",nombre:"Bacary Sagna"},
+    {pos:"DF",nombre:"William Gallas"},{pos:"DF",nombre:"Éric Abidal"},
+    {pos:"DF",nombre:"Patrice Evra"},{pos:"MF",nombre:"Lassana Diarra"},
+    {pos:"MF",nombre:"Franck Ribéry"},{pos:"MF",nombre:"Samir Nasri"},
+    {pos:"FW",nombre:"Thierry Henry"},{pos:"FW",nombre:"Nicolas Anelka"},
+    {pos:"FW",nombre:"Karim Benzema"}
+  ]},
+  { id:"fra_mundial2010", equipo:"Francia", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Bacary Sagna"},
+    {pos:"DF",nombre:"William Gallas"},{pos:"DF",nombre:"Patrice Evra"},
+    {pos:"DF",nombre:"Éric Abidal"},{pos:"MF",nombre:"Lassana Diarra"},
+    {pos:"MF",nombre:"Yoann Gourcuff"},{pos:"MF",nombre:"Franck Ribéry"},
+    {pos:"FW",nombre:"Thierry Henry"},{pos:"FW",nombre:"Nicolas Anelka"},
+    {pos:"FW",nombre:"Sidney Govou"}
+  ]},
+  { id:"fra_euro2012", equipo:"Francia", temporada:"Euro 2012", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Bacary Sagna"},
+    {pos:"DF",nombre:"Raphaël Varane"},{pos:"DF",nombre:"Adil Rami"},
+    {pos:"DF",nombre:"Patrice Evra"},{pos:"MF",nombre:"Alou Diarra"},
+    {pos:"MF",nombre:"Franck Ribéry"},{pos:"MF",nombre:"Samir Nasri"},
+    {pos:"FW",nombre:"Karim Benzema"},{pos:"FW",nombre:"Olivier Giroud"},
+    {pos:"FW",nombre:"Jeremy Ménez"}
+  ]},
+  { id:"fra_mundial2014", equipo:"Francia", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Bacary Sagna"},
+    {pos:"DF",nombre:"Raphaël Varane"},{pos:"DF",nombre:"Mamadou Sakho"},
+    {pos:"DF",nombre:"Patrice Evra"},{pos:"MF",nombre:"Blaise Matuidi"},
+    {pos:"MF",nombre:"Paul Pogba"},{pos:"MF",nombre:"Mathieu Valbuena"},
+    {pos:"FW",nombre:"Karim Benzema"},{pos:"FW",nombre:"Olivier Giroud"},
+    {pos:"FW",nombre:"Antoine Griezmann"}
+  ]},
+  { id:"fra_euro2016", equipo:"Francia", temporada:"Euro 2016", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Bacary Sagna"},
+    {pos:"DF",nombre:"Raphaël Varane"},{pos:"DF",nombre:"Laurent Koscielny"},
+    {pos:"DF",nombre:"Patrice Evra"},{pos:"MF",nombre:"Blaise Matuidi"},
+    {pos:"MF",nombre:"Paul Pogba"},{pos:"MF",nombre:"Dimitri Payet"},
+    {pos:"FW",nombre:"Antoine Griezmann"},{pos:"FW",nombre:"Olivier Giroud"},
+    {pos:"FW",nombre:"Kingsley Coman"}
+  ]},
+  { id:"fra_mundial2018", equipo:"Francia", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Benjamin Pavard"},
+    {pos:"DF",nombre:"Raphaël Varane"},{pos:"DF",nombre:"Samuel Umtiti"},
+    {pos:"DF",nombre:"Lucas Hernández"},{pos:"MF",nombre:"Blaise Matuidi"},
+    {pos:"MF",nombre:"Paul Pogba"},{pos:"MF",nombre:"N'Golo Kanté"},
+    {pos:"FW",nombre:"Kylian Mbappé"},{pos:"FW",nombre:"Antoine Griezmann"},
+    {pos:"FW",nombre:"Olivier Giroud"}
+  ]},
+  { id:"fra_euro2020", equipo:"Francia", temporada:"Euro 2020", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Benjamin Pavard"},
+    {pos:"DF",nombre:"Raphaël Varane"},{pos:"DF",nombre:"Presnel Kimpembe"},
+    {pos:"DF",nombre:"Lucas Hernández"},{pos:"MF",nombre:"Paul Pogba"},
+    {pos:"MF",nombre:"N'Golo Kanté"},{pos:"MF",nombre:"Adrien Rabiot"},
+    {pos:"FW",nombre:"Kylian Mbappé"},{pos:"FW",nombre:"Antoine Griezmann"},
+    {pos:"FW",nombre:"Karim Benzema"}
+  ]},
+  { id:"fra_mundial2022", equipo:"Francia", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Benjamin Pavard"},
+    {pos:"DF",nombre:"Raphaël Varane"},{pos:"DF",nombre:"Dayot Upamecano"},
+    {pos:"DF",nombre:"Theo Hernández"},{pos:"MF",nombre:"Adrien Rabiot"},
+    {pos:"MF",nombre:"Aurélien Tchouaméni"},{pos:"MF",nombre:"Antoine Griezmann"},
+    {pos:"FW",nombre:"Kylian Mbappé"},{pos:"FW",nombre:"Olivier Giroud"},
+    {pos:"FW",nombre:"Ousmane Dembélé"}
+  ]},
+  { id:"fra_euro2024", equipo:"Francia", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Mike Maignan"},{pos:"DF",nombre:"Jules Koundé"},
+    {pos:"DF",nombre:"Dayot Upamecano"},{pos:"DF",nombre:"William Saliba"},
+    {pos:"DF",nombre:"Theo Hernández"},{pos:"MF",nombre:"Aurélien Tchouaméni"},
+    {pos:"MF",nombre:"Antoine Griezmann"},{pos:"MF",nombre:"N'Golo Kanté"},
+    {pos:"FW",nombre:"Kylian Mbappé"},{pos:"FW",nombre:"Ousmane Dembélé"},
+    {pos:"FW",nombre:"Marcus Thuram"}
+  ]},
+  { id:"fra_mundial2026", equipo:"Francia", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Mike Maignan"},{pos:"DF",nombre:"Jules Koundé"},
+    {pos:"DF",nombre:"Dayot Upamecano"},{pos:"DF",nombre:"William Saliba"},
+    {pos:"DF",nombre:"Theo Hernández"},{pos:"MF",nombre:"Aurélien Tchouaméni"},
+    {pos:"MF",nombre:"Antoine Griezmann"},{pos:"MF",nombre:"N'Golo Kanté"},
+    {pos:"FW",nombre:"Kylian Mbappé"},{pos:"FW",nombre:"Ousmane Dembélé"},
+    {pos:"FW",nombre:"Marcus Thuram"}
+  ]},
+
+  // ── ALEMANIA ──────────────────────────────────────────────────────────────
+  { id:"ale_mundial1998", equipo:"Alemania", temporada:"Mundial 1998", jugadores:[
+    {pos:"GK",nombre:"Oliver Kahn"},{pos:"DF",nombre:"Markus Babbel"},
+    {pos:"DF",nombre:"Christian Wörns"},{pos:"DF",nombre:"Jürgen Kohler"},
+    {pos:"DF",nombre:"Christian Ziege"},{pos:"MF",nombre:"Lothar Matthäus"},
+    {pos:"MF",nombre:"Stefan Effenberg"},{pos:"MF",nombre:"Dietmar Hamann"},
+    {pos:"FW",nombre:"Jürgen Klinsmann"},{pos:"FW",nombre:"Oliver Bierhoff"},
+    {pos:"FW",nombre:"Andreas Möller"}
+  ]},
+  { id:"ale_euro2000", equipo:"Alemania", temporada:"Euro 2000", jugadores:[
+    {pos:"GK",nombre:"Oliver Kahn"},{pos:"DF",nombre:"Christian Wörns"},
+    {pos:"DF",nombre:"Jürgen Kohler"},{pos:"DF",nombre:"Thomas Linke"},
+    {pos:"DF",nombre:"Christian Ziege"},{pos:"MF",nombre:"Stefan Effenberg"},
+    {pos:"MF",nombre:"Dietmar Hamann"},{pos:"MF",nombre:"Mehmet Scholl"},
+    {pos:"FW",nombre:"Oliver Bierhoff"},{pos:"FW",nombre:"Carsten Jancker"},
+    {pos:"FW",nombre:"Sebastian Deisler"}
+  ]},
+  { id:"ale_mundial2002", equipo:"Alemania", temporada:"Mundial 2002", jugadores:[
+    {pos:"GK",nombre:"Oliver Kahn"},{pos:"DF",nombre:"Thomas Linke"},
+    {pos:"DF",nombre:"Christoph Metzelder"},{pos:"DF",nombre:"Carsten Ramelow"},
+    {pos:"DF",nombre:"Christian Ziege"},{pos:"MF",nombre:"Michael Ballack"},
+    {pos:"MF",nombre:"Dietmar Hamann"},{pos:"MF",nombre:"Bernd Schneider"},
+    {pos:"FW",nombre:"Miroslav Klose"},{pos:"FW",nombre:"Oliver Neuville"},
+    {pos:"FW",nombre:"Carsten Jancker"}
+  ]},
+  { id:"ale_euro2004", equipo:"Alemania", temporada:"Euro 2004", jugadores:[
+    {pos:"GK",nombre:"Jens Lehmann"},{pos:"DF",nombre:"Arne Friedrich"},
+    {pos:"DF",nombre:"Christoph Metzelder"},{pos:"DF",nombre:"Robert Huth"},
+    {pos:"DF",nombre:"Philipp Lahm"},{pos:"MF",nombre:"Michael Ballack"},
+    {pos:"MF",nombre:"Torsten Frings"},{pos:"MF",nombre:"Bernd Schneider"},
+    {pos:"FW",nombre:"Miroslav Klose"},{pos:"FW",nombre:"Fredi Bobic"},
+    {pos:"FW",nombre:"Kevin Kuranyi"}
+  ]},
+  { id:"ale_mundial2006", equipo:"Alemania", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Jens Lehmann"},{pos:"DF",nombre:"Philipp Lahm"},
+    {pos:"DF",nombre:"Per Mertesacker"},{pos:"DF",nombre:"Christoph Metzelder"},
+    {pos:"DF",nombre:"Arne Friedrich"},{pos:"MF",nombre:"Michael Ballack"},
+    {pos:"MF",nombre:"Torsten Frings"},{pos:"MF",nombre:"Tim Borowski"},
+    {pos:"FW",nombre:"Miroslav Klose"},{pos:"FW",nombre:"Lukas Podolski"},
+    {pos:"FW",nombre:"Oliver Neuville"}
+  ]},
+  { id:"ale_euro2008", equipo:"Alemania", temporada:"Euro 2008", jugadores:[
+    {pos:"GK",nombre:"Jens Lehmann"},{pos:"DF",nombre:"Philipp Lahm"},
+    {pos:"DF",nombre:"Per Mertesacker"},{pos:"DF",nombre:"Christoph Metzelder"},
+    {pos:"DF",nombre:"Marcell Jansen"},{pos:"MF",nombre:"Michael Ballack"},
+    {pos:"MF",nombre:"Torsten Frings"},{pos:"MF",nombre:"Thomas Hitzlsperger"},
+    {pos:"FW",nombre:"Miroslav Klose"},{pos:"FW",nombre:"Lukas Podolski"},
+    {pos:"FW",nombre:"Mario Gomez"}
+  ]},
+  { id:"ale_mundial2010", equipo:"Alemania", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"Manuel Neuer"},{pos:"DF",nombre:"Philipp Lahm"},
+    {pos:"DF",nombre:"Per Mertesacker"},{pos:"DF",nombre:"Holger Badstuber"},
+    {pos:"DF",nombre:"Arne Friedrich"},{pos:"MF",nombre:"Bastian Schweinsteiger"},
+    {pos:"MF",nombre:"Sami Khedira"},{pos:"MF",nombre:"Mesut Özil"},
+    {pos:"FW",nombre:"Miroslav Klose"},{pos:"FW",nombre:"Lukas Podolski"},
+    {pos:"FW",nombre:"Thomas Müller"}
+  ]},
+  { id:"ale_euro2012", equipo:"Alemania", temporada:"Euro 2012", jugadores:[
+    {pos:"GK",nombre:"Manuel Neuer"},{pos:"DF",nombre:"Philipp Lahm"},
+    {pos:"DF",nombre:"Per Mertesacker"},{pos:"DF",nombre:"Mats Hummels"},
+    {pos:"DF",nombre:"Holger Badstuber"},{pos:"MF",nombre:"Bastian Schweinsteiger"},
+    {pos:"MF",nombre:"Sami Khedira"},{pos:"MF",nombre:"Mesut Özil"},
+    {pos:"FW",nombre:"Miroslav Klose"},{pos:"FW",nombre:"Lukas Podolski"},
+    {pos:"FW",nombre:"Thomas Müller"}
+  ]},
+  { id:"ale_mundial2014", equipo:"Alemania", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Manuel Neuer"},{pos:"DF",nombre:"Philipp Lahm"},
+    {pos:"DF",nombre:"Mats Hummels"},{pos:"DF",nombre:"Per Mertesacker"},
+    {pos:"DF",nombre:"Jérôme Boateng"},{pos:"MF",nombre:"Bastian Schweinsteiger"},
+    {pos:"MF",nombre:"Sami Khedira"},{pos:"MF",nombre:"Mesut Özil"},
+    {pos:"FW",nombre:"Thomas Müller"},{pos:"FW",nombre:"Miroslav Klose"},
+    {pos:"FW",nombre:"Toni Kroos"}
+  ]},
+  { id:"ale_euro2016", equipo:"Alemania", temporada:"Euro 2016", jugadores:[
+    {pos:"GK",nombre:"Manuel Neuer"},{pos:"DF",nombre:"Joshua Kimmich"},
+    {pos:"DF",nombre:"Mats Hummels"},{pos:"DF",nombre:"Jérôme Boateng"},
+    {pos:"DF",nombre:"Jonas Hector"},{pos:"MF",nombre:"Toni Kroos"},
+    {pos:"MF",nombre:"Bastian Schweinsteiger"},{pos:"MF",nombre:"Mesut Özil"},
+    {pos:"FW",nombre:"Thomas Müller"},{pos:"FW",nombre:"Mario Gomez"},
+    {pos:"FW",nombre:"Mario Götze"}
+  ]},
+  { id:"ale_mundial2018", equipo:"Alemania", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Manuel Neuer"},{pos:"DF",nombre:"Joshua Kimmich"},
+    {pos:"DF",nombre:"Mats Hummels"},{pos:"DF",nombre:"Jérôme Boateng"},
+    {pos:"DF",nombre:"Marvin Plattenhardt"},{pos:"MF",nombre:"Toni Kroos"},
+    {pos:"MF",nombre:"Sami Khedira"},{pos:"MF",nombre:"Mesut Özil"},
+    {pos:"FW",nombre:"Thomas Müller"},{pos:"FW",nombre:"Timo Werner"},
+    {pos:"FW",nombre:"Marco Reus"}
+  ]},
+  { id:"ale_euro2020", equipo:"Alemania", temporada:"Euro 2020", jugadores:[
+    {pos:"GK",nombre:"Manuel Neuer"},{pos:"DF",nombre:"Joshua Kimmich"},
+    {pos:"DF",nombre:"Mats Hummels"},{pos:"DF",nombre:"Matthias Ginter"},
+    {pos:"DF",nombre:"Robin Gosens"},{pos:"MF",nombre:"Toni Kroos"},
+    {pos:"MF",nombre:"İlkay Gündoğan"},{pos:"MF",nombre:"Thomas Müller"},
+    {pos:"FW",nombre:"Serge Gnabry"},{pos:"FW",nombre:"Kai Havertz"},
+    {pos:"FW",nombre:"Leroy Sané"}
+  ]},
+  { id:"ale_mundial2022", equipo:"Alemania", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Manuel Neuer"},{pos:"DF",nombre:"Joshua Kimmich"},
+    {pos:"DF",nombre:"Niklas Süle"},{pos:"DF",nombre:"Antonio Rüdiger"},
+    {pos:"DF",nombre:"David Raum"},{pos:"MF",nombre:"İlkay Gündoğan"},
+    {pos:"MF",nombre:"Leon Goretzka"},{pos:"MF",nombre:"Jamal Musiala"},
+    {pos:"FW",nombre:"Serge Gnabry"},{pos:"FW",nombre:"Kai Havertz"},
+    {pos:"FW",nombre:"Thomas Müller"}
+  ]},
+  { id:"ale_euro2024", equipo:"Alemania", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Manuel Neuer"},{pos:"DF",nombre:"Joshua Kimmich"},
+    {pos:"DF",nombre:"Jonathan Tah"},{pos:"DF",nombre:"Antonio Rüdiger"},
+    {pos:"DF",nombre:"Maximilian Mittelstädt"},{pos:"MF",nombre:"İlkay Gündoğan"},
+    {pos:"MF",nombre:"Toni Kroos"},{pos:"MF",nombre:"Jamal Musiala"},
+    {pos:"FW",nombre:"Florian Wirtz"},{pos:"FW",nombre:"Kai Havertz"},
+    {pos:"FW",nombre:"Leroy Sané"}
+  ]},
+  { id:"ale_mundial2026", equipo:"Alemania", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Manuel Neuer"},{pos:"DF",nombre:"Joshua Kimmich"},
+    {pos:"DF",nombre:"Jonathan Tah"},{pos:"DF",nombre:"Antonio Rüdiger"},
+    {pos:"DF",nombre:"Maximilian Mittelstädt"},{pos:"MF",nombre:"İlkay Gündoğan"},
+    {pos:"MF",nombre:"Florian Wirtz"},{pos:"MF",nombre:"Jamal Musiala"},
+    {pos:"FW",nombre:"Serge Gnabry"},{pos:"FW",nombre:"Kai Havertz"},
+    {pos:"FW",nombre:"Leroy Sané"}
+  ]},
+
+  // ── BRASIL ────────────────────────────────────────────────────────────────
+  { id:"bra_mundial1998", equipo:"Brasil", temporada:"Mundial 1998", jugadores:[
+    {pos:"GK",nombre:"Taffarel"},{pos:"DF",nombre:"Cafu"},
+    {pos:"DF",nombre:"Aldair"},{pos:"DF",nombre:"Junior Baiano"},
+    {pos:"DF",nombre:"Roberto Carlos"},{pos:"MF",nombre:"Dunga"},
+    {pos:"MF",nombre:"Rivaldo"},{pos:"MF",nombre:"Leonardo"},
+    {pos:"FW",nombre:"Ronaldo"},{pos:"FW",nombre:"Bebeto"},
+    {pos:"FW",nombre:"Romário"}
+  ]},
+  { id:"bra_euro2002", equipo:"Brasil", temporada:"Mundial 2002", jugadores:[
+    {pos:"GK",nombre:"Marcos"},{pos:"DF",nombre:"Cafu"},
+    {pos:"DF",nombre:"Lúcio"},{pos:"DF",nombre:"Roque Junior"},
+    {pos:"DF",nombre:"Roberto Carlos"},{pos:"MF",nombre:"Gilberto Silva"},
+    {pos:"MF",nombre:"Rivaldo"},{pos:"MF",nombre:"Ronaldinho"},
+    {pos:"FW",nombre:"Ronaldo"},{pos:"FW",nombre:"Edilson"},
+    {pos:"FW",nombre:"Ronaldinho"}
+  ]},
+  { id:"bra_mundial2006", equipo:"Brasil", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Dida"},{pos:"DF",nombre:"Cafu"},
+    {pos:"DF",nombre:"Lúcio"},{pos:"DF",nombre:"Juan"},
+    {pos:"DF",nombre:"Roberto Carlos"},{pos:"MF",nombre:"Emerson"},
+    {pos:"MF",nombre:"Gilberto Silva"},{pos:"MF",nombre:"Ronaldinho"},
+    {pos:"FW",nombre:"Ronaldo"},{pos:"FW",nombre:"Adriano"},
+    {pos:"FW",nombre:"Kaká"}
+  ]},
+  { id:"bra_mundial2010", equipo:"Brasil", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"Júlio César"},{pos:"DF",nombre:"Maicon"},
+    {pos:"DF",nombre:"Lúcio"},{pos:"DF",nombre:"Juan"},
+    {pos:"DF",nombre:"Michel Bastos"},{pos:"MF",nombre:"Felipe Melo"},
+    {pos:"MF",nombre:"Gilberto Silva"},{pos:"MF",nombre:"Kaká"},
+    {pos:"FW",nombre:"Luis Fabiano"},{pos:"FW",nombre:"Robinho"},
+    {pos:"FW",nombre:"Elano"}
+  ]},
+  { id:"bra_mundial2014", equipo:"Brasil", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Júlio César"},{pos:"DF",nombre:"Dani Alves"},
+    {pos:"DF",nombre:"Thiago Silva"},{pos:"DF",nombre:"David Luiz"},
+    {pos:"DF",nombre:"Marcelo"},{pos:"MF",nombre:"Paulinho"},
+    {pos:"MF",nombre:"Fernandinho"},{pos:"MF",nombre:"Oscar"},
+    {pos:"FW",nombre:"Neymar"},{pos:"FW",nombre:"Hulk"},
+    {pos:"FW",nombre:"Fred"}
+  ]},
+  { id:"bra_mundial2018", equipo:"Brasil", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Alisson"},{pos:"DF",nombre:"Fagner"},
+    {pos:"DF",nombre:"Thiago Silva"},{pos:"DF",nombre:"Miranda"},
+    {pos:"DF",nombre:"Marcelo"},{pos:"MF",nombre:"Casemiro"},
+    {pos:"MF",nombre:"Paulinho"},{pos:"MF",nombre:"Coutinho"},
+    {pos:"FW",nombre:"Neymar"},{pos:"FW",nombre:"Gabriel Jesus"},
+    {pos:"FW",nombre:"Roberto Firmino"}
+  ]},
+  { id:"bra_mundial2022", equipo:"Brasil", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Alisson"},{pos:"DF",nombre:"Danilo"},
+    {pos:"DF",nombre:"Thiago Silva"},{pos:"DF",nombre:"Marquinhos"},
+    {pos:"DF",nombre:"Alex Sandro"},{pos:"MF",nombre:"Casemiro"},
+    {pos:"MF",nombre:"Lucas Paquetá"},{pos:"MF",nombre:"Fred"},
+    {pos:"FW",nombre:"Neymar"},{pos:"FW",nombre:"Vinicius Junior"},
+    {pos:"FW",nombre:"Rodrygo"}
+  ]},
+  { id:"bra_mundial2026", equipo:"Brasil", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Alisson"},{pos:"DF",nombre:"Danilo"},
+    {pos:"DF",nombre:"Marquinhos"},{pos:"DF",nombre:"Gabriel Magalhães"},
+    {pos:"DF",nombre:"Guilherme Arana"},{pos:"MF",nombre:"Bruno Guimarães"},
+    {pos:"MF",nombre:"Lucas Paquetá"},{pos:"MF",nombre:"Andreas Pereira"},
+    {pos:"FW",nombre:"Vinicius Junior"},{pos:"FW",nombre:"Endrick"},
+    {pos:"FW",nombre:"Rodrygo"}
+  ]},
+
+  // ── ARGENTINA ─────────────────────────────────────────────────────────────
+  { id:"arg_mundial1998", equipo:"Argentina", temporada:"Mundial 1998", jugadores:[
+    {pos:"GK",nombre:"Carlos Roa"},{pos:"DF",nombre:"Roberto Ayala"},
+    {pos:"DF",nombre:"José Chamot"},{pos:"DF",nombre:"Nelson Vivas"},
+    {pos:"DF",nombre:"Matías Almeyda"},{pos:"MF",nombre:"Diego Simeone"},
+    {pos:"MF",nombre:"Juan Sebastián Verón"},{pos:"MF",nombre:"Ariel Ortega"},
+    {pos:"FW",nombre:"Gabriel Batistuta"},{pos:"FW",nombre:"Hernán Crespo"},
+    {pos:"FW",nombre:"Claudio López"}
+  ]},
+  { id:"arg_mundial2002", equipo:"Argentina", temporada:"Mundial 2002", jugadores:[
+    {pos:"GK",nombre:"Pablo Cavallero"},{pos:"DF",nombre:"Roberto Ayala"},
+    {pos:"DF",nombre:"Walter Samuel"},{pos:"DF",nombre:"Mauricio Pochettino"},
+    {pos:"DF",nombre:"Juan Pablo Sorín"},{pos:"MF",nombre:"Diego Simeone"},
+    {pos:"MF",nombre:"Juan Sebastián Verón"},{pos:"MF",nombre:"Ariel Ortega"},
+    {pos:"FW",nombre:"Gabriel Batistuta"},{pos:"FW",nombre:"Hernán Crespo"},
+    {pos:"FW",nombre:"Claudio López"}
+  ]},
+  { id:"arg_mundial2006", equipo:"Argentina", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Roberto Abbondanzieri"},{pos:"DF",nombre:"Roberto Ayala"},
+    {pos:"DF",nombre:"Gabriel Heinze"},{pos:"DF",nombre:"Walter Samuel"},
+    {pos:"DF",nombre:"Juan Pablo Sorín"},{pos:"MF",nombre:"Javier Mascherano"},
+    {pos:"MF",nombre:"Juan Román Riquelme"},{pos:"MF",nombre:"Esteban Cambiasso"},
+    {pos:"FW",nombre:"Hernán Crespo"},{pos:"FW",nombre:"Carlos Tévez"},
+    {pos:"FW",nombre:"Lionel Messi"}
+  ]},
+  { id:"arg_mundial2010", equipo:"Argentina", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"Sergio Romero"},{pos:"DF",nombre:"Nicolás Otamendi"},
+    {pos:"DF",nombre:"Gabriel Heinze"},{pos:"DF",nombre:"Walter Samuel"},
+    {pos:"DF",nombre:"Jonás Gutiérrez"},{pos:"MF",nombre:"Javier Mascherano"},
+    {pos:"MF",nombre:"Ángel Di María"},{pos:"MF",nombre:"Juan Sebastián Verón"},
+    {pos:"FW",nombre:"Lionel Messi"},{pos:"FW",nombre:"Carlos Tévez"},
+    {pos:"FW",nombre:"Gonzalo Higuaín"}
+  ]},
+  { id:"arg_mundial2014", equipo:"Argentina", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Sergio Romero"},{pos:"DF",nombre:"Pablo Zabaleta"},
+    {pos:"DF",nombre:"Ezequiel Garay"},{pos:"DF",nombre:"Marcos Rojo"},
+    {pos:"DF",nombre:"Martín Demichelis"},{pos:"MF",nombre:"Javier Mascherano"},
+    {pos:"MF",nombre:"Ángel Di María"},{pos:"MF",nombre:"Lucas Biglia"},
+    {pos:"FW",nombre:"Lionel Messi"},{pos:"FW",nombre:"Gonzalo Higuaín"},
+    {pos:"FW",nombre:"Sergio Agüero"}
+  ]},
+  { id:"arg_mundial2018", equipo:"Argentina", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Wilfredo Caballero"},{pos:"DF",nombre:"Gabriel Mercado"},
+    {pos:"DF",nombre:"Nicolás Otamendi"},{pos:"DF",nombre:"Federico Fazio"},
+    {pos:"DF",nombre:"Marcos Rojo"},{pos:"MF",nombre:"Javier Mascherano"},
+    {pos:"MF",nombre:"Ángel Di María"},{pos:"MF",nombre:"Ever Banega"},
+    {pos:"FW",nombre:"Lionel Messi"},{pos:"FW",nombre:"Gonzalo Higuaín"},
+    {pos:"FW",nombre:"Paulo Dybala"}
+  ]},
+  { id:"arg_mundial2022", equipo:"Argentina", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Emiliano Martínez"},{pos:"DF",nombre:"Nahuel Molina"},
+    {pos:"DF",nombre:"Cristian Romero"},{pos:"DF",nombre:"Nicolás Otamendi"},
+    {pos:"DF",nombre:"Marcos Acuña"},{pos:"MF",nombre:"Rodrigo De Paul"},
+    {pos:"MF",nombre:"Enzo Fernández"},{pos:"MF",nombre:"Alexis Mac Allister"},
+    {pos:"FW",nombre:"Lionel Messi"},{pos:"FW",nombre:"Julián Álvarez"},
+    {pos:"FW",nombre:"Ángel Di María"}
+  ]},
+  { id:"arg_mundial2026", equipo:"Argentina", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Emiliano Martínez"},{pos:"DF",nombre:"Nahuel Molina"},
+    {pos:"DF",nombre:"Cristian Romero"},{pos:"DF",nombre:"Nicolás Otamendi"},
+    {pos:"DF",nombre:"Nicolás Tagliafico"},{pos:"MF",nombre:"Rodrigo De Paul"},
+    {pos:"MF",nombre:"Enzo Fernández"},{pos:"MF",nombre:"Alexis Mac Allister"},
+    {pos:"FW",nombre:"Lionel Messi"},{pos:"FW",nombre:"Julián Álvarez"},
+    {pos:"FW",nombre:"Lautaro Martínez"}
+  ]},
+
+  // ── PORTUGAL ──────────────────────────────────────────────────────────────
+  { id:"por_euro2000", equipo:"Portugal", temporada:"Euro 2000", jugadores:[
+    {pos:"GK",nombre:"Vítor Baía"},{pos:"DF",nombre:"João Pinto"},
+    {pos:"DF",nombre:"Fernando Couto"},{pos:"DF",nombre:"Jorge Costa"},
+    {pos:"DF",nombre:"Rui Jorge"},{pos:"MF",nombre:"Luis Figo"},
+    {pos:"MF",nombre:"João Pinto"},{pos:"MF",nombre:"Sérgio Conceição"},
+    {pos:"FW",nombre:"Nuno Gomes"},{pos:"FW",nombre:"Joao Vieira Pinto"},
+    {pos:"FW",nombre:"Pauleta"}
+  ]},
+  { id:"por_mundial2002", equipo:"Portugal", temporada:"Mundial 2002", jugadores:[
+    {pos:"GK",nombre:"Vítor Baía"},{pos:"DF",nombre:"Jorge Costa"},
+    {pos:"DF",nombre:"Fernando Couto"},{pos:"DF",nombre:"Rui Jorge"},
+    {pos:"DF",nombre:"Paulo Ferreira"},{pos:"MF",nombre:"Luis Figo"},
+    {pos:"MF",nombre:"Rui Costa"},{pos:"MF",nombre:"Sérgio Conceição"},
+    {pos:"FW",nombre:"Pauleta"},{pos:"FW",nombre:"Nuno Gomes"},
+    {pos:"FW",nombre:"Hélder Postiga"}
+  ]},
+  { id:"por_euro2004", equipo:"Portugal", temporada:"Euro 2004", jugadores:[
+    {pos:"GK",nombre:"Ricardo"},{pos:"DF",nombre:"Miguel"},
+    {pos:"DF",nombre:"Jorge Andrade"},{pos:"DF",nombre:"Fernando Couto"},
+    {pos:"DF",nombre:"Nuno Valente"},{pos:"MF",nombre:"Luis Figo"},
+    {pos:"MF",nombre:"Deco"},{pos:"MF",nombre:"Maniche"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Pauleta"},
+    {pos:"FW",nombre:"Nuno Gomes"}
+  ]},
+  { id:"por_mundial2006", equipo:"Portugal", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Ricardo"},{pos:"DF",nombre:"Paulo Ferreira"},
+    {pos:"DF",nombre:"Fernando Meira"},{pos:"DF",nombre:"Ricardo Carvalho"},
+    {pos:"DF",nombre:"Nuno Valente"},{pos:"MF",nombre:"Luis Figo"},
+    {pos:"MF",nombre:"Deco"},{pos:"MF",nombre:"Maniche"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Pauleta"},
+    {pos:"FW",nombre:"Hélder Postiga"}
+  ]},
+  { id:"por_euro2008", equipo:"Portugal", temporada:"Euro 2008", jugadores:[
+    {pos:"GK",nombre:"Ricardo"},{pos:"DF",nombre:"Paulo Ferreira"},
+    {pos:"DF",nombre:"Ricardo Carvalho"},{pos:"DF",nombre:"Bruno Alves"},
+    {pos:"DF",nombre:"Nuno Valente"},{pos:"MF",nombre:"Luis Figo"},
+    {pos:"MF",nombre:"Petit"},{pos:"MF",nombre:"Deco"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Nuno Gomes"},
+    {pos:"FW",nombre:"Hélder Postiga"}
+  ]},
+  { id:"por_mundial2010", equipo:"Portugal", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"Eduardo"},{pos:"DF",nombre:"Paulo Ferreira"},
+    {pos:"DF",nombre:"Ricardo Carvalho"},{pos:"DF",nombre:"Bruno Alves"},
+    {pos:"DF",nombre:"Fábio Coentrão"},{pos:"MF",nombre:"Raúl Meireles"},
+    {pos:"MF",nombre:"Tiago"},{pos:"MF",nombre:"Deco"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Hugo Almeida"},
+    {pos:"FW",nombre:"Simão"}
+  ]},
+  { id:"por_euro2012", equipo:"Portugal", temporada:"Euro 2012", jugadores:[
+    {pos:"GK",nombre:"Rui Patrício"},{pos:"DF",nombre:"João Pereira"},
+    {pos:"DF",nombre:"Bruno Alves"},{pos:"DF",nombre:"Pepe"},
+    {pos:"DF",nombre:"Fábio Coentrão"},{pos:"MF",nombre:"Raúl Meireles"},
+    {pos:"MF",nombre:"João Moutinho"},{pos:"MF",nombre:"Miguel Veloso"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Hélder Postiga"},
+    {pos:"FW",nombre:"Nani"}
+  ]},
+  { id:"por_mundial2014", equipo:"Portugal", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Rui Patrício"},{pos:"DF",nombre:"João Pereira"},
+    {pos:"DF",nombre:"Bruno Alves"},{pos:"DF",nombre:"Pepe"},
+    {pos:"DF",nombre:"Fábio Coentrão"},{pos:"MF",nombre:"Raúl Meireles"},
+    {pos:"MF",nombre:"João Moutinho"},{pos:"MF",nombre:"William Carvalho"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Hélder Postiga"},
+    {pos:"FW",nombre:"Nani"}
+  ]},
+  { id:"por_euro2016", equipo:"Portugal", temporada:"Euro 2016", jugadores:[
+    {pos:"GK",nombre:"Rui Patrício"},{pos:"DF",nombre:"Cédric Soares"},
+    {pos:"DF",nombre:"Pepe"},{pos:"DF",nombre:"Bruno Alves"},
+    {pos:"DF",nombre:"Raphaël Guerreiro"},{pos:"MF",nombre:"Renato Sanches"},
+    {pos:"MF",nombre:"João Moutinho"},{pos:"MF",nombre:"William Carvalho"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Nani"},
+    {pos:"FW",nombre:"Éder"}
+  ]},
+  { id:"por_mundial2018", equipo:"Portugal", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Rui Patrício"},{pos:"DF",nombre:"Cédric Soares"},
+    {pos:"DF",nombre:"Pepe"},{pos:"DF",nombre:"José Fonte"},
+    {pos:"DF",nombre:"Raphaël Guerreiro"},{pos:"MF",nombre:"Adrien Silva"},
+    {pos:"MF",nombre:"João Moutinho"},{pos:"MF",nombre:"Bernardo Silva"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Gonçalo Guedes"},
+    {pos:"FW",nombre:"Ricardo Quaresma"}
+  ]},
+  { id:"por_euro2020", equipo:"Portugal", temporada:"Euro 2020", jugadores:[
+    {pos:"GK",nombre:"Rui Patrício"},{pos:"DF",nombre:"Nelson Semedo"},
+    {pos:"DF",nombre:"Pepe"},{pos:"DF",nombre:"Rúben Dias"},
+    {pos:"DF",nombre:"Raphaël Guerreiro"},{pos:"MF",nombre:"Danilo Pereira"},
+    {pos:"MF",nombre:"João Moutinho"},{pos:"MF",nombre:"Bruno Fernandes"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Bernardo Silva"},
+    {pos:"FW",nombre:"Diogo Jota"}
+  ]},
+  { id:"por_mundial2022", equipo:"Portugal", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Diogo Costa"},{pos:"DF",nombre:"João Cancelo"},
+    {pos:"DF",nombre:"Pepe"},{pos:"DF",nombre:"Rúben Dias"},
+    {pos:"DF",nombre:"Raphaël Guerreiro"},{pos:"MF",nombre:"William Carvalho"},
+    {pos:"MF",nombre:"João Moutinho"},{pos:"MF",nombre:"Bruno Fernandes"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Bernardo Silva"},
+    {pos:"FW",nombre:"João Félix"}
+  ]},
+  { id:"por_euro2024", equipo:"Portugal", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Diogo Costa"},{pos:"DF",nombre:"João Cancelo"},
+    {pos:"DF",nombre:"Pepe"},{pos:"DF",nombre:"Rúben Dias"},
+    {pos:"DF",nombre:"Nuno Mendes"},{pos:"MF",nombre:"João Palhinha"},
+    {pos:"MF",nombre:"Vitinha"},{pos:"MF",nombre:"Bruno Fernandes"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Bernardo Silva"},
+    {pos:"FW",nombre:"Rafael Leão"}
+  ]},
+  { id:"por_mundial2026", equipo:"Portugal", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Diogo Costa"},{pos:"DF",nombre:"João Cancelo"},
+    {pos:"DF",nombre:"Rúben Dias"},{pos:"DF",nombre:"António Silva"},
+    {pos:"DF",nombre:"Nuno Mendes"},{pos:"MF",nombre:"João Palhinha"},
+    {pos:"MF",nombre:"Vitinha"},{pos:"MF",nombre:"Bruno Fernandes"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Bernardo Silva"},
+    {pos:"FW",nombre:"Rafael Leão"}
+  ]},
+
+  // ── ITALIA ────────────────────────────────────────────────────────────────
+  { id:"ita_euro2000", equipo:"Italia", temporada:"Euro 2000", jugadores:[
+    {pos:"GK",nombre:"Francesco Toldo"},{pos:"DF",nombre:"Alessandro Nesta"},
+    {pos:"DF",nombre:"Fabio Cannavaro"},{pos:"DF",nombre:"Paolo Maldini"},
+    {pos:"DF",nombre:"Luigi Di Biagio"},{pos:"MF",nombre:"Dino Baggio"},
+    {pos:"MF",nombre:"Stefano Fiore"},{pos:"MF",nombre:"Francesco Totti"},
+    {pos:"FW",nombre:"Filippo Inzaghi"},{pos:"FW",nombre:"Alessandro Del Piero"},
+    {pos:"FW",nombre:"Francesco Totti"}
+  ]},
+  { id:"ita_mundial2002", equipo:"Italia", temporada:"Mundial 2002", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Alessandro Nesta"},
+    {pos:"DF",nombre:"Fabio Cannavaro"},{pos:"DF",nombre:"Paolo Maldini"},
+    {pos:"DF",nombre:"Christian Panucci"},{pos:"MF",nombre:"Gennaro Gattuso"},
+    {pos:"MF",nombre:"Francesco Totti"},{pos:"MF",nombre:"Damiano Tommasi"},
+    {pos:"FW",nombre:"Filippo Inzaghi"},{pos:"FW",nombre:"Alessandro Del Piero"},
+    {pos:"FW",nombre:"Vieri"}
+  ]},
+  { id:"ita_euro2004", equipo:"Italia", temporada:"Euro 2004", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Alessandro Nesta"},
+    {pos:"DF",nombre:"Fabio Cannavaro"},{pos:"DF",nombre:"Gianluca Zambrotta"},
+    {pos:"DF",nombre:"Fabio Grosso"},{pos:"MF",nombre:"Gennaro Gattuso"},
+    {pos:"MF",nombre:"Andrea Pirlo"},{pos:"MF",nombre:"Francesco Totti"},
+    {pos:"FW",nombre:"Filippo Inzaghi"},{pos:"FW",nombre:"Antonio Cassano"},
+    {pos:"FW",nombre:"Vieri"}
+  ]},
+  { id:"ita_mundial2006", equipo:"Italia", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Alessandro Nesta"},
+    {pos:"DF",nombre:"Fabio Cannavaro"},{pos:"DF",nombre:"Marco Materazzi"},
+    {pos:"DF",nombre:"Gianluca Zambrotta"},{pos:"MF",nombre:"Gennaro Gattuso"},
+    {pos:"MF",nombre:"Andrea Pirlo"},{pos:"MF",nombre:"Mauro Camoranesi"},
+    {pos:"FW",nombre:"Luca Toni"},{pos:"FW",nombre:"Francesco Totti"},
+    {pos:"FW",nombre:"Alberto Gilardino"}
+  ]},
+  { id:"ita_euro2008", equipo:"Italia", temporada:"Euro 2008", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Christian Panucci"},
+    {pos:"DF",nombre:"Fabio Cannavaro"},{pos:"DF",nombre:"Giorgio Chiellini"},
+    {pos:"DF",nombre:"Fabio Grosso"},{pos:"MF",nombre:"Gennaro Gattuso"},
+    {pos:"MF",nombre:"Andrea Pirlo"},{pos:"MF",nombre:"Simone Perrotta"},
+    {pos:"FW",nombre:"Luca Toni"},{pos:"FW",nombre:"Antonio Di Natale"},
+    {pos:"FW",nombre:"Mauro Camoranesi"}
+  ]},
+  { id:"ita_mundial2010", equipo:"Italia", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Fabio Cannavaro"},
+    {pos:"DF",nombre:"Giorgio Chiellini"},{pos:"DF",nombre:"Domenico Criscito"},
+    {pos:"DF",nombre:"Gianluca Zambrotta"},{pos:"MF",nombre:"Gennaro Gattuso"},
+    {pos:"MF",nombre:"Andrea Pirlo"},{pos:"MF",nombre:"Riccardo Montolivo"},
+    {pos:"FW",nombre:"Vincenzo Iaquinta"},{pos:"FW",nombre:"Antonio Di Natale"},
+    {pos:"FW",nombre:"Fabio Quagliarella"}
+  ]},
+  { id:"ita_euro2012", equipo:"Italia", temporada:"Euro 2012", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Christian Maggio"},
+    {pos:"DF",nombre:"Giorgio Chiellini"},{pos:"DF",nombre:"Leonardo Bonucci"},
+    {pos:"DF",nombre:"Federico Balzaretti"},{pos:"MF",nombre:"Andrea Pirlo"},
+    {pos:"MF",nombre:"Daniele De Rossi"},{pos:"MF",nombre:"Riccardo Montolivo"},
+    {pos:"FW",nombre:"Antonio Cassano"},{pos:"FW",nombre:"Mario Balotelli"},
+    {pos:"FW",nombre:"Antonio Di Natale"}
+  ]},
+  { id:"ita_mundial2014", equipo:"Italia", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Matteo Darmian"},
+    {pos:"DF",nombre:"Giorgio Chiellini"},{pos:"DF",nombre:"Leonardo Bonucci"},
+    {pos:"DF",nombre:"Ignazio Abate"},{pos:"MF",nombre:"Andrea Pirlo"},
+    {pos:"MF",nombre:"Daniele De Rossi"},{pos:"MF",nombre:"Claudio Marchisio"},
+    {pos:"FW",nombre:"Mario Balotelli"},{pos:"FW",nombre:"Antonio Candreva"},
+    {pos:"FW",nombre:"Lorenzo Insigne"}
+  ]},
+  { id:"ita_euro2016", equipo:"Italia", temporada:"Euro 2016", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Matteo Darmian"},
+    {pos:"DF",nombre:"Giorgio Chiellini"},{pos:"DF",nombre:"Leonardo Bonucci"},
+    {pos:"DF",nombre:"Federico Bernardeschi"},{pos:"MF",nombre:"Daniele De Rossi"},
+    {pos:"MF",nombre:"Marco Parolo"},{pos:"MF",nombre:"Emanuele Giaccherini"},
+    {pos:"FW",nombre:"Graziano Pellè"},{pos:"FW",nombre:"Antonio Candreva"},
+    {pos:"FW",nombre:"Lorenzo Insigne"}
+  ]},
+  { id:"ita_mundial2018", equipo:"Italia", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Mattia De Sciglio"},
+    {pos:"DF",nombre:"Giorgio Chiellini"},{pos:"DF",nombre:"Leonardo Bonucci"},
+    {pos:"DF",nombre:"Marco Davide Faraoni"},{pos:"MF",nombre:"Daniele De Rossi"},
+    {pos:"MF",nombre:"Jorginho"},{pos:"MF",nombre:"Lorenzo Pellegrini"},
+    {pos:"FW",nombre:"Lorenzo Insigne"},{pos:"FW",nombre:"Andrea Belotti"},
+    {pos:"FW",nombre:"Federico Bernardeschi"}
+  ]},
+  { id:"ita_euro2020", equipo:"Italia", temporada:"Euro 2020", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Donnarumma"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Giorgio Chiellini"},{pos:"DF",nombre:"Leonardo Bonucci"},
+    {pos:"DF",nombre:"Leonardo Spinazzola"},{pos:"MF",nombre:"Jorginho"},
+    {pos:"MF",nombre:"Marco Verratti"},{pos:"MF",nombre:"Nicolo Barella"},
+    {pos:"FW",nombre:"Federico Chiesa"},{pos:"FW",nombre:"Lorenzo Insigne"},
+    {pos:"FW",nombre:"Ciro Immobile"}
+  ]},
+  { id:"ita_mundial2022", equipo:"Italia", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Donnarumma"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Giorgio Chiellini"},{pos:"DF",nombre:"Leonardo Bonucci"},
+    {pos:"DF",nombre:"Emerson Palmieri"},{pos:"MF",nombre:"Jorginho"},
+    {pos:"MF",nombre:"Marco Verratti"},{pos:"MF",nombre:"Nicolo Barella"},
+    {pos:"FW",nombre:"Federico Chiesa"},{pos:"FW",nombre:"Lorenzo Insigne"},
+    {pos:"FW",nombre:"Ciro Immobile"}
+  ]},
+  { id:"ita_euro2024", equipo:"Italia", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Donnarumma"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Alessandro Bastoni"},{pos:"DF",nombre:"Riccardo Calafiori"},
+    {pos:"DF",nombre:"Federico Dimarco"},{pos:"MF",nombre:"Jorginho"},
+    {pos:"MF",nombre:"Nicolo Barella"},{pos:"MF",nombre:"Bryan Cristante"},
+    {pos:"FW",nombre:"Federico Chiesa"},{pos:"FW",nombre:"Giacomo Raspadori"},
+    {pos:"FW",nombre:"Mattia Zaccagni"}
+  ]},
+  { id:"ita_mundial2026", equipo:"Italia", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Donnarumma"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Alessandro Bastoni"},{pos:"DF",nombre:"Riccardo Calafiori"},
+    {pos:"DF",nombre:"Federico Dimarco"},{pos:"MF",nombre:"Nicolo Barella"},
+    {pos:"MF",nombre:"Sandro Tonali"},{pos:"MF",nombre:"Davide Frattesi"},
+    {pos:"FW",nombre:"Federico Chiesa"},{pos:"FW",nombre:"Giacomo Raspadori"},
+    {pos:"FW",nombre:"Mateo Retegui"}
+  ]},
+
+  // ── INGLATERRA ────────────────────────────────────────────────────────────
+  { id:"eng_euro2000", equipo:"Inglaterra", temporada:"Euro 2000", jugadores:[
+    {pos:"GK",nombre:"David Seaman"},{pos:"DF",nombre:"Gary Neville"},
+    {pos:"DF",nombre:"Sol Campbell"},{pos:"DF",nombre:"Tony Adams"},
+    {pos:"DF",nombre:"Philip Neville"},{pos:"MF",nombre:"Paul Scholes"},
+    {pos:"MF",nombre:"Steven Gerrard"},{pos:"MF",nombre:"David Beckham"},
+    {pos:"FW",nombre:"Michael Owen"},{pos:"FW",nombre:"Alan Shearer"},
+    {pos:"FW",nombre:"Kevin Phillips"}
+  ]},
+  { id:"eng_mundial2002", equipo:"Inglaterra", temporada:"Mundial 2002", jugadores:[
+    {pos:"GK",nombre:"David Seaman"},{pos:"DF",nombre:"Gary Neville"},
+    {pos:"DF",nombre:"Sol Campbell"},{pos:"DF",nombre:"Rio Ferdinand"},
+    {pos:"DF",nombre:"Ashley Cole"},{pos:"MF",nombre:"Paul Scholes"},
+    {pos:"MF",nombre:"Nicky Butt"},{pos:"MF",nombre:"David Beckham"},
+    {pos:"FW",nombre:"Michael Owen"},{pos:"FW",nombre:"Emile Heskey"},
+    {pos:"FW",nombre:"Robbie Fowler"}
+  ]},
+  { id:"eng_euro2004", equipo:"Inglaterra", temporada:"Euro 2004", jugadores:[
+    {pos:"GK",nombre:"David James"},{pos:"DF",nombre:"Gary Neville"},
+    {pos:"DF",nombre:"Sol Campbell"},{pos:"DF",nombre:"John Terry"},
+    {pos:"DF",nombre:"Ashley Cole"},{pos:"MF",nombre:"Frank Lampard"},
+    {pos:"MF",nombre:"Steven Gerrard"},{pos:"MF",nombre:"David Beckham"},
+    {pos:"FW",nombre:"Michael Owen"},{pos:"FW",nombre:"Wayne Rooney"},
+    {pos:"FW",nombre:"Darius Vassell"}
+  ]},
+  { id:"eng_mundial2006", equipo:"Inglaterra", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Paul Robinson"},{pos:"DF",nombre:"Gary Neville"},
+    {pos:"DF",nombre:"Sol Campbell"},{pos:"DF",nombre:"John Terry"},
+    {pos:"DF",nombre:"Ashley Cole"},{pos:"MF",nombre:"Frank Lampard"},
+    {pos:"MF",nombre:"Steven Gerrard"},{pos:"MF",nombre:"David Beckham"},
+    {pos:"FW",nombre:"Michael Owen"},{pos:"FW",nombre:"Wayne Rooney"},
+    {pos:"FW",nombre:"Peter Crouch"}
+  ]},
+  { id:"eng_euro2008", equipo:"Inglaterra", temporada:"Euro 2008", jugadores:[
+    {pos:"GK",nombre:"Scott Carson"},{pos:"DF",nombre:"Wes Brown"},
+    {pos:"DF",nombre:"John Terry"},{pos:"DF",nombre:"Rio Ferdinand"},
+    {pos:"DF",nombre:"Ashley Cole"},{pos:"MF",nombre:"Frank Lampard"},
+    {pos:"MF",nombre:"Steven Gerrard"},{pos:"MF",nombre:"Joe Cole"},
+    {pos:"FW",nombre:"Wayne Rooney"},{pos:"FW",nombre:"Peter Crouch"},
+    {pos:"FW",nombre:"Emile Heskey"}
+  ]},
+  { id:"eng_mundial2010", equipo:"Inglaterra", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"David James"},{pos:"DF",nombre:"Glen Johnson"},
+    {pos:"DF",nombre:"John Terry"},{pos:"DF",nombre:"Matthew Upson"},
+    {pos:"DF",nombre:"Ashley Cole"},{pos:"MF",nombre:"Frank Lampard"},
+    {pos:"MF",nombre:"Steven Gerrard"},{pos:"MF",nombre:"Gareth Barry"},
+    {pos:"FW",nombre:"Wayne Rooney"},{pos:"FW",nombre:"Emile Heskey"},
+    {pos:"FW",nombre:"Jermain Defoe"}
+  ]},
+  { id:"eng_euro2012", equipo:"Inglaterra", temporada:"Euro 2012", jugadores:[
+    {pos:"GK",nombre:"Joe Hart"},{pos:"DF",nombre:"Glen Johnson"},
+    {pos:"DF",nombre:"John Terry"},{pos:"DF",nombre:"Gary Cahill"},
+    {pos:"DF",nombre:"Ashley Cole"},{pos:"MF",nombre:"Frank Lampard"},
+    {pos:"MF",nombre:"Steven Gerrard"},{pos:"MF",nombre:"Scott Parker"},
+    {pos:"FW",nombre:"Wayne Rooney"},{pos:"FW",nombre:"Andy Carroll"},
+    {pos:"FW",nombre:"Danny Welbeck"}
+  ]},
+  { id:"eng_mundial2014", equipo:"Inglaterra", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Joe Hart"},{pos:"DF",nombre:"Glen Johnson"},
+    {pos:"DF",nombre:"Gary Cahill"},{pos:"DF",nombre:"Phil Jagielka"},
+    {pos:"DF",nombre:"Leighton Baines"},{pos:"MF",nombre:"Frank Lampard"},
+    {pos:"MF",nombre:"Steven Gerrard"},{pos:"MF",nombre:"Jordan Henderson"},
+    {pos:"FW",nombre:"Wayne Rooney"},{pos:"FW",nombre:"Danny Welbeck"},
+    {pos:"FW",nombre:"Raheem Sterling"}
+  ]},
+  { id:"eng_euro2016", equipo:"Inglaterra", temporada:"Euro 2016", jugadores:[
+    {pos:"GK",nombre:"Joe Hart"},{pos:"DF",nombre:"Kyle Walker"},
+    {pos:"DF",nombre:"Gary Cahill"},{pos:"DF",nombre:"Chris Smalling"},
+    {pos:"DF",nombre:"Danny Rose"},{pos:"MF",nombre:"Jordan Henderson"},
+    {pos:"MF",nombre:"Dele Alli"},{pos:"MF",nombre:"Wayne Rooney"},
+    {pos:"FW",nombre:"Harry Kane"},{pos:"FW",nombre:"Raheem Sterling"},
+    {pos:"FW",nombre:"Jamie Vardy"}
+  ]},
+  { id:"eng_mundial2018", equipo:"Inglaterra", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Jordan Pickford"},{pos:"DF",nombre:"Kieran Trippier"},
+    {pos:"DF",nombre:"Harry Maguire"},{pos:"DF",nombre:"John Stones"},
+    {pos:"DF",nombre:"Ashley Young"},{pos:"MF",nombre:"Jordan Henderson"},
+    {pos:"MF",nombre:"Jesse Lingard"},{pos:"MF",nombre:"Dele Alli"},
+    {pos:"FW",nombre:"Harry Kane"},{pos:"FW",nombre:"Raheem Sterling"},
+    {pos:"FW",nombre:"Jamie Vardy"}
+  ]},
+  { id:"eng_euro2020", equipo:"Inglaterra", temporada:"Euro 2020", jugadores:[
+    {pos:"GK",nombre:"Jordan Pickford"},{pos:"DF",nombre:"Kieran Trippier"},
+    {pos:"DF",nombre:"Harry Maguire"},{pos:"DF",nombre:"John Stones"},
+    {pos:"DF",nombre:"Luke Shaw"},{pos:"MF",nombre:"Declan Rice"},
+    {pos:"MF",nombre:"Kalvin Phillips"},{pos:"MF",nombre:"Mason Mount"},
+    {pos:"FW",nombre:"Harry Kane"},{pos:"FW",nombre:"Raheem Sterling"},
+    {pos:"FW",nombre:"Bukayo Saka"}
+  ]},
+  { id:"eng_mundial2022", equipo:"Inglaterra", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Jordan Pickford"},{pos:"DF",nombre:"Kyle Walker"},
+    {pos:"DF",nombre:"Harry Maguire"},{pos:"DF",nombre:"John Stones"},
+    {pos:"DF",nombre:"Luke Shaw"},{pos:"MF",nombre:"Declan Rice"},
+    {pos:"MF",nombre:"Jude Bellingham"},{pos:"MF",nombre:"Mason Mount"},
+    {pos:"FW",nombre:"Harry Kane"},{pos:"FW",nombre:"Raheem Sterling"},
+    {pos:"FW",nombre:"Bukayo Saka"}
+  ]},
+  { id:"eng_euro2024", equipo:"Inglaterra", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Jordan Pickford"},{pos:"DF",nombre:"Kyle Walker"},
+    {pos:"DF",nombre:"Marc Guéhi"},{pos:"DF",nombre:"John Stones"},
+    {pos:"DF",nombre:"Luke Shaw"},{pos:"MF",nombre:"Declan Rice"},
+    {pos:"MF",nombre:"Jude Bellingham"},{pos:"MF",nombre:"Kobbie Mainoo"},
+    {pos:"FW",nombre:"Harry Kane"},{pos:"FW",nombre:"Phil Foden"},
+    {pos:"FW",nombre:"Bukayo Saka"}
+  ]},
+  { id:"eng_mundial2026", equipo:"Inglaterra", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Jordan Pickford"},{pos:"DF",nombre:"Kyle Walker"},
+    {pos:"DF",nombre:"Marc Guéhi"},{pos:"DF",nombre:"John Stones"},
+    {pos:"DF",nombre:"Luke Shaw"},{pos:"MF",nombre:"Declan Rice"},
+    {pos:"MF",nombre:"Jude Bellingham"},{pos:"MF",nombre:"Kobbie Mainoo"},
+    {pos:"FW",nombre:"Harry Kane"},{pos:"FW",nombre:"Phil Foden"},
+    {pos:"FW",nombre:"Bukayo Saka"}
+  ]},
+
+  // ── PAÍSES BAJOS ──────────────────────────────────────────────────────────
+  { id:"ned_euro2000", equipo:"Países Bajos", temporada:"Euro 2000", jugadores:[
+    {pos:"GK",nombre:"Edwin van der Sar"},{pos:"DF",nombre:"Jaap Stam"},
+    {pos:"DF",nombre:"Frank de Boer"},{pos:"DF",nombre:"Arthur Numan"},
+    {pos:"DF",nombre:"Michael Reiziger"},{pos:"MF",nombre:"Edgar Davids"},
+    {pos:"MF",nombre:"Marc Overmars"},{pos:"MF",nombre:"Ronald de Boer"},
+    {pos:"FW",nombre:"Patrick Kluivert"},{pos:"FW",nombre:"Dennis Bergkamp"},
+    {pos:"FW",nombre:"Clarence Seedorf"}
+  ]},
+  { id:"ned_mundial2006", equipo:"Países Bajos", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Edwin van der Sar"},{pos:"DF",nombre:"Khalid Boulahrouz"},
+    {pos:"DF",nombre:"Joris Mathijsen"},{pos:"DF",nombre:"Andre Ooijer"},
+    {pos:"DF",nombre:"Giovanni van Bronckhorst"},{pos:"MF",nombre:"Philip Cocu"},
+    {pos:"MF",nombre:"Mark van Bommel"},{pos:"MF",nombre:"Wesley Sneijder"},
+    {pos:"FW",nombre:"Arjen Robben"},{pos:"FW",nombre:"Ruud van Nistelrooy"},
+    {pos:"FW",nombre:"Robin van Persie"}
+  ]},
+  { id:"ned_euro2008", equipo:"Países Bajos", temporada:"Euro 2008", jugadores:[
+    {pos:"GK",nombre:"Edwin van der Sar"},{pos:"DF",nombre:"Khalid Boulahrouz"},
+    {pos:"DF",nombre:"Joris Mathijsen"},{pos:"DF",nombre:"Andre Ooijer"},
+    {pos:"DF",nombre:"Giovanni van Bronckhorst"},{pos:"MF",nombre:"Mark van Bommel"},
+    {pos:"MF",nombre:"Wesley Sneijder"},{pos:"MF",nombre:"Rafael van der Vaart"},
+    {pos:"FW",nombre:"Arjen Robben"},{pos:"FW",nombre:"Ruud van Nistelrooy"},
+    {pos:"FW",nombre:"Robin van Persie"}
+  ]},
+  { id:"ned_mundial2010", equipo:"Países Bajos", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"Maarten Stekelenburg"},{pos:"DF",nombre:"Gregory van der Wiel"},
+    {pos:"DF",nombre:"Joris Mathijsen"},{pos:"DF",nombre:"John Heitinga"},
+    {pos:"DF",nombre:"Giovanni van Bronckhorst"},{pos:"MF",nombre:"Mark van Bommel"},
+    {pos:"MF",nombre:"Wesley Sneijder"},{pos:"MF",nombre:"Dirk Kuyt"},
+    {pos:"FW",nombre:"Arjen Robben"},{pos:"FW",nombre:"Robin van Persie"},
+    {pos:"FW",nombre:"Rafael van der Vaart"}
+  ]},
+  { id:"ned_euro2012", equipo:"Países Bajos", temporada:"Euro 2012", jugadores:[
+    {pos:"GK",nombre:"Maarten Stekelenburg"},{pos:"DF",nombre:"Gregory van der Wiel"},
+    {pos:"DF",nombre:"Joris Mathijsen"},{pos:"DF",nombre:"Ron Vlaar"},
+    {pos:"DF",nombre:"Jetro Willems"},{pos:"MF",nombre:"Mark van Bommel"},
+    {pos:"MF",nombre:"Wesley Sneijder"},{pos:"MF",nombre:"Nigel de Jong"},
+    {pos:"FW",nombre:"Arjen Robben"},{pos:"FW",nombre:"Robin van Persie"},
+    {pos:"FW",nombre:"Klaas-Jan Huntelaar"}
+  ]},
+  { id:"ned_mundial2014", equipo:"Países Bajos", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Jasper Cillessen"},{pos:"DF",nombre:"Daryl Janmaat"},
+    {pos:"DF",nombre:"Ron Vlaar"},{pos:"DF",nombre:"Bruno Martins Indi"},
+    {pos:"DF",nombre:"Daley Blind"},{pos:"MF",nombre:"Nigel de Jong"},
+    {pos:"MF",nombre:"Wesley Sneijder"},{pos:"MF",nombre:"Georginio Wijnaldum"},
+    {pos:"FW",nombre:"Arjen Robben"},{pos:"FW",nombre:"Robin van Persie"},
+    {pos:"FW",nombre:"Memphis Depay"}
+  ]},
+  { id:"ned_euro2020", equipo:"Países Bajos", temporada:"Euro 2020", jugadores:[
+    {pos:"GK",nombre:"Maarten Stekelenburg"},{pos:"DF",nombre:"Denzel Dumfries"},
+    {pos:"DF",nombre:"Matthijs de Ligt"},{pos:"DF",nombre:"Stefan de Vrij"},
+    {pos:"DF",nombre:"Patrick van Aanholt"},{pos:"MF",nombre:"Frenkie de Jong"},
+    {pos:"MF",nombre:"Georginio Wijnaldum"},{pos:"MF",nombre:"Davy Klaassen"},
+    {pos:"FW",nombre:"Memphis Depay"},{pos:"FW",nombre:"Donyell Malen"},
+    {pos:"FW",nombre:"Wout Weghorst"}
+  ]},
+  { id:"ned_mundial2022", equipo:"Países Bajos", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Andries Noppert"},{pos:"DF",nombre:"Denzel Dumfries"},
+    {pos:"DF",nombre:"Virgil van Dijk"},{pos:"DF",nombre:"Matthijs de Ligt"},
+    {pos:"DF",nombre:"Daley Blind"},{pos:"MF",nombre:"Frenkie de Jong"},
+    {pos:"MF",nombre:"Davy Klaassen"},{pos:"MF",nombre:"Steven Berghuis"},
+    {pos:"FW",nombre:"Memphis Depay"},{pos:"FW",nombre:"Cody Gakpo"},
+    {pos:"FW",nombre:"Wout Weghorst"}
+  ]},
+  { id:"ned_euro2024", equipo:"Países Bajos", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Bart Verbruggen"},{pos:"DF",nombre:"Denzel Dumfries"},
+    {pos:"DF",nombre:"Virgil van Dijk"},{pos:"DF",nombre:"Stefan de Vrij"},
+    {pos:"DF",nombre:"Nathan Aké"},{pos:"MF",nombre:"Frenkie de Jong"},
+    {pos:"MF",nombre:"Georginio Wijnaldum"},{pos:"MF",nombre:"Tijjani Reijnders"},
+    {pos:"FW",nombre:"Cody Gakpo"},{pos:"FW",nombre:"Memphis Depay"},
+    {pos:"FW",nombre:"Xavi Simons"}
+  ]},
+  { id:"ned_mundial2026", equipo:"Países Bajos", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Bart Verbruggen"},{pos:"DF",nombre:"Denzel Dumfries"},
+    {pos:"DF",nombre:"Virgil van Dijk"},{pos:"DF",nombre:"Stefan de Vrij"},
+    {pos:"DF",nombre:"Nathan Aké"},{pos:"MF",nombre:"Frenkie de Jong"},
+    {pos:"MF",nombre:"Tijjani Reijnders"},{pos:"MF",nombre:"Ryan Gravenberch"},
+    {pos:"FW",nombre:"Cody Gakpo"},{pos:"FW",nombre:"Brian Brobbey"},
+    {pos:"FW",nombre:"Xavi Simons"}
+  ]},
+
+  // ── BÉLGICA ───────────────────────────────────────────────────────────────
+  { id:"bel_mundial2014", equipo:"Bélgica", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Thibaut Courtois"},{pos:"DF",nombre:"Toby Alderweireld"},
+    {pos:"DF",nombre:"Vincent Kompany"},{pos:"DF",nombre:"Jan Vertonghen"},
+    {pos:"DF",nombre:"Thomas Vermaelen"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Marouane Fellaini"},{pos:"MF",nombre:"Kevin De Bruyne"},
+    {pos:"FW",nombre:"Eden Hazard"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Dries Mertens"}
+  ]},
+  { id:"bel_euro2016", equipo:"Bélgica", temporada:"Euro 2016", jugadores:[
+    {pos:"GK",nombre:"Thibaut Courtois"},{pos:"DF",nombre:"Toby Alderweireld"},
+    {pos:"DF",nombre:"Vincent Kompany"},{pos:"DF",nombre:"Jan Vertonghen"},
+    {pos:"DF",nombre:"Thomas Meunier"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Marouane Fellaini"},{pos:"MF",nombre:"Kevin De Bruyne"},
+    {pos:"FW",nombre:"Eden Hazard"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Dries Mertens"}
+  ]},
+  { id:"bel_mundial2018", equipo:"Bélgica", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Thibaut Courtois"},{pos:"DF",nombre:"Toby Alderweireld"},
+    {pos:"DF",nombre:"Vincent Kompany"},{pos:"DF",nombre:"Jan Vertonghen"},
+    {pos:"DF",nombre:"Thomas Meunier"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Nacer Chadli"},{pos:"MF",nombre:"Kevin De Bruyne"},
+    {pos:"FW",nombre:"Eden Hazard"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Dries Mertens"}
+  ]},
+  { id:"bel_euro2020", equipo:"Bélgica", temporada:"Euro 2020", jugadores:[
+    {pos:"GK",nombre:"Thibaut Courtois"},{pos:"DF",nombre:"Toby Alderweireld"},
+    {pos:"DF",nombre:"Jason Denayer"},{pos:"DF",nombre:"Jan Vertonghen"},
+    {pos:"DF",nombre:"Thomas Meunier"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Youri Tielemans"},{pos:"MF",nombre:"Kevin De Bruyne"},
+    {pos:"FW",nombre:"Eden Hazard"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Dries Mertens"}
+  ]},
+  { id:"bel_mundial2022", equipo:"Bélgica", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Thibaut Courtois"},{pos:"DF",nombre:"Toby Alderweireld"},
+    {pos:"DF",nombre:"Jan Vertonghen"},{pos:"DF",nombre:"Thomas Meunier"},
+    {pos:"DF",nombre:"Leander Dendoncker"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Youri Tielemans"},{pos:"MF",nombre:"Kevin De Bruyne"},
+    {pos:"FW",nombre:"Eden Hazard"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Dries Mertens"}
+  ]},
+  { id:"bel_euro2024", equipo:"Bélgica", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Koen Casteels"},{pos:"DF",nombre:"Timothy Castagne"},
+    {pos:"DF",nombre:"Wout Faes"},{pos:"DF",nombre:"Jan Vertonghen"},
+    {pos:"DF",nombre:"Arthur Theate"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Youri Tielemans"},{pos:"MF",nombre:"Kevin De Bruyne"},
+    {pos:"FW",nombre:"Lois Openda"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Dodi Lukébakio"}
+  ]},
+  { id:"bel_mundial2026", equipo:"Bélgica", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Koen Casteels"},{pos:"DF",nombre:"Timothy Castagne"},
+    {pos:"DF",nombre:"Wout Faes"},{pos:"DF",nombre:"Zeno Debast"},
+    {pos:"DF",nombre:"Arthur Theate"},{pos:"MF",nombre:"Youri Tielemans"},
+    {pos:"MF",nombre:"Amadou Onana"},{pos:"MF",nombre:"Kevin De Bruyne"},
+    {pos:"FW",nombre:"Lois Openda"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Johan Bakayoko"}
+  ]},
+
+  // ── CROACIA ───────────────────────────────────────────────────────────────
+  { id:"cro_mundial2006", equipo:"Croacia", temporada:"Mundial 2006", jugadores:[
+    {pos:"GK",nombre:"Stipe Pletikosa"},{pos:"DF",nombre:"Darijo Srna"},
+    {pos:"DF",nombre:"Robert Kovač"},{pos:"DF",nombre:"Josip Šimunić"},
+    {pos:"DF",nombre:"Stjepan Tomas"},{pos:"MF",nombre:"Niko Kovač"},
+    {pos:"MF",nombre:"Ivan Rakitić"},{pos:"MF",nombre:"Luka Modrić"},
+    {pos:"FW",nombre:"Ivan Klasnić"},{pos:"FW",nombre:"Dado Pršo"},
+    {pos:"FW",nombre:"Eduardo"}
+  ]},
+  { id:"cro_euro2008", equipo:"Croacia", temporada:"Euro 2008", jugadores:[
+    {pos:"GK",nombre:"Stipe Pletikosa"},{pos:"DF",nombre:"Darijo Srna"},
+    {pos:"DF",nombre:"Robert Kovač"},{pos:"DF",nombre:"Josip Šimunić"},
+    {pos:"DF",nombre:"Vedran Ćorluka"},{pos:"MF",nombre:"Niko Kovač"},
+    {pos:"MF",nombre:"Luka Modrić"},{pos:"MF",nombre:"Ivan Rakitić"},
+    {pos:"FW",nombre:"Ivan Klasnić"},{pos:"FW",nombre:"Eduardo"},
+    {pos:"FW",nombre:"Mladen Petrić"}
+  ]},
+  { id:"cro_mundial2014", equipo:"Croacia", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Stipe Pletikosa"},{pos:"DF",nombre:"Darijo Srna"},
+    {pos:"DF",nombre:"Dejan Lovren"},{pos:"DF",nombre:"Vedran Ćorluka"},
+    {pos:"DF",nombre:"Ivan Strinić"},{pos:"MF",nombre:"Mateo Kovačić"},
+    {pos:"MF",nombre:"Luka Modrić"},{pos:"MF",nombre:"Ivan Rakitić"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Mario Mandžukić"},
+    {pos:"FW",nombre:"Eduardo"}
+  ]},
+  { id:"cro_euro2016", equipo:"Croacia", temporada:"Euro 2016", jugadores:[
+    {pos:"GK",nombre:"Danijel Subašić"},{pos:"DF",nombre:"Darijo Srna"},
+    {pos:"DF",nombre:"Dejan Lovren"},{pos:"DF",nombre:"Vedran Ćorluka"},
+    {pos:"DF",nombre:"Ivan Strinić"},{pos:"MF",nombre:"Mateo Kovačić"},
+    {pos:"MF",nombre:"Luka Modrić"},{pos:"MF",nombre:"Ivan Rakitić"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Mario Mandžukić"},
+    {pos:"FW",nombre:"Nikola Kalinić"}
+  ]},
+  { id:"cro_mundial2018", equipo:"Croacia", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Danijel Subašić"},{pos:"DF",nombre:"Šime Vrsaljko"},
+    {pos:"DF",nombre:"Dejan Lovren"},{pos:"DF",nombre:"Domagoj Vida"},
+    {pos:"DF",nombre:"Ivan Strinić"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Luka Modrić"},{pos:"MF",nombre:"Ivan Rakitić"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Mario Mandžukić"},
+    {pos:"FW",nombre:"Ante Rebić"}
+  ]},
+  { id:"cro_euro2020", equipo:"Croacia", temporada:"Euro 2020", jugadores:[
+    {pos:"GK",nombre:"Dominik Livaković"},{pos:"DF",nombre:"Šime Vrsaljko"},
+    {pos:"DF",nombre:"Dejan Lovren"},{pos:"DF",nombre:"Domagoj Vida"},
+    {pos:"DF",nombre:"Borna Barišić"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Luka Modrić"},{pos:"MF",nombre:"Ivan Rakitić"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Nikola Vlašić"},
+    {pos:"FW",nombre:"Bruno Petković"}
+  ]},
+  { id:"cro_mundial2022", equipo:"Croacia", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Dominik Livaković"},{pos:"DF",nombre:"Josip Juranović"},
+    {pos:"DF",nombre:"Dejan Lovren"},{pos:"DF",nombre:"Joško Gvardiol"},
+    {pos:"DF",nombre:"Borna Sosa"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Luka Modrić"},{pos:"MF",nombre:"Mateo Kovačić"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Andrej Kramarić"},
+    {pos:"FW",nombre:"Bruno Petković"}
+  ]},
+  { id:"cro_euro2024", equipo:"Croacia", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Dominik Livaković"},{pos:"DF",nombre:"Josip Stanišić"},
+    {pos:"DF",nombre:"Joško Gvardiol"},{pos:"DF",nombre:"Martin Erlić"},
+    {pos:"DF",nombre:"Borna Sosa"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Luka Modrić"},{pos:"MF",nombre:"Mateo Kovačić"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Andrej Kramarić"},
+    {pos:"FW",nombre:"Bruno Petković"}
+  ]},
+  { id:"cro_mundial2026", equipo:"Croacia", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Dominik Livaković"},{pos:"DF",nombre:"Josip Stanišić"},
+    {pos:"DF",nombre:"Joško Gvardiol"},{pos:"DF",nombre:"Martin Erlić"},
+    {pos:"DF",nombre:"Borna Sosa"},{pos:"MF",nombre:"Luka Modrić"},
+    {pos:"MF",nombre:"Mateo Kovačić"},{pos:"MF",nombre:"Lovro Majer"},
+    {pos:"FW",nombre:"Andrej Kramarić"},{pos:"FW",nombre:"Ivan Perišić"},
+    {pos:"FW",nombre:"Marko Pjaca"}
+  ]},
+
+  // ── URUGUAY ───────────────────────────────────────────────────────────────
+  { id:"uru_mundial2010", equipo:"Uruguay", temporada:"Mundial 2010", jugadores:[
+    {pos:"GK",nombre:"Fernando Muslera"},{pos:"DF",nombre:"Maximiliano Pereira"},
+    {pos:"DF",nombre:"Diego Lugano"},{pos:"DF",nombre:"Diego Godín"},
+    {pos:"DF",nombre:"Jorge Fucile"},{pos:"MF",nombre:"Diego Pérez"},
+    {pos:"MF",nombre:"Álvaro Pereira"},{pos:"MF",nombre:"Walter Gargano"},
+    {pos:"FW",nombre:"Diego Forlán"},{pos:"FW",nombre:"Luis Suárez"},
+    {pos:"FW",nombre:"Edinson Cavani"}
+  ]},
+  { id:"uru_mundial2014", equipo:"Uruguay", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Fernando Muslera"},{pos:"DF",nombre:"Maximiliano Pereira"},
+    {pos:"DF",nombre:"Diego Lugano"},{pos:"DF",nombre:"Diego Godín"},
+    {pos:"DF",nombre:"Martín Cáceres"},{pos:"MF",nombre:"Egidio Arévalo"},
+    {pos:"MF",nombre:"Álvaro González"},{pos:"MF",nombre:"Cristian Rodríguez"},
+    {pos:"FW",nombre:"Luis Suárez"},{pos:"FW",nombre:"Edinson Cavani"},
+    {pos:"FW",nombre:"Diego Forlán"}
+  ]},
+  { id:"uru_mundial2018", equipo:"Uruguay", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Fernando Muslera"},{pos:"DF",nombre:"Diego Godín"},
+    {pos:"DF",nombre:"Martín Cáceres"},{pos:"DF",nombre:"José Giménez"},
+    {pos:"DF",nombre:"Gastón Silva"},{pos:"MF",nombre:"Lucas Torreira"},
+    {pos:"MF",nombre:"Rodrigo Bentancur"},{pos:"MF",nombre:"Matías Vecino"},
+    {pos:"FW",nombre:"Luis Suárez"},{pos:"FW",nombre:"Edinson Cavani"},
+    {pos:"FW",nombre:"Cristhian Stuani"}
+  ]},
+  { id:"uru_mundial2022", equipo:"Uruguay", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Sergio Rochet"},{pos:"DF",nombre:"Nahitan Nández"},
+    {pos:"DF",nombre:"Diego Godín"},{pos:"DF",nombre:"José Giménez"},
+    {pos:"DF",nombre:"Mathías Olivera"},{pos:"MF",nombre:"Federico Valverde"},
+    {pos:"MF",nombre:"Rodrigo Bentancur"},{pos:"MF",nombre:"Matías Vecino"},
+    {pos:"FW",nombre:"Luis Suárez"},{pos:"FW",nombre:"Edinson Cavani"},
+    {pos:"FW",nombre:"Darwin Núñez"}
+  ]},
+  { id:"uru_mundial2026", equipo:"Uruguay", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Sergio Rochet"},{pos:"DF",nombre:"Nahitan Nández"},
+    {pos:"DF",nombre:"José Giménez"},{pos:"DF",nombre:"Ronald Araújo"},
+    {pos:"DF",nombre:"Mathías Olivera"},{pos:"MF",nombre:"Federico Valverde"},
+    {pos:"MF",nombre:"Rodrigo Bentancur"},{pos:"MF",nombre:"Manuel Ugarte"},
+    {pos:"FW",nombre:"Darwin Núñez"},{pos:"FW",nombre:"Facundo Pellistri"},
+    {pos:"FW",nombre:"Maximiliano Araújo"}
+  ]},
+
+  // ── MARRUECOS ─────────────────────────────────────────────────────────────
+  { id:"mar_mundial2018", equipo:"Marruecos", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Munir Mohamedi"},{pos:"DF",nombre:"Achraf Hakimi"},
+    {pos:"DF",nombre:"Manuel da Costa"},{pos:"DF",nombre:"Mehdi Benatia"},
+    {pos:"DF",nombre:"Faycal Fajr"},{pos:"MF",nombre:"Karim El Ahmadi"},
+    {pos:"MF",nombre:"Younès Belhanda"},{pos:"MF",nombre:"Hakim Ziyech"},
+    {pos:"FW",nombre:"Khalid Boutaib"},{pos:"FW",nombre:"Ayoub El Kaabi"},
+    {pos:"FW",nombre:"Nordin Amrabat"}
+  ]},
+  { id:"mar_mundial2022", equipo:"Marruecos", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Yassine Bounou"},{pos:"DF",nombre:"Achraf Hakimi"},
+    {pos:"DF",nombre:"Romain Saïss"},{pos:"DF",nombre:"Nayef Aguerd"},
+    {pos:"DF",nombre:"Noussair Mazraoui"},{pos:"MF",nombre:"Sofyan Amrabat"},
+    {pos:"MF",nombre:"Azzedine Ounahi"},{pos:"MF",nombre:"Selim Amallah"},
+    {pos:"FW",nombre:"Hakim Ziyech"},{pos:"FW",nombre:"Youssef En-Nesyri"},
+    {pos:"FW",nombre:"Sofiane Boufal"}
+  ]},
+  { id:"mar_euro2024", equipo:"Marruecos", temporada:"Euro 2024", jugadores:[
+    {pos:"GK",nombre:"Yassine Bounou"},{pos:"DF",nombre:"Achraf Hakimi"},
+    {pos:"DF",nombre:"Romain Saïss"},{pos:"DF",nombre:"Nayef Aguerd"},
+    {pos:"DF",nombre:"Noussair Mazraoui"},{pos:"MF",nombre:"Sofyan Amrabat"},
+    {pos:"MF",nombre:"Azzedine Ounahi"},{pos:"MF",nombre:"Bilal El Khannouss"},
+    {pos:"FW",nombre:"Hakim Ziyech"},{pos:"FW",nombre:"Youssef En-Nesyri"},
+    {pos:"FW",nombre:"Soufiane Rahimi"}
+  ]},
+  { id:"mar_mundial2026", equipo:"Marruecos", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Yassine Bounou"},{pos:"DF",nombre:"Achraf Hakimi"},
+    {pos:"DF",nombre:"Nayef Aguerd"},{pos:"DF",nombre:"Jawad El Yamiq"},
+    {pos:"DF",nombre:"Noussair Mazraoui"},{pos:"MF",nombre:"Sofyan Amrabat"},
+    {pos:"MF",nombre:"Bilal El Khannouss"},{pos:"MF",nombre:"Azzedine Ounahi"},
+    {pos:"FW",nombre:"Hakim Ziyech"},{pos:"FW",nombre:"Youssef En-Nesyri"},
+    {pos:"FW",nombre:"Soufiane Rahimi"}
+  ]},
+
+  // ── SENEGAL ───────────────────────────────────────────────────────────────
+  { id:"sen_mundial2014", equipo:"Senegal", temporada:"Mundial 2014", jugadores:[
+    {pos:"GK",nombre:"Cheikh Ndiaye"},{pos:"DF",nombre:"Salif Sané"},
+    {pos:"DF",nombre:"Kara Mbodj"},{pos:"DF",nombre:"Papiss Cissé"},
+    {pos:"DF",nombre:"Lamine Gassama"},{pos:"MF",nombre:"Cheikh Kouyaté"},
+    {pos:"MF",nombre:"Idrissa Gueye"},{pos:"MF",nombre:"Alfred Ndiaye"},
+    {pos:"FW",nombre:"Moussa Sow"},{pos:"FW",nombre:"Sadio Mané"},
+    {pos:"FW",nombre:"Moussa Konaté"}
+  ]},
+  { id:"sen_mundial2018", equipo:"Senegal", temporada:"Mundial 2018", jugadores:[
+    {pos:"GK",nombre:"Khadim Ndiaye"},{pos:"DF",nombre:"Salif Sané"},
+    {pos:"DF",nombre:"Cheikhou Kouyaté"},{pos:"DF",nombre:"Kalidou Koulibaly"},
+    {pos:"DF",nombre:"Youssouf Sabaly"},{pos:"MF",nombre:"Idrissa Gueye"},
+    {pos:"MF",nombre:"Alfred Ndiaye"},{pos:"MF",nombre:"Moussa Wagué"},
+    {pos:"FW",nombre:"Sadio Mané"},{pos:"FW",nombre:"Mbaye Niang"},
+    {pos:"FW",nombre:"Keita Baldé"}
+  ]},
+  { id:"sen_mundial2022", equipo:"Senegal", temporada:"Mundial 2022", jugadores:[
+    {pos:"GK",nombre:"Édouard Mendy"},{pos:"DF",nombre:"Youssouf Sabaly"},
+    {pos:"DF",nombre:"Abdou Diallo"},{pos:"DF",nombre:"Kalidou Koulibaly"},
+    {pos:"DF",nombre:"Fodé Ballo-Touré"},{pos:"MF",nombre:"Idrissa Gueye"},
+    {pos:"MF",nombre:"Nampalys Mendy"},{pos:"MF",nombre:"Pape Matar Sarr"},
+    {pos:"FW",nombre:"Sadio Mané"},{pos:"FW",nombre:"Ismaïla Sarr"},
+    {pos:"FW",nombre:"Boulaye Dia"}
+  ]},
+  { id:"sen_mundial2026", equipo:"Senegal", temporada:"Mundial 2026", jugadores:[
+    {pos:"GK",nombre:"Édouard Mendy"},{pos:"DF",nombre:"Youssouf Sabaly"},
+    {pos:"DF",nombre:"Abdou Diallo"},{pos:"DF",nombre:"Kalidou Koulibaly"},
+    {pos:"DF",nombre:"Fodé Ballo-Touré"},{pos:"MF",nombre:"Idrissa Gueye"},
+    {pos:"MF",nombre:"Pape Matar Sarr"},{pos:"MF",nombre:"Habib Diallo"},
+    {pos:"FW",nombre:"Sadio Mané"},{pos:"FW",nombre:"Ismaïla Sarr"},
+    {pos:"FW",nombre:"Nicolas Jackson"}
+  ]},
 ]
 
 // Normaliza: quita tildes, minúsculas, solo alfanumérico + espacios
