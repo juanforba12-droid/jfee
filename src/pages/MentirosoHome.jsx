@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase.js'
+import useSEO from '../hooks/useSEO.js'
 
 function generateCode() {
   return Math.random().toString(36).substring(2, 8).toUpperCase()
@@ -15,7 +16,13 @@ export default function MentirosoHome() {
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
   const [user, setUser] = useState(null)
-  const [misSesiones, setMisSesiones] = useState([]) // sesiones guardadas localmente
+  const [misSesiones, setMisSesiones] = useState([])
+
+  useSEO({
+    title: 'Mentiroso | El impostor del fútbol - JFEE',
+    description: 'Uno es el impostor. Di la verdad o miente sobre jugadores, clubes y selecciones. El juego de bluff multijugador de fútbol en español.',
+    url: 'https://juegosdefutbolenespanol.vercel.app/mentiroso'
+  })
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => {
@@ -23,7 +30,6 @@ export default function MentirosoHome() {
       const name = data.user?.user_metadata?.full_name || data.user?.email?.split('@')[0] || 'Jugador'
       setNombre(name)
     })
-    // Cargar sesiones guardadas
     const saved = JSON.parse(localStorage.getItem('mentiroso_sesiones') || '[]')
     setMisSesiones(saved)
   }, [])
@@ -82,7 +88,6 @@ export default function MentirosoHome() {
     const jugadores = [...(session.jugadores || [])]
     const yaEsta = jugadores.find(j => j.id === uid)
 
-    // Solo añadir si no está ya y la partida está esperando
     if (!yaEsta && session.estado !== 'esperando') {
       setError('La partida ya ha empezado y no eres parte de ella')
       setLoading(false); return
@@ -118,7 +123,6 @@ export default function MentirosoHome() {
 
         {error && <div style={{ background:'rgba(239,68,68,0.15)', border:'1px solid rgba(239,68,68,0.3)', borderRadius:10, padding:'10px 14px', marginBottom:16, color:'#fca5a5', fontSize:14 }}>{error}</div>}
 
-        {/* Sesiones guardadas */}
         {mode === 'menu' && misSesiones.length > 0 && (
           <div style={{ marginBottom:16 }}>
             <div style={{ fontSize:12, color:'rgba(255,255,255,0.3)', letterSpacing:2, marginBottom:10 }}>TUS SESIONES</div>
