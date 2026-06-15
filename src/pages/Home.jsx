@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase.js'
 import { getRankInfo } from '../lib/ranks.js'
 import { getUserPoints } from '../lib/userPoints.js'
+import useSEO from '../hooks/useSEO.js'
 
 function getOrCreateGuest() {
   const saved = localStorage.getItem('jfee_guest')
@@ -81,6 +82,12 @@ export default function Home() {
   const [pwMsg, setPwMsg] = useState('')
   const [totalPoints, setTotalPoints] = useState(0)
   const [guestName] = useState(getOrCreateGuest)
+
+  useSEO({
+    title: 'Juegos de Fútbol en Español | JFEE - Mundial 2026',
+    description: 'Predice el Mundial 2026, adivina jugadores, juega al Top 10, Plantillas Históricas, Estimon y más. Juegos de fútbol gratis en español.',
+    url: 'https://juegosdefutbolenespanol.vercel.app/'
+  })
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => setUser(data.user ?? null))
