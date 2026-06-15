@@ -2,9 +2,15 @@ import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase.js'
 import { getRankInfo } from '../lib/ranks.js'
+import useSEO from '../hooks/useSEO.js'
 
 export default function Ranking() {
   const nav = useNavigate()
+  useSEO({
+  title: 'Clasificación Global | Ranking JFEE - Mundial 2026',
+  description: 'Consulta el ranking global de JFEE. Compara tu puntuación con jugadores de todo el mundo y añade amigos para ver su posición.',
+  url: 'https://juegosdefutbolenespanol.vercel.app/ranking'
+})
   const [tab, setTab] = useState('global')
   const [global, setGlobal] = useState([])
   const [friends, setFriends] = useState([])
