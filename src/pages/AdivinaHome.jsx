@@ -1,7 +1,15 @@
 import { useNavigate } from 'react-router-dom'
+import useSEO from '../hooks/useSEO.js'
 
 export default function AdivinaHome() {
   const nav = useNavigate()
+
+  useSEO({
+    title: 'Adivina el Jugador | 7 pistas, 7 puntos - JFEE',
+    description: 'Adivina qué jugador se esconde con pistas de liga, edad, nacionalidad y valor. Cuantas menos pistas uses, más puntos. Solo o multijugador online.',
+    url: 'https://juegosdefutbolenespanol.vercel.app/adivina'
+  })
+
   return (
     <div style={{ minHeight:'100vh', background:'linear-gradient(160deg,#0a0f1a,#0f1a2e,#0a0f1a)', fontFamily:'system-ui,sans-serif', color:'#e8eaf0', display:'flex', flexDirection:'column', alignItems:'center', justifyContent:'center', padding:24 }}>
       <button onClick={() => nav('/')} style={{ position:'absolute', top:20, left:20, background:'none', border:'none', color:'#4a6080', cursor:'pointer', fontSize:20 }}>←</button>
