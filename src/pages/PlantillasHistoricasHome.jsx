@@ -3,7 +3,6 @@ import useSEO from '../hooks/useSEO.js'
 
 export default function PlantillasHistoricasHome() {
   const nav = useNavigate()
-
   useSEO({
     title: 'Plantillas Históricas | Adivina los 11 titulares - JFEE',
     description: '¿Recuerdas los 11 más usados del Barça 2011 o el Madrid 2018? Adivina las plantillas históricas de Real Madrid, Barcelona, Bayern, Liverpool y más.',
@@ -19,12 +18,19 @@ export default function PlantillasHistoricasHome() {
       padding:24,
     }}>
       <button onClick={() => nav('/')} style={{ position:'absolute', top:20, left:20, background:'none', border:'none', color:'#6a5a8a', cursor:'pointer', fontSize:20 }}>←</button>
+
       <div style={{ textAlign:'center', marginBottom:48 }}>
         <div style={{ fontSize:52, marginBottom:10 }}>🏟️</div>
         <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:46, letterSpacing:4, color:'#f59e0b', lineHeight:1 }}>PLANTILLAS</div>
         <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:46, letterSpacing:4, color:'#e8e0f0', lineHeight:1 }}>HISTÓRICAS</div>
-        <div style={{ fontSize:13, color:'#6a5a8a', marginTop:8, letterSpacing:2 }}>REAL MADRID · BARCELONA · MAN UNITED · BAYERN · CHELSEA · LIVERPOOL · ATLÉTICO · MAN CITY · AC MILAN · PSG</div>
+        <div style={{ fontSize:12, color:'#6a5a8a', marginTop:8, letterSpacing:1 }}>
+          19 EQUIPOS · 331 TEMPORADAS
+        </div>
+        <div style={{ fontSize:11, color:'#4a3a6a', marginTop:4, letterSpacing:1 }}>
+          REAL MADRID · BARCELONA · CHELSEA · LIVERPOOL · MAN UNITED · BAYERN · ATLÉTICO · MAN CITY · AC MILAN · PSG · ARSENAL · JUVENTUS · INTER · DORTMUND · TOTTENHAM · NÁPOLES · VALENCIA · VILLARREAL · SEVILLA
+        </div>
       </div>
+
       <div style={{ width:'100%', maxWidth:360, display:'flex', flexDirection:'column', gap:14 }}>
         <button onClick={() => nav('/plantillas/individual')} style={{
           padding:'22px 24px', borderRadius:18,
@@ -36,6 +42,7 @@ export default function PlantillasHistoricasHome() {
           <div style={{ fontSize:20, fontWeight:900, color:'#f59e0b', marginBottom:4 }}>Individual</div>
           <div style={{ fontSize:13, color:'#6a5a8a', lineHeight:1.5 }}>Juega solo. Elige club o plantilla aleatoria. Adivina los 11 titulares.</div>
         </button>
+
         <button onClick={() => nav('/plantillas/online')} style={{
           padding:'22px 24px', borderRadius:18,
           border:'1px solid rgba(34,197,94,0.3)',
