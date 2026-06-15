@@ -22,6 +22,15 @@ const CLUB_COLOR = {
   'Manchester City': '#6ec6f0',
   'AC Milan': '#c80000',
   'Paris Saint-Germain': '#001489',
+  'Arsenal': '#ef0107',
+  'Juventus': '#f5f5f5',
+  'Inter de Milán': '#0068a8',
+  'Borussia Dortmund': '#fde100',
+  'Tottenham': '#f5f5f5',
+  'Nápoles': '#0067b1',
+  'Valencia': '#f47920',
+  'Villarreal': '#ffcc00',
+  'Sevilla': '#d51317',
 }
 
 function getRandomPlantilla(filtroEquipo) {
@@ -446,7 +455,7 @@ export default function PlantillasHistoricasOnline() {
             <button onClick={() => iniciarPartida('ambos')} style={S.clubBtn('#f59e0b')}>
               <div style={{ fontSize:22, marginBottom:4 }}>🎲</div>
               <div style={{ fontSize:16, fontWeight:900, color:'#f59e0b' }}>Aleatorio</div>
-              <div style={{ fontSize:11, color:'#6a5a8a', marginTop:3 }}>Cualquier plantilla de las 242 temporadas</div>
+              <div style={{ fontSize:11, color:'#6a5a8a', marginTop:3 }}>Cualquier plantilla de las 331 temporadas</div>
             </button>
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
               <button onClick={() => iniciarPartida('Real Madrid')} style={S.clubBtn('#3b82f6')}>
@@ -488,6 +497,42 @@ export default function PlantillasHistoricasOnline() {
               <button onClick={() => iniciarPartida('Paris Saint-Germain')} style={S.clubBtn('#001489')}>
                 <div style={{ fontSize:20, marginBottom:3 }}>🔵</div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#001489' }}>PSG</div>
+              </button>
+              <button onClick={() => iniciarPartida('Arsenal')} style={S.clubBtn('#ef0107')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🔴</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#ef0107' }}>Arsenal</div>
+              </button>
+              <button onClick={() => iniciarPartida('Juventus')} style={S.clubBtn('#f5f5f5')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>⚫</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#f5f5f5' }}>Juventus</div>
+              </button>
+              <button onClick={() => iniciarPartida('Inter de Milán')} style={S.clubBtn('#0068a8')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🔵</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#0068a8' }}>Inter Milán</div>
+              </button>
+              <button onClick={() => iniciarPartida('Borussia Dortmund')} style={S.clubBtn('#fde100')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🟡</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#fde100' }}>Dortmund</div>
+              </button>
+              <button onClick={() => iniciarPartida('Tottenham')} style={S.clubBtn('#f5f5f5')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>⚪</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#f5f5f5' }}>Tottenham</div>
+              </button>
+              <button onClick={() => iniciarPartida('Nápoles')} style={S.clubBtn('#0067b1')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🔵</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#0067b1' }}>Nápoles</div>
+              </button>
+              <button onClick={() => iniciarPartida('Valencia')} style={S.clubBtn('#f47920')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🦇</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#f47920' }}>Valencia</div>
+              </button>
+              <button onClick={() => iniciarPartida('Villarreal')} style={S.clubBtn('#ffcc00')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🟡</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#ffcc00' }}>Villarreal</div>
+              </button>
+              <button onClick={() => iniciarPartida('Sevilla')} style={S.clubBtn('#d51317')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🔴</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#d51317' }}>Sevilla</div>
               </button>
             </div>
           </div>
