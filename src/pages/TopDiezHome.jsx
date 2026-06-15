@@ -1,7 +1,15 @@
 import { useNavigate } from 'react-router-dom'
+import useSEO from '../hooks/useSEO.js'
 
 export default function TopDiezHome() {
   const nav = useNavigate()
+
+  useSEO({
+    title: 'Top 10 Fútbol | Adivina los rankings históricos - JFEE',
+    description: '¿Cuántos goleadores históricos de LaLiga recuerdas? Adivina los top 10 de fútbol: máximos anotadores, temporadas, Champions y más. Solo o con amigos.',
+    url: 'https://juegosdefutbolenespanol.vercel.app/topdiezgame'
+  })
+
   return (
     <div style={{
       minHeight: '100vh',
@@ -11,13 +19,11 @@ export default function TopDiezHome() {
       padding: 24,
     }}>
       <button onClick={() => nav('/')} style={{ position: 'absolute', top: 20, left: 20, background: 'none', border: 'none', color: '#6a5a8a', cursor: 'pointer', fontSize: 20 }}>←</button>
-
       <div style={{ textAlign: 'center', marginBottom: 48 }}>
         <div style={{ fontSize: 56, marginBottom: 10 }}>🏆</div>
         <div style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: 52, letterSpacing: 6, color: '#c084fc', lineHeight: 1 }}>TOP 10</div>
         <div style={{ fontSize: 13, color: '#6a5a8a', marginTop: 8, letterSpacing: 2 }}>FÚTBOL</div>
       </div>
-
       <div style={{ width: '100%', maxWidth: 360, display: 'flex', flexDirection: 'column', gap: 14 }}>
         <button onClick={() => nav('/topdiezgame/individual')} style={{
           padding: '22px 24px', borderRadius: 18,
@@ -29,7 +35,6 @@ export default function TopDiezHome() {
           <div style={{ fontSize: 20, fontWeight: 900, color: '#c084fc', marginBottom: 4 }}>Individual</div>
           <div style={{ fontSize: 13, color: '#6a5a8a', lineHeight: 1.5 }}>Juega solo. Te sale un top 10 aleatorio. Adivina todos los que puedas.</div>
         </button>
-
         <button onClick={() => nav('/topdiezgame/online')} style={{
           padding: '22px 24px', borderRadius: 18,
           border: '1px solid rgba(251,191,36,0.3)',
