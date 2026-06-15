@@ -24,10 +24,10 @@ export default function PlantillasHistoricasHome() {
         <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:46, letterSpacing:4, color:'#f59e0b', lineHeight:1 }}>PLANTILLAS</div>
         <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:46, letterSpacing:4, color:'#e8e0f0', lineHeight:1 }}>HISTÓRICAS</div>
         <div style={{ fontSize:12, color:'#6a5a8a', marginTop:8, letterSpacing:1 }}>
-          19 EQUIPOS · 331 TEMPORADAS
+          19 CLUBES + 14 SELECCIONES · 474 PLANTILLAS
         </div>
         <div style={{ fontSize:11, color:'#4a3a6a', marginTop:4, letterSpacing:1 }}>
-          REAL MADRID · BARCELONA · CHELSEA · LIVERPOOL · MAN UNITED · BAYERN · ATLÉTICO · MAN CITY · AC MILAN · PSG · ARSENAL · JUVENTUS · INTER · DORTMUND · TOTTENHAM · NÁPOLES · VALENCIA · VILLARREAL · SEVILLA
+          19 CLUBES HISTÓRICOS + ESPAÑA · FRANCIA · ALEMANIA · BRASIL · ARGENTINA · PORTUGAL · ITALIA · INGLATERRA · PAÍSES BAJOS · BÉLGICA · CROACIA · URUGUAY · MARRUECOS · SENEGAL
         </div>
       </div>
 
