@@ -1956,6 +1956,737 @@ export const PLANTILLAS = [
     {pos:"FW",nombre:"Ousmane Dembélé"},{pos:"FW",nombre:"Khvicha Kvaratskhelia"},
     {pos:"FW",nombre:"Désiré Doué"}
   ]},
+
+
+  // ── ARSENAL (2015-2026) ────────────────────────────────────────────────────
+  { id:"arsenal_2015_2016", equipo:"Arsenal", temporada:"2015-2016", jugadores:[
+    {pos:"GK",nombre:"Petr Čech"},{pos:"DF",nombre:"Héctor Bellerín"},
+    {pos:"DF",nombre:"Nacho Monreal"},{pos:"DF",nombre:"Laurent Koscielny"},
+    {pos:"DF",nombre:"Per Mertesacker"},{pos:"MF",nombre:"Mesut Özil"},
+    {pos:"MF",nombre:"Aaron Ramsey"},{pos:"MF",nombre:"Francis Coquelin"},
+    {pos:"FW",nombre:"Alexis Sánchez"},{pos:"FW",nombre:"Olivier Giroud"},
+    {pos:"FW",nombre:"Theo Walcott"}
+  ]},
+  { id:"arsenal_2016_2017", equipo:"Arsenal", temporada:"2016-2017", jugadores:[
+    {pos:"GK",nombre:"Petr Čech"},{pos:"DF",nombre:"Héctor Bellerín"},
+    {pos:"DF",nombre:"Nacho Monreal"},{pos:"DF",nombre:"Laurent Koscielny"},
+    {pos:"DF",nombre:"Shkodran Mustafi"},{pos:"MF",nombre:"Mesut Özil"},
+    {pos:"MF",nombre:"Aaron Ramsey"},{pos:"MF",nombre:"Granit Xhaka"},
+    {pos:"FW",nombre:"Alexis Sánchez"},{pos:"FW",nombre:"Olivier Giroud"},
+    {pos:"FW",nombre:"Alex Iwobi"}
+  ]},
+  { id:"arsenal_2017_2018", equipo:"Arsenal", temporada:"2017-2018", jugadores:[
+    {pos:"GK",nombre:"Petr Čech"},{pos:"DF",nombre:"Héctor Bellerín"},
+    {pos:"DF",nombre:"Nacho Monreal"},{pos:"DF",nombre:"Laurent Koscielny"},
+    {pos:"DF",nombre:"Shkodran Mustafi"},{pos:"MF",nombre:"Granit Xhaka"},
+    {pos:"MF",nombre:"Aaron Ramsey"},{pos:"DF",nombre:"Sead Kolasinac"},
+    {pos:"FW",nombre:"Alexis Sánchez"},{pos:"FW",nombre:"Alexandre Lacazette"},
+    {pos:"FW",nombre:"Alex Iwobi"}
+  ]},
+  { id:"arsenal_2018_2019", equipo:"Arsenal", temporada:"2018-2019", jugadores:[
+    {pos:"GK",nombre:"Bernd Leno"},{pos:"DF",nombre:"Héctor Bellerín"},
+    {pos:"DF",nombre:"Nacho Monreal"},{pos:"DF",nombre:"Shkodran Mustafi"},
+    {pos:"DF",nombre:"Sead Kolasinac"},{pos:"MF",nombre:"Granit Xhaka"},
+    {pos:"MF",nombre:"Lucas Torreira"},{pos:"MF",nombre:"Henrikh Mkhitaryan"},
+    {pos:"FW",nombre:"Pierre-Emerick Aubameyang"},{pos:"FW",nombre:"Alexandre Lacazette"},
+    {pos:"FW",nombre:"Alex Iwobi"}
+  ]},
+  { id:"arsenal_2019_2020", equipo:"Arsenal", temporada:"2019-2020", jugadores:[
+    {pos:"GK",nombre:"Bernd Leno"},{pos:"DF",nombre:"David Luiz"},
+    {pos:"DF",nombre:"Kieran Tierney"},{pos:"DF",nombre:"Sokratis"},
+    {pos:"MF",nombre:"Granit Xhaka"},{pos:"MF",nombre:"Dani Ceballos"},
+    {pos:"MF",nombre:"Mattéo Guendouzi"},{pos:"FW",nombre:"Bukayo Saka"},
+    {pos:"FW",nombre:"Pierre-Emerick Aubameyang"},{pos:"FW",nombre:"Alexandre Lacazette"},
+    {pos:"FW",nombre:"Nicolas Pépé"}
+  ]},
+  { id:"arsenal_2020_2021", equipo:"Arsenal", temporada:"2020-2021", jugadores:[
+    {pos:"GK",nombre:"Bernd Leno"},{pos:"DF",nombre:"Héctor Bellerín"},
+    {pos:"DF",nombre:"Kieran Tierney"},{pos:"DF",nombre:"Rob Holding"},
+    {pos:"DF",nombre:"Gabriel Magalhães"},{pos:"MF",nombre:"Granit Xhaka"},
+    {pos:"MF",nombre:"Thomas Partey"},{pos:"MF",nombre:"Emile Smith Rowe"},
+    {pos:"FW",nombre:"Bukayo Saka"},{pos:"FW",nombre:"Pierre-Emerick Aubameyang"},
+    {pos:"FW",nombre:"Alexandre Lacazette"}
+  ]},
+  { id:"arsenal_2021_2022", equipo:"Arsenal", temporada:"2021-2022", jugadores:[
+    {pos:"GK",nombre:"Aaron Ramsdale"},{pos:"DF",nombre:"Ben White"},
+    {pos:"DF",nombre:"Kieran Tierney"},{pos:"DF",nombre:"Gabriel Magalhães"},
+    {pos:"DF",nombre:"Takehiro Tomiyasu"},{pos:"MF",nombre:"Granit Xhaka"},
+    {pos:"MF",nombre:"Thomas Partey"},{pos:"MF",nombre:"Emile Smith Rowe"},
+    {pos:"FW",nombre:"Bukayo Saka"},{pos:"FW",nombre:"Alexandre Lacazette"},
+    {pos:"FW",nombre:"Gabriel Martinelli"}
+  ]},
+  { id:"arsenal_2022_2023", equipo:"Arsenal", temporada:"2022-2023", jugadores:[
+    {pos:"GK",nombre:"Aaron Ramsdale"},{pos:"DF",nombre:"Ben White"},
+    {pos:"DF",nombre:"Oleksandr Zinchenko"},{pos:"DF",nombre:"William Saliba"},
+    {pos:"DF",nombre:"Gabriel Magalhães"},{pos:"MF",nombre:"Granit Xhaka"},
+    {pos:"MF",nombre:"Thomas Partey"},{pos:"MF",nombre:"Martin Ødegaard"},
+    {pos:"FW",nombre:"Bukayo Saka"},{pos:"FW",nombre:"Gabriel Jesus"},
+    {pos:"FW",nombre:"Gabriel Martinelli"}
+  ]},
+  { id:"arsenal_2023_2024", equipo:"Arsenal", temporada:"2023-2024", jugadores:[
+    {pos:"GK",nombre:"David Raya"},{pos:"DF",nombre:"Ben White"},
+    {pos:"DF",nombre:"Oleksandr Zinchenko"},{pos:"DF",nombre:"William Saliba"},
+    {pos:"DF",nombre:"Gabriel Magalhães"},{pos:"MF",nombre:"Declan Rice"},
+    {pos:"MF",nombre:"Thomas Partey"},{pos:"MF",nombre:"Martin Ødegaard"},
+    {pos:"FW",nombre:"Bukayo Saka"},{pos:"FW",nombre:"Kai Havertz"},
+    {pos:"FW",nombre:"Gabriel Martinelli"}
+  ]},
+  { id:"arsenal_2024_2025", equipo:"Arsenal", temporada:"2024-2025", jugadores:[
+    {pos:"GK",nombre:"David Raya"},{pos:"DF",nombre:"Ben White"},
+    {pos:"DF",nombre:"Oleksandr Zinchenko"},{pos:"DF",nombre:"William Saliba"},
+    {pos:"DF",nombre:"Gabriel Magalhães"},{pos:"MF",nombre:"Declan Rice"},
+    {pos:"MF",nombre:"Thomas Partey"},{pos:"MF",nombre:"Martin Ødegaard"},
+    {pos:"FW",nombre:"Bukayo Saka"},{pos:"FW",nombre:"Kai Havertz"},
+    {pos:"FW",nombre:"Gabriel Martinelli"}
+  ]},
+  { id:"arsenal_2025_2026", equipo:"Arsenal", temporada:"2025-2026", jugadores:[
+    {pos:"GK",nombre:"David Raya"},{pos:"DF",nombre:"Ben White"},
+    {pos:"DF",nombre:"Riccardo Calafiori"},{pos:"DF",nombre:"William Saliba"},
+    {pos:"DF",nombre:"Gabriel Magalhães"},{pos:"MF",nombre:"Declan Rice"},
+    {pos:"MF",nombre:"Mikel Merino"},{pos:"MF",nombre:"Martin Ødegaard"},
+    {pos:"FW",nombre:"Bukayo Saka"},{pos:"FW",nombre:"Viktor Gyökeres"},
+    {pos:"FW",nombre:"Gabriel Martinelli"}
+  ]},
+
+  // ── JUVENTUS (2015-2026) ───────────────────────────────────────────────────
+  { id:"juventus_2015_2016", equipo:"Juventus", temporada:"2015-2016", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Andrea Barzagli"},
+    {pos:"DF",nombre:"Leonardo Bonucci"},{pos:"DF",nombre:"Giorgio Chiellini"},
+    {pos:"DF",nombre:"Alex Sandro"},{pos:"MF",nombre:"Sami Khedira"},
+    {pos:"MF",nombre:"Claudio Marchisio"},{pos:"MF",nombre:"Miralem Pjanić"},
+    {pos:"FW",nombre:"Paulo Dybala"},{pos:"FW",nombre:"Álvaro Morata"},
+    {pos:"FW",nombre:"Juan Cuadrado"}
+  ]},
+  { id:"juventus_2016_2017", equipo:"Juventus", temporada:"2016-2017", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Andrea Barzagli"},
+    {pos:"DF",nombre:"Leonardo Bonucci"},{pos:"DF",nombre:"Giorgio Chiellini"},
+    {pos:"DF",nombre:"Alex Sandro"},{pos:"MF",nombre:"Sami Khedira"},
+    {pos:"MF",nombre:"Miralem Pjanić"},{pos:"MF",nombre:"Mario Mandžukić"},
+    {pos:"FW",nombre:"Paulo Dybala"},{pos:"FW",nombre:"Gonzalo Higuaín"},
+    {pos:"FW",nombre:"Juan Cuadrado"}
+  ]},
+  { id:"juventus_2017_2018", equipo:"Juventus", temporada:"2017-2018", jugadores:[
+    {pos:"GK",nombre:"Gianluigi Buffon"},{pos:"DF",nombre:"Andrea Barzagli"},
+    {pos:"DF",nombre:"Giorgio Chiellini"},{pos:"DF",nombre:"Mehdi Benatia"},
+    {pos:"DF",nombre:"Alex Sandro"},{pos:"MF",nombre:"Sami Khedira"},
+    {pos:"MF",nombre:"Miralem Pjanić"},{pos:"MF",nombre:"Blaise Matuidi"},
+    {pos:"FW",nombre:"Paulo Dybala"},{pos:"FW",nombre:"Gonzalo Higuaín"},
+    {pos:"FW",nombre:"Mario Mandžukić"}
+  ]},
+  { id:"juventus_2018_2019", equipo:"Juventus", temporada:"2018-2019", jugadores:[
+    {pos:"GK",nombre:"Wojciech Szczęsny"},{pos:"DF",nombre:"Giorgio Chiellini"},
+    {pos:"DF",nombre:"Leonardo Bonucci"},{pos:"DF",nombre:"João Cancelo"},
+    {pos:"DF",nombre:"Alex Sandro"},{pos:"MF",nombre:"Miralem Pjanić"},
+    {pos:"MF",nombre:"Blaise Matuidi"},{pos:"MF",nombre:"Rodrigo Bentancur"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Paulo Dybala"},
+    {pos:"FW",nombre:"Mario Mandžukić"}
+  ]},
+  { id:"juventus_2019_2020", equipo:"Juventus", temporada:"2019-2020", jugadores:[
+    {pos:"GK",nombre:"Wojciech Szczęsny"},{pos:"DF",nombre:"Giorgio Chiellini"},
+    {pos:"DF",nombre:"Leonardo Bonucci"},{pos:"DF",nombre:"Danilo"},
+    {pos:"DF",nombre:"Alex Sandro"},{pos:"MF",nombre:"Miralem Pjanić"},
+    {pos:"MF",nombre:"Rodrigo Bentancur"},{pos:"MF",nombre:"Blaise Matuidi"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Paulo Dybala"},
+    {pos:"FW",nombre:"Juan Cuadrado"}
+  ]},
+  { id:"juventus_2020_2021", equipo:"Juventus", temporada:"2020-2021", jugadores:[
+    {pos:"GK",nombre:"Wojciech Szczęsny"},{pos:"DF",nombre:"Leonardo Bonucci"},
+    {pos:"DF",nombre:"Merih Demiral"},{pos:"DF",nombre:"Danilo"},
+    {pos:"DF",nombre:"Alex Sandro"},{pos:"MF",nombre:"Arthur"},
+    {pos:"MF",nombre:"Rodrigo Bentancur"},{pos:"MF",nombre:"Juan Cuadrado"},
+    {pos:"FW",nombre:"Cristiano Ronaldo"},{pos:"FW",nombre:"Álvaro Morata"},
+    {pos:"FW",nombre:"Federico Chiesa"}
+  ]},
+  { id:"juventus_2021_2022", equipo:"Juventus", temporada:"2021-2022", jugadores:[
+    {pos:"GK",nombre:"Wojciech Szczęsny"},{pos:"DF",nombre:"Leonardo Bonucci"},
+    {pos:"DF",nombre:"Mattia De Sciglio"},{pos:"DF",nombre:"Danilo"},
+    {pos:"DF",nombre:"Alex Sandro"},{pos:"MF",nombre:"Manuel Locatelli"},
+    {pos:"MF",nombre:"Rodrigo Bentancur"},{pos:"MF",nombre:"Juan Cuadrado"},
+    {pos:"FW",nombre:"Dušan Vlahović"},{pos:"FW",nombre:"Federico Bernardeschi"},
+    {pos:"FW",nombre:"Federico Chiesa"}
+  ]},
+  { id:"juventus_2022_2023", equipo:"Juventus", temporada:"2022-2023", jugadores:[
+    {pos:"GK",nombre:"Wojciech Szczęsny"},{pos:"DF",nombre:"Leonardo Bonucci"},
+    {pos:"DF",nombre:"Bremer"},{pos:"DF",nombre:"Danilo"},
+    {pos:"DF",nombre:"Alex Sandro"},{pos:"MF",nombre:"Manuel Locatelli"},
+    {pos:"MF",nombre:"Adrien Rabiot"},{pos:"MF",nombre:"Juan Cuadrado"},
+    {pos:"FW",nombre:"Dušan Vlahović"},{pos:"FW",nombre:"Ángel Di María"},
+    {pos:"FW",nombre:"Filip Kostić"}
+  ]},
+  { id:"juventus_2023_2024", equipo:"Juventus", temporada:"2023-2024", jugadores:[
+    {pos:"GK",nombre:"Wojciech Szczęsny"},{pos:"DF",nombre:"Bremer"},
+    {pos:"DF",nombre:"Danilo"},{pos:"DF",nombre:"Federico Gatti"},
+    {pos:"DF",nombre:"Andrea Cambiaso"},{pos:"MF",nombre:"Manuel Locatelli"},
+    {pos:"MF",nombre:"Adrien Rabiot"},{pos:"MF",nombre:"Nicolò Fagioli"},
+    {pos:"FW",nombre:"Dušan Vlahović"},{pos:"FW",nombre:"Filip Kostić"},
+    {pos:"FW",nombre:"Kenan Yıldız"}
+  ]},
+  { id:"juventus_2024_2025", equipo:"Juventus", temporada:"2024-2025", jugadores:[
+    {pos:"GK",nombre:"Michele Di Gregorio"},{pos:"DF",nombre:"Federico Gatti"},
+    {pos:"DF",nombre:"Pierre Kalulu"},{pos:"DF",nombre:"Andrea Cambiaso"},
+    {pos:"DF",nombre:"Nicolò Savona"},{pos:"MF",nombre:"Manuel Locatelli"},
+    {pos:"MF",nombre:"Teun Koopmeiners"},{pos:"MF",nombre:"Kenan Yıldız"},
+    {pos:"FW",nombre:"Dušan Vlahović"},{pos:"FW",nombre:"Timothy Weah"},
+    {pos:"FW",nombre:"Francisco Conceição"}
+  ]},
+  { id:"juventus_2025_2026", equipo:"Juventus", temporada:"2025-2026", jugadores:[
+    {pos:"GK",nombre:"Michele Di Gregorio"},{pos:"DF",nombre:"Federico Gatti"},
+    {pos:"DF",nombre:"Pierre Kalulu"},{pos:"DF",nombre:"Andrea Cambiaso"},
+    {pos:"DF",nombre:"Lloyd Kelly"},{pos:"MF",nombre:"Manuel Locatelli"},
+    {pos:"MF",nombre:"Teun Koopmeiners"},{pos:"MF",nombre:"Kenan Yıldız"},
+    {pos:"FW",nombre:"Dušan Vlahović"},{pos:"FW",nombre:"Francisco Conceição"},
+    {pos:"FW",nombre:"Alberto Costa"}
+  ]},
+
+  // ── INTER DE MILÁN (2015-2026) ─────────────────────────────────────────────
+  { id:"inter_2015_2016", equipo:"Inter de Milán", temporada:"2015-2016", jugadores:[
+    {pos:"GK",nombre:"Samir Handanović"},{pos:"DF",nombre:"Jeison Murillo"},
+    {pos:"DF",nombre:"Miranda"},{pos:"DF",nombre:"Nagatomo"},
+    {pos:"MF",nombre:"Felipe Melo"},{pos:"MF",nombre:"Geoffrey Kondogbia"},
+    {pos:"MF",nombre:"Marcelo Brozović"},{pos:"FW",nombre:"Ivan Perišić"},
+    {pos:"FW",nombre:"Mauro Icardi"},{pos:"FW",nombre:"Jonathan Jovetić"},
+    {pos:"FW",nombre:"Adem Ljajić"}
+  ]},
+  { id:"inter_2016_2017", equipo:"Inter de Milán", temporada:"2016-2017", jugadores:[
+    {pos:"GK",nombre:"Samir Handanović"},{pos:"DF",nombre:"Jeison Murillo"},
+    {pos:"DF",nombre:"Miranda"},{pos:"DF",nombre:"Nagatomo"},
+    {pos:"MF",nombre:"Roberto Gagliardini"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Antonio Candreva"},{pos:"FW",nombre:"Ivan Perišić"},
+    {pos:"FW",nombre:"Mauro Icardi"},{pos:"FW",nombre:"Éder"},
+    {pos:"FW",nombre:"Rodrigo Palacio"}
+  ]},
+  { id:"inter_2017_2018", equipo:"Inter de Milán", temporada:"2017-2018", jugadores:[
+    {pos:"GK",nombre:"Samir Handanović"},{pos:"DF",nombre:"Milán Škriniar"},
+    {pos:"DF",nombre:"Miranda"},{pos:"DF",nombre:"João Cancelo"},
+    {pos:"MF",nombre:"Marcelo Brozović"},{pos:"MF",nombre:"Borja Valero"},
+    {pos:"MF",nombre:"Matías Vecino"},{pos:"MF",nombre:"Antonio Candreva"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Mauro Icardi"},
+    {pos:"FW",nombre:"Éver Banega"}
+  ]},
+  { id:"inter_2018_2019", equipo:"Inter de Milán", temporada:"2018-2019", jugadores:[
+    {pos:"GK",nombre:"Samir Handanović"},{pos:"DF",nombre:"Milán Škriniar"},
+    {pos:"DF",nombre:"Miranda"},{pos:"DF",nombre:"Šime Vrsaljko"},
+    {pos:"DF",nombre:"Kwadwo Asamoah"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Matías Vecino"},{pos:"MF",nombre:"Radja Nainggolan"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Mauro Icardi"},
+    {pos:"FW",nombre:"Lautaro Martínez"}
+  ]},
+  { id:"inter_2019_2020", equipo:"Inter de Milán", temporada:"2019-2020", jugadores:[
+    {pos:"GK",nombre:"Samir Handanović"},{pos:"DF",nombre:"Milán Škriniar"},
+    {pos:"DF",nombre:"Stefan de Vrij"},{pos:"DF",nombre:"Alessandro Bastoni"},
+    {pos:"DF",nombre:"Achraf Hakimi"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Nicolò Barella"},{pos:"MF",nombre:"Arturo Vidal"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Lautaro Martínez"}
+  ]},
+  { id:"inter_2020_2021", equipo:"Inter de Milán", temporada:"2020-2021", jugadores:[
+    {pos:"GK",nombre:"Samir Handanović"},{pos:"DF",nombre:"Milán Škriniar"},
+    {pos:"DF",nombre:"Stefan de Vrij"},{pos:"DF",nombre:"Alessandro Bastoni"},
+    {pos:"DF",nombre:"Achraf Hakimi"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Nicolò Barella"},{pos:"MF",nombre:"Arturo Vidal"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Lautaro Martínez"}
+  ]},
+  { id:"inter_2021_2022", equipo:"Inter de Milán", temporada:"2021-2022", jugadores:[
+    {pos:"GK",nombre:"Samir Handanović"},{pos:"DF",nombre:"Milán Škriniar"},
+    {pos:"DF",nombre:"Stefan de Vrij"},{pos:"DF",nombre:"Alessandro Bastoni"},
+    {pos:"DF",nombre:"Denzel Dumfries"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Nicolò Barella"},{pos:"MF",nombre:"Hakan Çalhanoğlu"},
+    {pos:"FW",nombre:"Ivan Perišić"},{pos:"FW",nombre:"Edin Džeko"},
+    {pos:"FW",nombre:"Lautaro Martínez"}
+  ]},
+  { id:"inter_2022_2023", equipo:"Inter de Milán", temporada:"2022-2023", jugadores:[
+    {pos:"GK",nombre:"Samir Handanović"},{pos:"DF",nombre:"Milán Škriniar"},
+    {pos:"DF",nombre:"Stefan de Vrij"},{pos:"DF",nombre:"Alessandro Bastoni"},
+    {pos:"DF",nombre:"Denzel Dumfries"},{pos:"MF",nombre:"Marcelo Brozović"},
+    {pos:"MF",nombre:"Nicolò Barella"},{pos:"MF",nombre:"Hakan Çalhanoğlu"},
+    {pos:"FW",nombre:"Federico Dimarco"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Lautaro Martínez"}
+  ]},
+  { id:"inter_2023_2024", equipo:"Inter de Milán", temporada:"2023-2024", jugadores:[
+    {pos:"GK",nombre:"Yann Sommer"},{pos:"DF",nombre:"Benjamin Pavard"},
+    {pos:"DF",nombre:"Stefan de Vrij"},{pos:"DF",nombre:"Alessandro Bastoni"},
+    {pos:"DF",nombre:"Federico Dimarco"},{pos:"MF",nombre:"Nicolò Barella"},
+    {pos:"MF",nombre:"Hakan Çalhanoğlu"},{pos:"MF",nombre:"Henrikh Mkhitaryan"},
+    {pos:"FW",nombre:"Denzel Dumfries"},{pos:"FW",nombre:"Marcus Thuram"},
+    {pos:"FW",nombre:"Lautaro Martínez"}
+  ]},
+  { id:"inter_2024_2025", equipo:"Inter de Milán", temporada:"2024-2025", jugadores:[
+    {pos:"GK",nombre:"Yann Sommer"},{pos:"DF",nombre:"Benjamin Pavard"},
+    {pos:"DF",nombre:"Stefan de Vrij"},{pos:"DF",nombre:"Alessandro Bastoni"},
+    {pos:"DF",nombre:"Federico Dimarco"},{pos:"MF",nombre:"Nicolò Barella"},
+    {pos:"MF",nombre:"Hakan Çalhanoğlu"},{pos:"MF",nombre:"Henrikh Mkhitaryan"},
+    {pos:"FW",nombre:"Denzel Dumfries"},{pos:"FW",nombre:"Marcus Thuram"},
+    {pos:"FW",nombre:"Lautaro Martínez"}
+  ]},
+  { id:"inter_2025_2026", equipo:"Inter de Milán", temporada:"2025-2026", jugadores:[
+    {pos:"GK",nombre:"Yann Sommer"},{pos:"DF",nombre:"Benjamin Pavard"},
+    {pos:"DF",nombre:"Stefan de Vrij"},{pos:"DF",nombre:"Alessandro Bastoni"},
+    {pos:"DF",nombre:"Federico Dimarco"},{pos:"MF",nombre:"Nicolò Barella"},
+    {pos:"MF",nombre:"Hakan Çalhanoğlu"},{pos:"MF",nombre:"Henrikh Mkhitaryan"},
+    {pos:"FW",nombre:"Denzel Dumfries"},{pos:"FW",nombre:"Marcus Thuram"},
+    {pos:"FW",nombre:"Lautaro Martínez"}
+  ]},
+
+  // ── BORUSSIA DORTMUND (2015-2026) ─────────────────────────────────────────
+  { id:"dortmund_2015_2016", equipo:"Borussia Dortmund", temporada:"2015-2016", jugadores:[
+    {pos:"GK",nombre:"Roman Bürki"},{pos:"DF",nombre:"Łukasz Piszczek"},
+    {pos:"DF",nombre:"Sokratis"},{pos:"DF",nombre:"Marcel Schmelzer"},
+    {pos:"MF",nombre:"Julian Weigl"},{pos:"MF",nombre:"Henrikh Mkhitaryan"},
+    {pos:"MF",nombre:"Marco Reus"},{pos:"MF",nombre:"Ilkay Gündoğan"},
+    {pos:"FW",nombre:"Pierre-Emerick Aubameyang"},{pos:"FW",nombre:"Shinji Kagawa"},
+    {pos:"FW",nombre:"Gonzalo Castro"}
+  ]},
+  { id:"dortmund_2016_2017", equipo:"Borussia Dortmund", temporada:"2016-2017", jugadores:[
+    {pos:"GK",nombre:"Roman Bürki"},{pos:"DF",nombre:"Łukasz Piszczek"},
+    {pos:"DF",nombre:"Sokratis"},{pos:"DF",nombre:"Marcel Schmelzer"},
+    {pos:"DF",nombre:"Marc Bartra"},{pos:"MF",nombre:"Julian Weigl"},
+    {pos:"MF",nombre:"Shinji Kagawa"},{pos:"MF",nombre:"Christian Pulisic"},
+    {pos:"FW",nombre:"Pierre-Emerick Aubameyang"},{pos:"FW",nombre:"Ousmane Dembélé"},
+    {pos:"FW",nombre:"Marco Reus"}
+  ]},
+  { id:"dortmund_2017_2018", equipo:"Borussia Dortmund", temporada:"2017-2018", jugadores:[
+    {pos:"GK",nombre:"Roman Bürki"},{pos:"DF",nombre:"Łukasz Piszczek"},
+    {pos:"DF",nombre:"Sokratis"},{pos:"DF",nombre:"Marcel Schmelzer"},
+    {pos:"DF",nombre:"Raphael Guerreiro"},{pos:"MF",nombre:"Julian Weigl"},
+    {pos:"MF",nombre:"Christian Pulisic"},{pos:"MF",nombre:"Andriy Yarmolenko"},
+    {pos:"FW",nombre:"Pierre-Emerick Aubameyang"},{pos:"FW",nombre:"Maximilian Philipp"},
+    {pos:"FW",nombre:"Marco Reus"}
+  ]},
+  { id:"dortmund_2018_2019", equipo:"Borussia Dortmund", temporada:"2018-2019", jugadores:[
+    {pos:"GK",nombre:"Roman Bürki"},{pos:"DF",nombre:"Łukasz Piszczek"},
+    {pos:"DF",nombre:"Manuel Akanji"},{pos:"DF",nombre:"Abdou Diallo"},
+    {pos:"DF",nombre:"Raphael Guerreiro"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Thomas Delaney"},{pos:"MF",nombre:"Christian Pulisic"},
+    {pos:"FW",nombre:"Marco Reus"},{pos:"FW",nombre:"Paco Alcácer"},
+    {pos:"FW",nombre:"Jadon Sancho"}
+  ]},
+  { id:"dortmund_2019_2020", equipo:"Borussia Dortmund", temporada:"2019-2020", jugadores:[
+    {pos:"GK",nombre:"Roman Bürki"},{pos:"DF",nombre:"Łukasz Piszczek"},
+    {pos:"DF",nombre:"Manuel Akanji"},{pos:"DF",nombre:"Mats Hummels"},
+    {pos:"DF",nombre:"Raphael Guerreiro"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Emre Can"},{pos:"MF",nombre:"Julian Brandt"},
+    {pos:"FW",nombre:"Marco Reus"},{pos:"FW",nombre:"Erling Haaland"},
+    {pos:"FW",nombre:"Jadon Sancho"}
+  ]},
+  { id:"dortmund_2020_2021", equipo:"Borussia Dortmund", temporada:"2020-2021", jugadores:[
+    {pos:"GK",nombre:"Roman Bürki"},{pos:"DF",nombre:"Thomas Meunier"},
+    {pos:"DF",nombre:"Manuel Akanji"},{pos:"DF",nombre:"Mats Hummels"},
+    {pos:"DF",nombre:"Raphael Guerreiro"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Emre Can"},{pos:"MF",nombre:"Julian Brandt"},
+    {pos:"FW",nombre:"Marco Reus"},{pos:"FW",nombre:"Erling Haaland"},
+    {pos:"FW",nombre:"Jadon Sancho"}
+  ]},
+  { id:"dortmund_2021_2022", equipo:"Borussia Dortmund", temporada:"2021-2022", jugadores:[
+    {pos:"GK",nombre:"Gregor Kobel"},{pos:"DF",nombre:"Thomas Meunier"},
+    {pos:"DF",nombre:"Manuel Akanji"},{pos:"DF",nombre:"Mats Hummels"},
+    {pos:"DF",nombre:"Raphael Guerreiro"},{pos:"MF",nombre:"Axel Witsel"},
+    {pos:"MF",nombre:"Jude Bellingham"},{pos:"MF",nombre:"Julian Brandt"},
+    {pos:"FW",nombre:"Marco Reus"},{pos:"FW",nombre:"Erling Haaland"},
+    {pos:"FW",nombre:"Donyell Malen"}
+  ]},
+  { id:"dortmund_2022_2023", equipo:"Borussia Dortmund", temporada:"2022-2023", jugadores:[
+    {pos:"GK",nombre:"Gregor Kobel"},{pos:"DF",nombre:"Thomas Meunier"},
+    {pos:"DF",nombre:"Nico Schlotterbeck"},{pos:"DF",nombre:"Mats Hummels"},
+    {pos:"DF",nombre:"Raphael Guerreiro"},{pos:"MF",nombre:"Jude Bellingham"},
+    {pos:"MF",nombre:"Salih Özcan"},{pos:"MF",nombre:"Julian Brandt"},
+    {pos:"FW",nombre:"Marco Reus"},{pos:"FW",nombre:"Sébastien Haller"},
+    {pos:"FW",nombre:"Karim Adeyemi"}
+  ]},
+  { id:"dortmund_2023_2024", equipo:"Borussia Dortmund", temporada:"2023-2024", jugadores:[
+    {pos:"GK",nombre:"Gregor Kobel"},{pos:"DF",nombre:"Julian Ryerson"},
+    {pos:"DF",nombre:"Nico Schlotterbeck"},{pos:"DF",nombre:"Mats Hummels"},
+    {pos:"DF",nombre:"Ian Maatsen"},{pos:"MF",nombre:"Marcel Sabitzer"},
+    {pos:"MF",nombre:"Emre Can"},{pos:"MF",nombre:"Julian Brandt"},
+    {pos:"FW",nombre:"Marco Reus"},{pos:"FW",nombre:"Niclas Füllkrug"},
+    {pos:"FW",nombre:"Karim Adeyemi"}
+  ]},
+  { id:"dortmund_2024_2025", equipo:"Borussia Dortmund", temporada:"2024-2025", jugadores:[
+    {pos:"GK",nombre:"Gregor Kobel"},{pos:"DF",nombre:"Julian Ryerson"},
+    {pos:"DF",nombre:"Nico Schlotterbeck"},{pos:"DF",nombre:"Emre Can"},
+    {pos:"DF",nombre:"Ramy Bensebaini"},{pos:"MF",nombre:"Marcel Sabitzer"},
+    {pos:"MF",nombre:"Pascal Groß"},{pos:"MF",nombre:"Julian Brandt"},
+    {pos:"FW",nombre:"Serhou Guirassy"},{pos:"FW",nombre:"Donyell Malen"},
+    {pos:"FW",nombre:"Karim Adeyemi"}
+  ]},
+  { id:"dortmund_2025_2026", equipo:"Borussia Dortmund", temporada:"2025-2026", jugadores:[
+    {pos:"GK",nombre:"Gregor Kobel"},{pos:"DF",nombre:"Julian Ryerson"},
+    {pos:"DF",nombre:"Nico Schlotterbeck"},{pos:"DF",nombre:"Waldemar Anton"},
+    {pos:"DF",nombre:"Ramy Bensebaini"},{pos:"MF",nombre:"Pascal Groß"},
+    {pos:"MF",nombre:"Felix Nmecha"},{pos:"MF",nombre:"Julian Brandt"},
+    {pos:"FW",nombre:"Serhou Guirassy"},{pos:"FW",nombre:"Jamie Gittens"},
+    {pos:"FW",nombre:"Karim Adeyemi"}
+  ]},
+
+  // ── TOTTENHAM (2017-2026) ──────────────────────────────────────────────────
+  { id:"tottenham_2017_2018", equipo:"Tottenham", temporada:"2017-2018", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Kieran Trippier"},
+    {pos:"DF",nombre:"Toby Alderweireld"},{pos:"DF",nombre:"Jan Vertonghen"},
+    {pos:"DF",nombre:"Ben Davies"},{pos:"MF",nombre:"Mousa Dembélé"},
+    {pos:"MF",nombre:"Christian Eriksen"},{pos:"MF",nombre:"Dele Alli"},
+    {pos:"FW",nombre:"Son Heung-min"},{pos:"FW",nombre:"Harry Kane"},
+    {pos:"FW",nombre:"Davinson Sánchez"}
+  ]},
+  { id:"tottenham_2018_2019", equipo:"Tottenham", temporada:"2018-2019", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Kieran Trippier"},
+    {pos:"DF",nombre:"Toby Alderweireld"},{pos:"DF",nombre:"Jan Vertonghen"},
+    {pos:"DF",nombre:"Danny Rose"},{pos:"MF",nombre:"Mousa Dembélé"},
+    {pos:"MF",nombre:"Christian Eriksen"},{pos:"MF",nombre:"Dele Alli"},
+    {pos:"FW",nombre:"Son Heung-min"},{pos:"FW",nombre:"Harry Kane"},
+    {pos:"FW",nombre:"Lucas Moura"}
+  ]},
+  { id:"tottenham_2019_2020", equipo:"Tottenham", temporada:"2019-2020", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Serge Aurier"},
+    {pos:"DF",nombre:"Toby Alderweireld"},{pos:"DF",nombre:"Jan Vertonghen"},
+    {pos:"DF",nombre:"Ben Davies"},{pos:"MF",nombre:"Moussa Sissoko"},
+    {pos:"MF",nombre:"Christian Eriksen"},{pos:"MF",nombre:"Dele Alli"},
+    {pos:"FW",nombre:"Son Heung-min"},{pos:"FW",nombre:"Harry Kane"},
+    {pos:"FW",nombre:"Lucas Moura"}
+  ]},
+  { id:"tottenham_2020_2021", equipo:"Tottenham", temporada:"2020-2021", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Serge Aurier"},
+    {pos:"DF",nombre:"Toby Alderweireld"},{pos:"DF",nombre:"Davinson Sánchez"},
+    {pos:"DF",nombre:"Ben Davies"},{pos:"MF",nombre:"Moussa Sissoko"},
+    {pos:"MF",nombre:"Pierre-Emile Højbjerg"},{pos:"MF",nombre:"Dele Alli"},
+    {pos:"FW",nombre:"Son Heung-min"},{pos:"FW",nombre:"Harry Kane"},
+    {pos:"FW",nombre:"Lucas Moura"}
+  ]},
+  { id:"tottenham_2021_2022", equipo:"Tottenham", temporada:"2021-2022", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Emerson Royal"},
+    {pos:"DF",nombre:"Eric Dier"},{pos:"DF",nombre:"Davinson Sánchez"},
+    {pos:"DF",nombre:"Ben Davies"},{pos:"MF",nombre:"Pierre-Emile Højbjerg"},
+    {pos:"MF",nombre:"Oliver Skipp"},{pos:"MF",nombre:"Dejan Kulusevski"},
+    {pos:"FW",nombre:"Son Heung-min"},{pos:"FW",nombre:"Harry Kane"},
+    {pos:"FW",nombre:"Lucas Moura"}
+  ]},
+  { id:"tottenham_2022_2023", equipo:"Tottenham", temporada:"2022-2023", jugadores:[
+    {pos:"GK",nombre:"Hugo Lloris"},{pos:"DF",nombre:"Emerson Royal"},
+    {pos:"DF",nombre:"Eric Dier"},{pos:"DF",nombre:"Davinson Sánchez"},
+    {pos:"DF",nombre:"Ivan Perišić"},{pos:"MF",nombre:"Pierre-Emile Højbjerg"},
+    {pos:"MF",nombre:"Rodrigo Bentancur"},{pos:"MF",nombre:"Dejan Kulusevski"},
+    {pos:"FW",nombre:"Son Heung-min"},{pos:"FW",nombre:"Harry Kane"},
+    {pos:"FW",nombre:"Richarlison"}
+  ]},
+  { id:"tottenham_2023_2024", equipo:"Tottenham", temporada:"2023-2024", jugadores:[
+    {pos:"GK",nombre:"Guglielmo Vicario"},{pos:"DF",nombre:"Pedro Porro"},
+    {pos:"DF",nombre:"Cristian Romero"},{pos:"DF",nombre:"Micky van de Ven"},
+    {pos:"DF",nombre:"Destiny Udogie"},{pos:"MF",nombre:"Yves Bissouma"},
+    {pos:"MF",nombre:"Rodrigo Bentancur"},{pos:"MF",nombre:"Dejan Kulusevski"},
+    {pos:"FW",nombre:"Son Heung-min"},{pos:"FW",nombre:"Richarlison"},
+    {pos:"FW",nombre:"Brennan Johnson"}
+  ]},
+  { id:"tottenham_2024_2025", equipo:"Tottenham", temporada:"2024-2025", jugadores:[
+    {pos:"GK",nombre:"Guglielmo Vicario"},{pos:"DF",nombre:"Pedro Porro"},
+    {pos:"DF",nombre:"Cristian Romero"},{pos:"DF",nombre:"Micky van de Ven"},
+    {pos:"DF",nombre:"Destiny Udogie"},{pos:"MF",nombre:"Yves Bissouma"},
+    {pos:"MF",nombre:"Dejan Kulusevski"},{pos:"MF",nombre:"Lucas Bergvall"},
+    {pos:"FW",nombre:"Son Heung-min"},{pos:"FW",nombre:"Dominic Solanke"},
+    {pos:"FW",nombre:"Brennan Johnson"}
+  ]},
+  { id:"tottenham_2025_2026", equipo:"Tottenham", temporada:"2025-2026", jugadores:[
+    {pos:"GK",nombre:"Guglielmo Vicario"},{pos:"DF",nombre:"Pedro Porro"},
+    {pos:"DF",nombre:"Cristian Romero"},{pos:"DF",nombre:"Micky van de Ven"},
+    {pos:"DF",nombre:"Destiny Udogie"},{pos:"MF",nombre:"Yves Bissouma"},
+    {pos:"MF",nombre:"Dejan Kulusevski"},{pos:"MF",nombre:"Lucas Bergvall"},
+    {pos:"FW",nombre:"Son Heung-min"},{pos:"FW",nombre:"Dominic Solanke"},
+    {pos:"FW",nombre:"Mathys Tel"}
+  ]},
+
+  // ── NÁPOLES (2017-2026) ────────────────────────────────────────────────────
+  { id:"napoles_2017_2018", equipo:"Nápoles", temporada:"2017-2018", jugadores:[
+    {pos:"GK",nombre:"Pepe Reina"},{pos:"DF",nombre:"Elseid Hysaj"},
+    {pos:"DF",nombre:"Kalidou Koulibaly"},{pos:"DF",nombre:"Raúl Albiol"},
+    {pos:"DF",nombre:"Faouzi Ghoulam"},{pos:"MF",nombre:"Jorginho"},
+    {pos:"MF",nombre:"Allan"},{pos:"MF",nombre:"Marek Hamšík"},
+    {pos:"FW",nombre:"José Callejón"},{pos:"FW",nombre:"Dries Mertens"},
+    {pos:"FW",nombre:"Lorenzo Insigne"}
+  ]},
+  { id:"napoles_2018_2019", equipo:"Nápoles", temporada:"2018-2019", jugadores:[
+    {pos:"GK",nombre:"David Ospina"},{pos:"DF",nombre:"Elseid Hysaj"},
+    {pos:"DF",nombre:"Kalidou Koulibaly"},{pos:"DF",nombre:"Raúl Albiol"},
+    {pos:"DF",nombre:"Mário Rui"},{pos:"MF",nombre:"Allan"},
+    {pos:"MF",nombre:"Fabián Ruiz"},{pos:"MF",nombre:"Marek Hamšík"},
+    {pos:"FW",nombre:"José Callejón"},{pos:"FW",nombre:"Dries Mertens"},
+    {pos:"FW",nombre:"Lorenzo Insigne"}
+  ]},
+  { id:"napoles_2019_2020", equipo:"Nápoles", temporada:"2019-2020", jugadores:[
+    {pos:"GK",nombre:"Alex Meret"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Kalidou Koulibaly"},{pos:"DF",nombre:"Kostas Manolas"},
+    {pos:"DF",nombre:"Mário Rui"},{pos:"MF",nombre:"Allan"},
+    {pos:"MF",nombre:"Fabián Ruiz"},{pos:"MF",nombre:"Piotr Zieliński"},
+    {pos:"FW",nombre:"José Callejón"},{pos:"FW",nombre:"Dries Mertens"},
+    {pos:"FW",nombre:"Lorenzo Insigne"}
+  ]},
+  { id:"napoles_2020_2021", equipo:"Nápoles", temporada:"2020-2021", jugadores:[
+    {pos:"GK",nombre:"Alex Meret"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Kalidou Koulibaly"},{pos:"DF",nombre:"Kostas Manolas"},
+    {pos:"DF",nombre:"Mário Rui"},{pos:"MF",nombre:"Fabián Ruiz"},
+    {pos:"MF",nombre:"Piotr Zieliński"},{pos:"MF",nombre:"Tiémoué Bakayoko"},
+    {pos:"FW",nombre:"Hirving Lozano"},{pos:"FW",nombre:"Victor Osimhen"},
+    {pos:"FW",nombre:"Lorenzo Insigne"}
+  ]},
+  { id:"napoles_2021_2022", equipo:"Nápoles", temporada:"2021-2022", jugadores:[
+    {pos:"GK",nombre:"David Ospina"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Kalidou Koulibaly"},{pos:"DF",nombre:"Amir Rrahmani"},
+    {pos:"DF",nombre:"Mário Rui"},{pos:"MF",nombre:"Fabián Ruiz"},
+    {pos:"MF",nombre:"Piotr Zieliński"},{pos:"MF",nombre:"Stanislav Lobotka"},
+    {pos:"FW",nombre:"Hirving Lozano"},{pos:"FW",nombre:"Victor Osimhen"},
+    {pos:"FW",nombre:"Lorenzo Insigne"}
+  ]},
+  { id:"napoles_2022_2023", equipo:"Nápoles", temporada:"2022-2023", jugadores:[
+    {pos:"GK",nombre:"Alex Meret"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Kim Min-jae"},{pos:"DF",nombre:"Amir Rrahmani"},
+    {pos:"DF",nombre:"Mário Rui"},{pos:"MF",nombre:"Piotr Zieliński"},
+    {pos:"MF",nombre:"Stanislav Lobotka"},{pos:"MF",nombre:"André-Frank Zambo Anguissa"},
+    {pos:"FW",nombre:"Matteo Politano"},{pos:"FW",nombre:"Victor Osimhen"},
+    {pos:"FW",nombre:"Khvicha Kvaratskhelia"}
+  ]},
+  { id:"napoles_2023_2024", equipo:"Nápoles", temporada:"2023-2024", jugadores:[
+    {pos:"GK",nombre:"Alex Meret"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Amir Rrahmani"},{pos:"DF",nombre:"Juan Jesús"},
+    {pos:"DF",nombre:"Mário Rui"},{pos:"MF",nombre:"Piotr Zieliński"},
+    {pos:"MF",nombre:"Stanislav Lobotka"},{pos:"MF",nombre:"André-Frank Zambo Anguissa"},
+    {pos:"FW",nombre:"Matteo Politano"},{pos:"FW",nombre:"Victor Osimhen"},
+    {pos:"FW",nombre:"Khvicha Kvaratskhelia"}
+  ]},
+  { id:"napoles_2024_2025", equipo:"Nápoles", temporada:"2024-2025", jugadores:[
+    {pos:"GK",nombre:"Alex Meret"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Amir Rrahmani"},{pos:"DF",nombre:"Alessandro Buongiorno"},
+    {pos:"DF",nombre:"Mathías Olivera"},{pos:"MF",nombre:"Stanislav Lobotka"},
+    {pos:"MF",nombre:"André-Frank Zambo Anguissa"},{pos:"MF",nombre:"Scott McTominay"},
+    {pos:"FW",nombre:"Matteo Politano"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"Khvicha Kvaratskhelia"}
+  ]},
+  { id:"napoles_2025_2026", equipo:"Nápoles", temporada:"2025-2026", jugadores:[
+    {pos:"GK",nombre:"Alex Meret"},{pos:"DF",nombre:"Giovanni Di Lorenzo"},
+    {pos:"DF",nombre:"Amir Rrahmani"},{pos:"DF",nombre:"Alessandro Buongiorno"},
+    {pos:"DF",nombre:"Mathías Olivera"},{pos:"MF",nombre:"Stanislav Lobotka"},
+    {pos:"MF",nombre:"André-Frank Zambo Anguissa"},{pos:"MF",nombre:"Scott McTominay"},
+    {pos:"FW",nombre:"Matteo Politano"},{pos:"FW",nombre:"Romelu Lukaku"},
+    {pos:"FW",nombre:"David Neres"}
+  ]},
+
+  // ── VALENCIA (2017-2026) ───────────────────────────────────────────────────
+  { id:"valencia_2017_2018", equipo:"Valencia", temporada:"2017-2018", jugadores:[
+    {pos:"GK",nombre:"Neto"},{pos:"DF",nombre:"Martín Montoya"},
+    {pos:"DF",nombre:"Gabriel Paulista"},{pos:"DF",nombre:"Ezequiel Garay"},
+    {pos:"DF",nombre:"José Gayà"},{pos:"MF",nombre:"Geoffrey Kondogbia"},
+    {pos:"MF",nombre:"Dani Parejo"},{pos:"MF",nombre:"Carlos Soler"},
+    {pos:"FW",nombre:"Gonçalo Guedes"},{pos:"FW",nombre:"Rodrigo"},
+    {pos:"FW",nombre:"Simone Zaza"}
+  ]},
+  { id:"valencia_2018_2019", equipo:"Valencia", temporada:"2018-2019", jugadores:[
+    {pos:"GK",nombre:"Neto"},{pos:"DF",nombre:"Cristiano Piccini"},
+    {pos:"DF",nombre:"Gabriel Paulista"},{pos:"DF",nombre:"Ezequiel Garay"},
+    {pos:"DF",nombre:"José Gayà"},{pos:"MF",nombre:"Geoffrey Kondogbia"},
+    {pos:"MF",nombre:"Dani Parejo"},{pos:"MF",nombre:"Carlos Soler"},
+    {pos:"FW",nombre:"Denis Cheryshev"},{pos:"FW",nombre:"Rodrigo"},
+    {pos:"FW",nombre:"Santi Mina"}
+  ]},
+  { id:"valencia_2019_2020", equipo:"Valencia", temporada:"2019-2020", jugadores:[
+    {pos:"GK",nombre:"Jaume Doménech"},{pos:"DF",nombre:"Daniel Wass"},
+    {pos:"DF",nombre:"Gabriel Paulista"},{pos:"DF",nombre:"Ezequiel Garay"},
+    {pos:"DF",nombre:"José Gayà"},{pos:"MF",nombre:"Geoffrey Kondogbia"},
+    {pos:"MF",nombre:"Dani Parejo"},{pos:"MF",nombre:"Carlos Soler"},
+    {pos:"FW",nombre:"Ferran Torres"},{pos:"FW",nombre:"Maxi Gómez"},
+    {pos:"FW",nombre:"Rodrigo"}
+  ]},
+  { id:"valencia_2020_2021", equipo:"Valencia", temporada:"2020-2021", jugadores:[
+    {pos:"GK",nombre:"Jaume Doménech"},{pos:"DF",nombre:"Daniel Wass"},
+    {pos:"DF",nombre:"Gabriel Paulista"},{pos:"DF",nombre:"Mouctar Diakhaby"},
+    {pos:"DF",nombre:"José Gayà"},{pos:"MF",nombre:"Carlos Soler"},
+    {pos:"MF",nombre:"Geoffrey Kondogbia"},{pos:"MF",nombre:"Uros Račić"},
+    {pos:"FW",nombre:"Lee Kang-in"},{pos:"FW",nombre:"Maxi Gómez"},
+    {pos:"FW",nombre:"Gonçalo Guedes"}
+  ]},
+  { id:"valencia_2021_2022", equipo:"Valencia", temporada:"2021-2022", jugadores:[
+    {pos:"GK",nombre:"Giorgi Mamardashvili"},{pos:"DF",nombre:"Daniel Wass"},
+    {pos:"DF",nombre:"Gabriel Paulista"},{pos:"DF",nombre:"Omar Alderete"},
+    {pos:"DF",nombre:"José Gayà"},{pos:"MF",nombre:"Carlos Soler"},
+    {pos:"MF",nombre:"Hugo Guillamón"},{pos:"MF",nombre:"Yunus Musah"},
+    {pos:"FW",nombre:"Samuel Lino"},{pos:"FW",nombre:"Maxi Gómez"},
+    {pos:"FW",nombre:"Hugo Duro"}
+  ]},
+  { id:"valencia_2022_2023", equipo:"Valencia", temporada:"2022-2023", jugadores:[
+    {pos:"GK",nombre:"Giorgi Mamardashvili"},{pos:"DF",nombre:"Thierry Correia"},
+    {pos:"DF",nombre:"Gabriel Paulista"},{pos:"DF",nombre:"Mouctar Diakhaby"},
+    {pos:"DF",nombre:"José Gayà"},{pos:"MF",nombre:"Hugo Guillamón"},
+    {pos:"MF",nombre:"Ilaix Moriba"},{pos:"MF",nombre:"André Almeida"},
+    {pos:"FW",nombre:"Samuel Lino"},{pos:"FW",nombre:"Hugo Duro"},
+    {pos:"FW",nombre:"Justin Kluivert"}
+  ]},
+  { id:"valencia_2023_2024", equipo:"Valencia", temporada:"2023-2024", jugadores:[
+    {pos:"GK",nombre:"Giorgi Mamardashvili"},{pos:"DF",nombre:"Thierry Correia"},
+    {pos:"DF",nombre:"Gabriel Paulista"},{pos:"DF",nombre:"Cristhian Mosquera"},
+    {pos:"DF",nombre:"José Gayà"},{pos:"MF",nombre:"Hugo Guillamón"},
+    {pos:"MF",nombre:"Diego López"},{pos:"MF",nombre:"Pepelu"},
+    {pos:"FW",nombre:"Hugo Duro"},{pos:"FW",nombre:"Duro Rafa Mir"},
+    {pos:"FW",nombre:"Dimitri Foulquier"}
+  ]},
+  { id:"valencia_2024_2025", equipo:"Valencia", temporada:"2024-2025", jugadores:[
+    {pos:"GK",nombre:"Giorgi Mamardashvili"},{pos:"DF",nombre:"Thierry Correia"},
+    {pos:"DF",nombre:"Cristhian Mosquera"},{pos:"DF",nombre:"César Tárrega"},
+    {pos:"DF",nombre:"José Gayà"},{pos:"MF",nombre:"Hugo Guillamón"},
+    {pos:"MF",nombre:"Pepelu"},{pos:"MF",nombre:"Diego López"},
+    {pos:"FW",nombre:"Hugo Duro"},{pos:"FW",nombre:"Rafa Mir"},
+    {pos:"FW",nombre:"Dani Gómez"}
+  ]},
+  { id:"valencia_2025_2026", equipo:"Valencia", temporada:"2025-2026", jugadores:[
+    {pos:"GK",nombre:"Giorgi Mamardashvili"},{pos:"DF",nombre:"Thierry Correia"},
+    {pos:"DF",nombre:"Cristhian Mosquera"},{pos:"DF",nombre:"César Tárrega"},
+    {pos:"DF",nombre:"José Gayà"},{pos:"MF",nombre:"Hugo Guillamón"},
+    {pos:"MF",nombre:"Pepelu"},{pos:"MF",nombre:"Diego López"},
+    {pos:"FW",nombre:"Hugo Duro"},{pos:"FW",nombre:"Rafa Mir"},
+    {pos:"FW",nombre:"Dani Gómez"}
+  ]},
+
+  // ── VILLARREAL (2017-2026) ─────────────────────────────────────────────────
+  { id:"villarreal_2017_2018", equipo:"Villarreal", temporada:"2017-2018", jugadores:[
+    {pos:"GK",nombre:"Sergio Asenjo"},{pos:"DF",nombre:"Mario Gaspar"},
+    {pos:"DF",nombre:"Víctor Ruiz"},{pos:"DF",nombre:"Álvaro González"},
+    {pos:"DF",nombre:"Jaume Costa"},{pos:"MF",nombre:"Manu Trigueros"},
+    {pos:"MF",nombre:"Bruno Soriano"},{pos:"MF",nombre:"Rodrigo Hernández"},
+    {pos:"FW",nombre:"Samuel Chukwueze"},{pos:"FW",nombre:"Carlos Bacca"},
+    {pos:"FW",nombre:"Gerard Moreno"}
+  ]},
+  { id:"villarreal_2018_2019", equipo:"Villarreal", temporada:"2018-2019", jugadores:[
+    {pos:"GK",nombre:"Sergio Asenjo"},{pos:"DF",nombre:"Mario Gaspar"},
+    {pos:"DF",nombre:"Raúl Albiol"},{pos:"DF",nombre:"Ramiro Funes Mori"},
+    {pos:"DF",nombre:"Jaume Costa"},{pos:"MF",nombre:"Manu Trigueros"},
+    {pos:"MF",nombre:"Vicente Iborra"},{pos:"MF",nombre:"Pablo Fornals"},
+    {pos:"FW",nombre:"Samuel Chukwueze"},{pos:"FW",nombre:"Carlos Bacca"},
+    {pos:"FW",nombre:"Gerard Moreno"}
+  ]},
+  { id:"villarreal_2019_2020", equipo:"Villarreal", temporada:"2019-2020", jugadores:[
+    {pos:"GK",nombre:"Sergio Asenjo"},{pos:"DF",nombre:"Mario Gaspar"},
+    {pos:"DF",nombre:"Raúl Albiol"},{pos:"DF",nombre:"Pau Torres"},
+    {pos:"DF",nombre:"Alberto Moreno"},{pos:"MF",nombre:"Santi Cazorla"},
+    {pos:"MF",nombre:"Manu Trigueros"},{pos:"MF",nombre:"Samuel Chukwueze"},
+    {pos:"FW",nombre:"Carlos Bacca"},{pos:"FW",nombre:"Gerard Moreno"},
+    {pos:"FW",nombre:"Moi Gómez"}
+  ]},
+  { id:"villarreal_2020_2021", equipo:"Villarreal", temporada:"2020-2021", jugadores:[
+    {pos:"GK",nombre:"Gerónimo Rulli"},{pos:"DF",nombre:"Mario Gaspar"},
+    {pos:"DF",nombre:"Raúl Albiol"},{pos:"DF",nombre:"Pau Torres"},
+    {pos:"DF",nombre:"Alberto Moreno"},{pos:"MF",nombre:"Dani Parejo"},
+    {pos:"MF",nombre:"Étienne Capoue"},{pos:"MF",nombre:"Samuel Chukwueze"},
+    {pos:"FW",nombre:"Yeremy Pino"},{pos:"FW",nombre:"Gerard Moreno"},
+    {pos:"FW",nombre:"Moi Gómez"}
+  ]},
+  { id:"villarreal_2021_2022", equipo:"Villarreal", temporada:"2021-2022", jugadores:[
+    {pos:"GK",nombre:"Gerónimo Rulli"},{pos:"DF",nombre:"Mario Gaspar"},
+    {pos:"DF",nombre:"Raúl Albiol"},{pos:"DF",nombre:"Pau Torres"},
+    {pos:"DF",nombre:"Alfonso Pedraza"},{pos:"MF",nombre:"Dani Parejo"},
+    {pos:"MF",nombre:"Étienne Capoue"},{pos:"MF",nombre:"Samuel Chukwueze"},
+    {pos:"FW",nombre:"Yeremy Pino"},{pos:"FW",nombre:"Gerard Moreno"},
+    {pos:"FW",nombre:"Arnaut Danjuma"}
+  ]},
+  { id:"villarreal_2022_2023", equipo:"Villarreal", temporada:"2022-2023", jugadores:[
+    {pos:"GK",nombre:"Filip Jørgensen"},{pos:"DF",nombre:"Juan Foyth"},
+    {pos:"DF",nombre:"Raúl Albiol"},{pos:"DF",nombre:"Pau Torres"},
+    {pos:"DF",nombre:"Alfonso Pedraza"},{pos:"MF",nombre:"Dani Parejo"},
+    {pos:"MF",nombre:"Alex Baena"},{pos:"MF",nombre:"Samuel Chukwueze"},
+    {pos:"FW",nombre:"Yeremy Pino"},{pos:"FW",nombre:"Gerard Moreno"},
+    {pos:"FW",nombre:"Samu Chukwueze"}
+  ]},
+  { id:"villarreal_2023_2024", equipo:"Villarreal", temporada:"2023-2024", jugadores:[
+    {pos:"GK",nombre:"Filip Jørgensen"},{pos:"DF",nombre:"Juan Foyth"},
+    {pos:"DF",nombre:"Eric Bailly"},{pos:"DF",nombre:"Raúl Albiol"},
+    {pos:"DF",nombre:"Alfonso Pedraza"},{pos:"MF",nombre:"Dani Parejo"},
+    {pos:"MF",nombre:"Alex Baena"},{pos:"MF",nombre:"Àlex Baena"},
+    {pos:"FW",nombre:"Yeremy Pino"},{pos:"FW",nombre:"Gerard Moreno"},
+    {pos:"FW",nombre:"Jose Luis Morales"}
+  ]},
+  { id:"villarreal_2024_2025", equipo:"Villarreal", temporada:"2024-2025", jugadores:[
+    {pos:"GK",nombre:"Diego Conde"},{pos:"DF",nombre:"Juan Foyth"},
+    {pos:"DF",nombre:"Sergi Cardona"},{pos:"DF",nombre:"Eric Bailly"},
+    {pos:"DF",nombre:"Alfonso Pedraza"},{pos:"MF",nombre:"Dani Parejo"},
+    {pos:"MF",nombre:"Alex Baena"},{pos:"MF",nombre:"Ilias Akhomach"},
+    {pos:"FW",nombre:"Ayoze Pérez"},{pos:"FW",nombre:"Nicolas Pépé"},
+    {pos:"FW",nombre:"Yeremy Pino"}
+  ]},
+  { id:"villarreal_2025_2026", equipo:"Villarreal", temporada:"2025-2026", jugadores:[
+    {pos:"GK",nombre:"Diego Conde"},{pos:"DF",nombre:"Juan Foyth"},
+    {pos:"DF",nombre:"Sergi Cardona"},{pos:"DF",nombre:"Eric Bailly"},
+    {pos:"DF",nombre:"Alfonso Pedraza"},{pos:"MF",nombre:"Dani Parejo"},
+    {pos:"MF",nombre:"Alex Baena"},{pos:"MF",nombre:"Yeremy Pino"},
+    {pos:"FW",nombre:"Ayoze Pérez"},{pos:"FW",nombre:"Gerard Moreno"},
+    {pos:"FW",nombre:"Ilias Akhomach"}
+  ]},
+
+  // ── SEVILLA (2017-2026) ────────────────────────────────────────────────────
+  { id:"sevilla_2017_2018", equipo:"Sevilla", temporada:"2017-2018", jugadores:[
+    {pos:"GK",nombre:"Sergio Rico"},{pos:"DF",nombre:"Jesús Navas"},
+    {pos:"DF",nombre:"Clément Lenglet"},{pos:"DF",nombre:"Sergio Escudero"},
+    {pos:"DF",nombre:"Sergi Gómez"},{pos:"MF",nombre:"Éver Banega"},
+    {pos:"MF",nombre:"Steven Nzonzi"},{pos:"MF",nombre:"Franco Vázquez"},
+    {pos:"FW",nombre:"Pablo Sarabia"},{pos:"FW",nombre:"Wissam Ben Yedder"},
+    {pos:"FW",nombre:"Luis Muriel"}
+  ]},
+  { id:"sevilla_2018_2019", equipo:"Sevilla", temporada:"2018-2019", jugadores:[
+    {pos:"GK",nombre:"Tomas Vaclík"},{pos:"DF",nombre:"Jesús Navas"},
+    {pos:"DF",nombre:"Simon Kjær"},{pos:"DF",nombre:"Sergio Escudero"},
+    {pos:"DF",nombre:"Sergi Gómez"},{pos:"MF",nombre:"Éver Banega"},
+    {pos:"MF",nombre:"Roque Mesa"},{pos:"MF",nombre:"Franco Vázquez"},
+    {pos:"FW",nombre:"Pablo Sarabia"},{pos:"FW",nombre:"Wissam Ben Yedder"},
+    {pos:"FW",nombre:"André Silva"}
+  ]},
+  { id:"sevilla_2019_2020", equipo:"Sevilla", temporada:"2019-2020", jugadores:[
+    {pos:"GK",nombre:"Tomas Vaclík"},{pos:"DF",nombre:"Jesús Navas"},
+    {pos:"DF",nombre:"Jules Koundé"},{pos:"DF",nombre:"Diego Carlos"},
+    {pos:"DF",nombre:"Sergio Reguilón"},{pos:"MF",nombre:"Éver Banega"},
+    {pos:"MF",nombre:"Fernando"},{pos:"MF",nombre:"Joan Jordán"},
+    {pos:"FW",nombre:"Lucas Ocampos"},{pos:"FW",nombre:"Luuk de Jong"},
+    {pos:"FW",nombre:"Munir El Haddadi"}
+  ]},
+  { id:"sevilla_2020_2021", equipo:"Sevilla", temporada:"2020-2021", jugadores:[
+    {pos:"GK",nombre:"Yassine Bounou"},{pos:"DF",nombre:"Jesús Navas"},
+    {pos:"DF",nombre:"Jules Koundé"},{pos:"DF",nombre:"Diego Carlos"},
+    {pos:"DF",nombre:"Marcos Acuña"},{pos:"MF",nombre:"Ivan Rakitić"},
+    {pos:"MF",nombre:"Fernando"},{pos:"MF",nombre:"Joan Jordán"},
+    {pos:"FW",nombre:"Lucas Ocampos"},{pos:"FW",nombre:"Youssef En-Nesyri"},
+    {pos:"FW",nombre:"Suso"}
+  ]},
+  { id:"sevilla_2021_2022", equipo:"Sevilla", temporada:"2021-2022", jugadores:[
+    {pos:"GK",nombre:"Yassine Bounou"},{pos:"DF",nombre:"Jesús Navas"},
+    {pos:"DF",nombre:"Jules Koundé"},{pos:"DF",nombre:"Diego Carlos"},
+    {pos:"DF",nombre:"Marcos Acuña"},{pos:"MF",nombre:"Ivan Rakitić"},
+    {pos:"MF",nombre:"Fernando"},{pos:"MF",nombre:"Joan Jordán"},
+    {pos:"FW",nombre:"Lucas Ocampos"},{pos:"FW",nombre:"Youssef En-Nesyri"},
+    {pos:"FW",nombre:"Erik Lamela"}
+  ]},
+  { id:"sevilla_2022_2023", equipo:"Sevilla", temporada:"2022-2023", jugadores:[
+    {pos:"GK",nombre:"Yassine Bounou"},{pos:"DF",nombre:"Jesús Navas"},
+    {pos:"DF",nombre:"Marcão"},{pos:"DF",nombre:"Loïc Badé"},
+    {pos:"DF",nombre:"Marcos Acuña"},{pos:"MF",nombre:"Ivan Rakitić"},
+    {pos:"MF",nombre:"Fernando"},{pos:"MF",nombre:"Joan Jordán"},
+    {pos:"FW",nombre:"Lucas Ocampos"},{pos:"FW",nombre:"Youssef En-Nesyri"},
+    {pos:"FW",nombre:"Alejandro Gómez"}
+  ]},
+  { id:"sevilla_2023_2024", equipo:"Sevilla", temporada:"2023-2024", jugadores:[
+    {pos:"GK",nombre:"Orjan Nyland"},{pos:"DF",nombre:"Jesús Navas"},
+    {pos:"DF",nombre:"Loïc Badé"},{pos:"DF",nombre:"Gudelj"},
+    {pos:"DF",nombre:"Marcos Acuña"},{pos:"MF",nombre:"Ivan Rakitić"},
+    {pos:"MF",nombre:"Lucas Ocampos"},{pos:"MF",nombre:"Joan Jordán"},
+    {pos:"FW",nombre:"Isaac Romero"},{pos:"FW",nombre:"Youssef En-Nesyri"},
+    {pos:"FW",nombre:"Suso"}
+  ]},
+  { id:"sevilla_2024_2025", equipo:"Sevilla", temporada:"2024-2025", jugadores:[
+    {pos:"GK",nombre:"Ørjan Nyland"},{pos:"DF",nombre:"Jesús Navas"},
+    {pos:"DF",nombre:"Loïc Badé"},{pos:"DF",nombre:"Adrià Pedrosa"},
+    {pos:"DF",nombre:"Marcos Acuña"},{pos:"MF",nombre:"Nemanja Gudelj"},
+    {pos:"MF",nombre:"Lucien Agoumé"},{pos:"MF",nombre:"Dodi Lukébakio"},
+    {pos:"FW",nombre:"Isaac Romero"},{pos:"FW",nombre:"Chidera Ejuke"},
+    {pos:"FW",nombre:"Juanlu Sánchez"}
+  ]},
+  { id:"sevilla_2025_2026", equipo:"Sevilla", temporada:"2025-2026", jugadores:[
+    {pos:"GK",nombre:"Ørjan Nyland"},{pos:"DF",nombre:"Juanlu Sánchez"},
+    {pos:"DF",nombre:"Loïc Badé"},{pos:"DF",nombre:"Adrià Pedrosa"},
+    {pos:"DF",nombre:"Marcos Acuña"},{pos:"MF",nombre:"Nemanja Gudelj"},
+    {pos:"MF",nombre:"Lucien Agoumé"},{pos:"MF",nombre:"Dodi Lukébakio"},
+    {pos:"FW",nombre:"Isaac Romero"},{pos:"FW",nombre:"Chidera Ejuke"},
+    {pos:"FW",nombre:"Ejuke Peque"}
+  ]},
 ]
 
 // Normaliza: quita tildes, minúsculas, solo alfanumérico + espacios
