@@ -241,72 +241,72 @@ export default function PlantillasHistoricasIndividual() {
 
           <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
             <button onClick={() => iniciarJuego('España')} style={st.bigBtn('#c60b1e')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇪🇸</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/es.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#c60b1e' }}>España</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>16 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Francia')} style={st.bigBtn('#002395')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇫🇷</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/fr.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#4d7fff' }}>Francia</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>15 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Alemania')} style={st.bigBtn('#ffcc00')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇩🇪</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/de.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#ffcc00' }}>Alemania</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>15 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Brasil')} style={st.bigBtn('#009c3b')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇧🇷</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/br.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#009c3b' }}>Brasil</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>8 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Argentina')} style={st.bigBtn('#74acdf')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇦🇷</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/ar.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#74acdf' }}>Argentina</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>8 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Portugal')} style={st.bigBtn('#006600')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇵🇹</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/pt.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#00aa00' }}>Portugal</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>14 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Italia')} style={st.bigBtn('#003580')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇮🇹</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/it.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#4d9fff' }}>Italia</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>14 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Inglaterra')} style={st.bigBtn('#cf081f')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/gb-eng.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#cf081f' }}>Inglaterra</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>14 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Países Bajos')} style={st.bigBtn('#ff6600')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇳🇱</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/nl.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#ff6600' }}>Países Bajos</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>10 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Bélgica')} style={st.bigBtn('#f5c518')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇧🇪</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/be.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#f5c518' }}>Bélgica</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>7 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Croacia')} style={st.bigBtn('#ff0000')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇭🇷</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/hr.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#ff6666' }}>Croacia</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>9 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Uruguay')} style={st.bigBtn('#5EB6E4')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇺🇾</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/uy.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#5EB6E4' }}>Uruguay</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>5 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Marruecos')} style={st.bigBtn('#c1272d')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇲🇦</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/ma.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#c1272d' }}>Marruecos</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>4 torneos</div>
             </button>
             <button onClick={() => iniciarJuego('Senegal')} style={st.bigBtn('#00853f')}>
-              <div style={{ fontSize:22, marginBottom:3 }}>🇸🇳</div>
+              <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/sn.png" style={{width:28,borderRadius:3,marginBottom:3}} /></div>
               <div style={{ fontSize:14, fontWeight:900, color:'#00853f' }}>Senegal</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>4 torneos</div>
             </button>
