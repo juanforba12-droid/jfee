@@ -552,59 +552,59 @@ export default function PlantillasHistoricasOnline() {
             <div style={{ fontSize:11, color:'#4a3a6a', letterSpacing:2, textAlign:'center', margin:'16px 0 8px', textTransform:'uppercase' }}>🌍 Selecciones</div>
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
               <button onClick={() => iniciarPartida('España')} style={S.clubBtn('#c60b1e')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇪🇸</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/es.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#c60b1e' }}>España</div>
               </button>
               <button onClick={() => iniciarPartida('Francia')} style={S.clubBtn('#002395')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇫🇷</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/fr.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#4d7fff' }}>Francia</div>
               </button>
               <button onClick={() => iniciarPartida('Alemania')} style={S.clubBtn('#ffcc00')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇩🇪</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/de.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#ffcc00' }}>Alemania</div>
               </button>
               <button onClick={() => iniciarPartida('Brasil')} style={S.clubBtn('#009c3b')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇧🇷</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/br.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#009c3b' }}>Brasil</div>
               </button>
               <button onClick={() => iniciarPartida('Argentina')} style={S.clubBtn('#74acdf')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇦🇷</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/ar.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#74acdf' }}>Argentina</div>
               </button>
               <button onClick={() => iniciarPartida('Portugal')} style={S.clubBtn('#006600')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇵🇹</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/pt.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#00aa00' }}>Portugal</div>
               </button>
               <button onClick={() => iniciarPartida('Italia')} style={S.clubBtn('#003580')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇮🇹</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/it.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#4d9fff' }}>Italia</div>
               </button>
               <button onClick={() => iniciarPartida('Inglaterra')} style={S.clubBtn('#cf081f')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/gb-eng.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#cf081f' }}>Inglaterra</div>
               </button>
               <button onClick={() => iniciarPartida('Países Bajos')} style={S.clubBtn('#ff6600')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇳🇱</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/nl.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#ff6600' }}>Países Bajos</div>
               </button>
               <button onClick={() => iniciarPartida('Bélgica')} style={S.clubBtn('#f5c518')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇧🇪</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/be.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#f5c518' }}>Bélgica</div>
               </button>
               <button onClick={() => iniciarPartida('Croacia')} style={S.clubBtn('#ff0000')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇭🇷</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/hr.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#ff6666' }}>Croacia</div>
               </button>
               <button onClick={() => iniciarPartida('Uruguay')} style={S.clubBtn('#5EB6E4')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇺🇾</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/uy.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#5EB6E4' }}>Uruguay</div>
               </button>
               <button onClick={() => iniciarPartida('Marruecos')} style={S.clubBtn('#c1272d')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇲🇦</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/ma.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#c1272d' }}>Marruecos</div>
               </button>
               <button onClick={() => iniciarPartida('Senegal')} style={S.clubBtn('#00853f')}>
-                <div style={{ fontSize:20, marginBottom:3 }}>🇸🇳</div>
+                <div style={{ marginBottom:3 }}><img src="https://flagcdn.com/w40/sn.png" style={{width:24,borderRadius:3,marginBottom:3}} /></div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#00853f' }}>Senegal</div>
               </button>
             </div>
