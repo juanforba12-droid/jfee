@@ -31,6 +31,20 @@ const CLUB_COLOR = {
   'Valencia': '#f47920',
   'Villarreal': '#ffcc00',
   'Sevilla': '#d51317',
+  'España': '#c60b1e',
+  'Francia': '#002395',
+  'Alemania': '#ffcc00',
+  'Brasil': '#009c3b',
+  'Argentina': '#74acdf',
+  'Portugal': '#006600',
+  'Italia': '#003580',
+  'Inglaterra': '#cf081f',
+  'Países Bajos': '#ff6600',
+  'Bélgica': '#f5c518',
+  'Croacia': '#ff0000',
+  'Uruguay': '#5EB6E4',
+  'Marruecos': '#c1272d',
+  'Senegal': '#00853f',
 }
 
 function getRandomPlantilla(filtroEquipo) {
@@ -455,7 +469,7 @@ export default function PlantillasHistoricasOnline() {
             <button onClick={() => iniciarPartida('ambos')} style={S.clubBtn('#f59e0b')}>
               <div style={{ fontSize:22, marginBottom:4 }}>🎲</div>
               <div style={{ fontSize:16, fontWeight:900, color:'#f59e0b' }}>Aleatorio</div>
-              <div style={{ fontSize:11, color:'#6a5a8a', marginTop:3 }}>Cualquier plantilla de las 331 temporadas</div>
+              <div style={{ fontSize:11, color:'#6a5a8a', marginTop:3 }}>Cualquier plantilla de las 474 plantillas</div>
             </button>
             <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
               <button onClick={() => iniciarPartida('Real Madrid')} style={S.clubBtn('#3b82f6')}>
@@ -533,6 +547,65 @@ export default function PlantillasHistoricasOnline() {
               <button onClick={() => iniciarPartida('Sevilla')} style={S.clubBtn('#d51317')}>
                 <div style={{ fontSize:20, marginBottom:3 }}>🔴</div>
                 <div style={{ fontSize:14, fontWeight:900, color:'#d51317' }}>Sevilla</div>
+              </button>
+            </div>
+            <div style={{ fontSize:11, color:'#4a3a6a', letterSpacing:2, textAlign:'center', margin:'16px 0 8px', textTransform:'uppercase' }}>🌍 Selecciones</div>
+            <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:10 }}>
+              <button onClick={() => iniciarPartida('España')} style={S.clubBtn('#c60b1e')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇪🇸</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#c60b1e' }}>España</div>
+              </button>
+              <button onClick={() => iniciarPartida('Francia')} style={S.clubBtn('#002395')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇫🇷</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#4d7fff' }}>Francia</div>
+              </button>
+              <button onClick={() => iniciarPartida('Alemania')} style={S.clubBtn('#ffcc00')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇩🇪</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#ffcc00' }}>Alemania</div>
+              </button>
+              <button onClick={() => iniciarPartida('Brasil')} style={S.clubBtn('#009c3b')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇧🇷</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#009c3b' }}>Brasil</div>
+              </button>
+              <button onClick={() => iniciarPartida('Argentina')} style={S.clubBtn('#74acdf')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇦🇷</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#74acdf' }}>Argentina</div>
+              </button>
+              <button onClick={() => iniciarPartida('Portugal')} style={S.clubBtn('#006600')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇵🇹</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#00aa00' }}>Portugal</div>
+              </button>
+              <button onClick={() => iniciarPartida('Italia')} style={S.clubBtn('#003580')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇮🇹</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#4d9fff' }}>Italia</div>
+              </button>
+              <button onClick={() => iniciarPartida('Inglaterra')} style={S.clubBtn('#cf081f')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🏴󠁧󠁢󠁥󠁮󠁧󠁿</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#cf081f' }}>Inglaterra</div>
+              </button>
+              <button onClick={() => iniciarPartida('Países Bajos')} style={S.clubBtn('#ff6600')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇳🇱</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#ff6600' }}>Países Bajos</div>
+              </button>
+              <button onClick={() => iniciarPartida('Bélgica')} style={S.clubBtn('#f5c518')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇧🇪</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#f5c518' }}>Bélgica</div>
+              </button>
+              <button onClick={() => iniciarPartida('Croacia')} style={S.clubBtn('#ff0000')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇭🇷</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#ff6666' }}>Croacia</div>
+              </button>
+              <button onClick={() => iniciarPartida('Uruguay')} style={S.clubBtn('#5EB6E4')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇺🇾</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#5EB6E4' }}>Uruguay</div>
+              </button>
+              <button onClick={() => iniciarPartida('Marruecos')} style={S.clubBtn('#c1272d')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇲🇦</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#c1272d' }}>Marruecos</div>
+              </button>
+              <button onClick={() => iniciarPartida('Senegal')} style={S.clubBtn('#00853f')}>
+                <div style={{ fontSize:20, marginBottom:3 }}>🇸🇳</div>
+                <div style={{ fontSize:14, fontWeight:900, color:'#00853f' }}>Senegal</div>
               </button>
             </div>
           </div>
