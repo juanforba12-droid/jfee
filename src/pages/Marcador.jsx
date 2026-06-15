@@ -2,6 +2,7 @@ import { useState, useEffect, useCallback } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase.js'
 import { getRankInfo } from '../lib/ranks.js'
+import useSEO from '../hooks/useSEO.js'
 
 // ── Admin UIDs ─────────────────────────────────────────────────────────────
 const ADMIN_UIDS = ['2f506ea7-bb8a-4e5e-bf90-2816fcd73fe1']
@@ -240,6 +241,11 @@ export default function Marcador() {
   const nav = useNavigate()
   const [uid] = useState(getUserId)
   const admin = isAdmin(uid)
+  useSEO({
+  title: 'El Marcador | Apuestas Mundial 2026 - JFEE',
+  description: 'Apuesta tus puntos en los partidos del Mundial 2026 con cuotas reales. Multiplica tus ganancias apostando 1X2 en cada partido.',
+  url: 'https://juegosdefutbolenespanol.vercel.app/marcador'
+})
 
   const [partidos, setPartidos] = useState([])
   const [misApuestas, setMisApuestas] = useState([])
