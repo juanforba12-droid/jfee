@@ -89,6 +89,15 @@ export default function PlantillasHistoricasIndividual() {
     'Manchester City': '#6ec6f0',
     'AC Milan': '#c80000',
     'Paris Saint-Germain': '#001489',
+    'Arsenal': '#ef0107',
+    'Juventus': '#f5f5f5',
+    'Inter de Milán': '#0068a8',
+    'Borussia Dortmund': '#fde100',
+    'Tottenham': '#f5f5f5',
+    'Nápoles': '#0067b1',
+    'Valencia': '#f47920',
+    'Villarreal': '#ffcc00',
+    'Sevilla': '#d51317',
   }
   const acento = ACENTO_MAP[plantilla?.equipo] || '#f59e0b'
 
@@ -107,7 +116,7 @@ export default function PlantillasHistoricasIndividual() {
           <button onClick={() => iniciarJuego(null)} style={st.bigBtn('#f59e0b')}>
             <div style={{ fontSize:28, marginBottom:6 }}>🎲</div>
             <div style={{ fontSize:18, fontWeight:900, color:'#f59e0b' }}>Aleatoria</div>
-            <div style={{ fontSize:12, color:'#6a5a8a', marginTop:4 }}>Cualquier plantilla de las 54 temporadas</div>
+            <div style={{ fontSize:12, color:'#6a5a8a', marginTop:4 }}>Cualquier plantilla de las 331 temporadas</div>
           </button>
 
           <div style={{ fontSize:11, color:'#4a3a6a', letterSpacing:2, textAlign:'center', margin:'8px 0 4px', textTransform:'uppercase' }}>
@@ -164,6 +173,51 @@ export default function PlantillasHistoricasIndividual() {
               <div style={{ fontSize:22, marginBottom:3 }}>🔵</div>
               <div style={{ fontSize:14, fontWeight:900, color:'#001489' }}>PSG</div>
               <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>15 temporadas</div>
+            </button>
+            <button onClick={() => iniciarJuego('Arsenal')} style={st.bigBtn('#ef0107')}>
+              <div style={{ fontSize:22, marginBottom:3 }}>🔴</div>
+              <div style={{ fontSize:14, fontWeight:900, color:'#ef0107' }}>Arsenal</div>
+              <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>11 temporadas</div>
+            </button>
+            <button onClick={() => iniciarJuego('Juventus')} style={st.bigBtn('#000000')}>
+              <div style={{ fontSize:22, marginBottom:3 }}>⚫</div>
+              <div style={{ fontSize:14, fontWeight:900, color:'#ffffff' }}>Juventus</div>
+              <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>11 temporadas</div>
+            </button>
+            <button onClick={() => iniciarJuego('Inter de Milán')} style={st.bigBtn('#0068a8')}>
+              <div style={{ fontSize:22, marginBottom:3 }}>🔵</div>
+              <div style={{ fontSize:14, fontWeight:900, color:'#0068a8' }}>Inter Milán</div>
+              <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>11 temporadas</div>
+            </button>
+            <button onClick={() => iniciarJuego('Borussia Dortmund')} style={st.bigBtn('#fde100')}>
+              <div style={{ fontSize:22, marginBottom:3 }}>🟡</div>
+              <div style={{ fontSize:14, fontWeight:900, color:'#fde100' }}>Dortmund</div>
+              <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>11 temporadas</div>
+            </button>
+            <button onClick={() => iniciarJuego('Tottenham')} style={st.bigBtn('#ffffff')}>
+              <div style={{ fontSize:22, marginBottom:3 }}>⚪</div>
+              <div style={{ fontSize:14, fontWeight:900, color:'#ffffff' }}>Tottenham</div>
+              <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>9 temporadas</div>
+            </button>
+            <button onClick={() => iniciarJuego('Nápoles')} style={st.bigBtn('#0067b1')}>
+              <div style={{ fontSize:22, marginBottom:3 }}>🔵</div>
+              <div style={{ fontSize:14, fontWeight:900, color:'#0067b1' }}>Nápoles</div>
+              <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>9 temporadas</div>
+            </button>
+            <button onClick={() => iniciarJuego('Valencia')} style={st.bigBtn('#f47920')}>
+              <div style={{ fontSize:22, marginBottom:3 }}>🦇</div>
+              <div style={{ fontSize:14, fontWeight:900, color:'#f47920' }}>Valencia</div>
+              <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>9 temporadas</div>
+            </button>
+            <button onClick={() => iniciarJuego('Villarreal')} style={st.bigBtn('#ffcc00')}>
+              <div style={{ fontSize:22, marginBottom:3 }}>🟡</div>
+              <div style={{ fontSize:14, fontWeight:900, color:'#ffcc00' }}>Villarreal</div>
+              <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>9 temporadas</div>
+            </button>
+            <button onClick={() => iniciarJuego('Sevilla')} style={st.bigBtn('#d51317')}>
+              <div style={{ fontSize:22, marginBottom:3 }}>🔴</div>
+              <div style={{ fontSize:14, fontWeight:900, color:'#d51317' }}>Sevilla</div>
+              <div style={{ fontSize:10, color:'#6a5a8a', marginTop:2 }}>9 temporadas</div>
             </button>
           </div>
         </div>
