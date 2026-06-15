@@ -120,6 +120,64 @@ function esPlaceholder(e) {
   if (e.indexOf('Ganador') >= 0 || e.indexOf('Perdedor') >= 0) return true
   return false
 }
+const TEAM_FLAGS = {
+  'México': 'https://flagcdn.com/w40/mx.png',
+  'Sudáfrica': 'https://flagcdn.com/w40/za.png',
+  'Corea del Sur': 'https://flagcdn.com/w40/kr.png',
+  'Rep. Checa': 'https://flagcdn.com/w40/cz.png',
+  'Canadá': 'https://flagcdn.com/w40/ca.png',
+  'Bosnia-Herz.': 'https://flagcdn.com/w40/ba.png',
+  'Qatar': 'https://flagcdn.com/w40/qa.png',
+  'Suiza': 'https://flagcdn.com/w40/ch.png',
+  'Brasil': 'https://flagcdn.com/w40/br.png',
+  'Marruecos': 'https://flagcdn.com/w40/ma.png',
+  'Haití': 'https://flagcdn.com/w40/ht.png',
+  'Escocia': 'https://flagcdn.com/w40/gb-sct.png',
+  'Estados Unidos': 'https://flagcdn.com/w40/us.png',
+  'Paraguay': 'https://flagcdn.com/w40/py.png',
+  'Australia': 'https://flagcdn.com/w40/au.png',
+  'Turquía': 'https://flagcdn.com/w40/tr.png',
+  'Alemania': 'https://flagcdn.com/w40/de.png',
+  'Curazao': 'https://flagcdn.com/w40/cw.png',
+  'C. de Marfil': 'https://flagcdn.com/w40/ci.png',
+  'Ecuador': 'https://flagcdn.com/w40/ec.png',
+  'Países Bajos': 'https://flagcdn.com/w40/nl.png',
+  'Japón': 'https://flagcdn.com/w40/jp.png',
+  'Suecia': 'https://flagcdn.com/w40/se.png',
+  'Túnez': 'https://flagcdn.com/w40/tn.png',
+  'Bélgica': 'https://flagcdn.com/w40/be.png',
+  'Egipto': 'https://flagcdn.com/w40/eg.png',
+  'Irán': 'https://flagcdn.com/w40/ir.png',
+  'Nueva Zelanda': 'https://flagcdn.com/w40/nz.png',
+  'España': 'https://flagcdn.com/w40/es.png',
+  'Cabo Verde': 'https://flagcdn.com/w40/cv.png',
+  'Arabia Saudita': 'https://flagcdn.com/w40/sa.png',
+  'Uruguay': 'https://flagcdn.com/w40/uy.png',
+  'Francia': 'https://flagcdn.com/w40/fr.png',
+  'Senegal': 'https://flagcdn.com/w40/sn.png',
+  'Iraq': 'https://flagcdn.com/w40/iq.png',
+  'Noruega': 'https://flagcdn.com/w40/no.png',
+  'Argentina': 'https://flagcdn.com/w40/ar.png',
+  'Argelia': 'https://flagcdn.com/w40/dz.png',
+  'Austria': 'https://flagcdn.com/w40/at.png',
+  'Jordania': 'https://flagcdn.com/w40/jo.png',
+  'Portugal': 'https://flagcdn.com/w40/pt.png',
+  'R.D. Congo': 'https://flagcdn.com/w40/cd.png',
+  'Uzbekistán': 'https://flagcdn.com/w40/uz.png',
+  'Colombia': 'https://flagcdn.com/w40/co.png',
+  'Inglaterra': 'https://flagcdn.com/w40/gb-eng.png',
+  'Croacia': 'https://flagcdn.com/w40/hr.png',
+  'Ghana': 'https://flagcdn.com/w40/gh.png',
+  'Panamá': 'https://flagcdn.com/w40/pa.png',
+}
+
+function TeamFlag({ name, size = 18 }) {
+  const src = TEAM_FLAGS[name]
+  if (!src) return null
+  return <img src={src} style={{ height: size, borderRadius: 2, verticalAlign: 'middle', flexShrink: 0 }} />
+}
+
+
 
 export default function Game() {
   const { code } = useParams()
@@ -146,7 +204,6 @@ export default function Game() {
   const [loadingGlobal, setLoadingGlobal] = useState(false)
   const [now, setNow] = useState(new Date())
 
-  // Actualizar 'now' cada minuto para que los bloqueos se refresquen
   useEffect(function() {
     const interval = setInterval(function() { setNow(new Date()) }, 60000)
     return function() { clearInterval(interval) }
@@ -157,7 +214,6 @@ export default function Game() {
   const isCreator = group && myPlayer && group.creator_id === myPlayer.id
   const shareUrl = window.location.origin + '/unirse/' + code
 
-  // locked global = cuando el primer partido de J1 ya empezó (para el banner)
   const firstMatch = PARTIDOS_GRUPOS[0]
   const globallyLocked = firstMatch ? isMatchLocked(firstMatch) : false
 
@@ -290,7 +346,7 @@ export default function Game() {
         predsRes.data.forEach(function(p) {
           if (!apMap[p.player_id]) apMap[p.player_id] = {}
           apMap[p.player_id][p.match_id] = { l: p.goals_local != null ? p.goals_local : '', v: p.goals_vis != null ? p.goals_vis : '' }
-          if (false) myMap[p.match_id] = {}  // myMap se llena desde myPredsRes
+          if (false) myMap[p.match_id] = {}
         })
         setAllPreds(apMap)
       }
@@ -714,7 +770,9 @@ export default function Game() {
                     </div>
 
                     <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: (isElim && !isTerceroFase) ? 10 : 0 }}>
-                      <div style={{ flex: 1, textAlign: 'right', fontSize: 13, fontWeight: 700 }}>{localReal}</div>
+                      <div style={{ flex: 1, textAlign: 'right', fontSize: 13, fontWeight: 700, display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: 6 }}>
+                        {localReal}<TeamFlag name={localReal} />
+                      </div>
                       {!isElim ? (
                         <div style={{ display: 'flex', alignItems: 'center', gap: 4, flexShrink: 0 }}>
                           <input type="text" inputMode="numeric" maxLength={2} value={pl} onChange={function(e) { savePred(m.id, 'l', e.target.value, matchLocked) }} onBlur={function() { savePredBlur(m.id) }} placeholder="-" readOnly={matchLocked}
@@ -726,7 +784,9 @@ export default function Game() {
                       ) : (
                         <div style={{ fontSize: 16, color: '#1a2a3a', fontWeight: 900 }}>vs</div>
                       )}
-                      <div style={{ flex: 1, textAlign: 'left', fontSize: 13, fontWeight: 700 }}>{visReal}</div>
+                      <div style={{ flex: 1, textAlign: 'left', fontSize: 13, fontWeight: 700, display: 'flex', alignItems: 'center', gap: 6 }}>
+                        <TeamFlag name={visReal} />{visReal}
+                      </div>
                     </div>
 
                     {isElim && !isTerceroFase && !isTerceroPlaceholder && (
@@ -739,8 +799,8 @@ export default function Game() {
                             {[localReal, visReal].map(function(eq) {
                               return (
                                 <button key={eq} onClick={function() { savePredClasif(m.id, eq, matchLocked) }}
-                                  style={{ flex: 1, padding: '10px 8px', borderRadius: 10, border: '2px solid ' + (miPredEq === eq ? mc : 'rgba(255,255,255,0.1)'), background: miPredEq === eq ? mc + '22' : 'rgba(255,255,255,0.04)', color: miPredEq === eq ? mc : '#8a9ab0', fontWeight: miPredEq === eq ? 700 : 400, fontSize: 13, cursor: matchLocked ? 'not-allowed' : 'pointer' }}>
-                                  {eq}
+                                  style={{ flex: 1, padding: '10px 8px', borderRadius: 10, border: '2px solid ' + (miPredEq === eq ? mc : 'rgba(255,255,255,0.1)'), background: miPredEq === eq ? mc + '22' : 'rgba(255,255,255,0.04)', color: miPredEq === eq ? mc : '#8a9ab0', fontWeight: miPredEq === eq ? 700 : 400, fontSize: 13, cursor: matchLocked ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+                                  <TeamFlag name={eq} size={16} />{eq}
                                 </button>
                               )
                             })}
@@ -763,8 +823,8 @@ export default function Game() {
                                 {[localReal, visReal].map(function(eq) {
                                   return (
                                     <button key={eq} onClick={function() { saveRealClasif(m.id, eq) }}
-                                      style={{ flex: 1, padding: '6px 8px', borderRadius: 8, border: '1.5px solid ' + (realEq === eq ? 'rgba(42,157,143,.6)' : 'rgba(255,215,0,0.2)'), background: realEq === eq ? 'rgba(42,157,143,.2)' : 'rgba(255,215,0,0.04)', color: realEq === eq ? '#2a9d8f' : '#ffd700', fontSize: 12, cursor: 'pointer', fontWeight: realEq === eq ? 700 : 400 }}>
-                                      {eq}
+                                      style={{ flex: 1, padding: '6px 8px', borderRadius: 8, border: '1.5px solid ' + (realEq === eq ? 'rgba(42,157,143,.6)' : 'rgba(255,215,0,0.2)'), background: realEq === eq ? 'rgba(42,157,143,.2)' : 'rgba(255,215,0,0.04)', color: realEq === eq ? '#2a9d8f' : '#ffd700', fontSize: 12, cursor: 'pointer', fontWeight: realEq === eq ? 700 : 400, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+                                      <TeamFlag name={eq} size={14} />{eq}
                                     </button>
                                   )
                                 })}
@@ -794,8 +854,8 @@ export default function Game() {
                             {[localReal, visReal].map(function(eq) {
                               return (
                                 <button key={eq} onClick={function() { savePredClasif(m.id, eq, matchLocked) }}
-                                  style={{ flex: 1, padding: '10px 8px', borderRadius: 10, border: '2px solid ' + (miPredEq === eq ? mc : 'rgba(255,255,255,0.1)'), background: miPredEq === eq ? mc + '22' : 'rgba(255,255,255,0.04)', color: miPredEq === eq ? mc : '#8a9ab0', fontWeight: miPredEq === eq ? 700 : 400, fontSize: 13, cursor: matchLocked ? 'not-allowed' : 'pointer' }}>
-                                  {eq}
+                                  style={{ flex: 1, padding: '10px 8px', borderRadius: 10, border: '2px solid ' + (miPredEq === eq ? mc : 'rgba(255,255,255,0.1)'), background: miPredEq === eq ? mc + '22' : 'rgba(255,255,255,0.04)', color: miPredEq === eq ? mc : '#8a9ab0', fontWeight: miPredEq === eq ? 700 : 400, fontSize: 13, cursor: matchLocked ? 'not-allowed' : 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 6 }}>
+                                  <TeamFlag name={eq} size={16} />{eq}
                                 </button>
                               )
                             })}
@@ -815,8 +875,8 @@ export default function Game() {
                               {[localReal, visReal].map(function(eq) {
                                 return (
                                   <button key={eq} onClick={function() { saveRealClasif(m.id, eq) }}
-                                    style={{ flex: 1, padding: '6px 8px', borderRadius: 8, border: '1.5px solid ' + (realEq === eq ? 'rgba(42,157,143,.6)' : 'rgba(255,215,0,0.2)'), background: realEq === eq ? 'rgba(42,157,143,.2)' : 'rgba(255,215,0,0.04)', color: realEq === eq ? '#2a9d8f' : '#ffd700', fontSize: 12, cursor: 'pointer', fontWeight: realEq === eq ? 700 : 400 }}>
-                                    {eq}
+                                    style={{ flex: 1, padding: '6px 8px', borderRadius: 8, border: '1.5px solid ' + (realEq === eq ? 'rgba(42,157,143,.6)' : 'rgba(255,215,0,0.2)'), background: realEq === eq ? 'rgba(42,157,143,.2)' : 'rgba(255,215,0,0.04)', color: realEq === eq ? '#2a9d8f' : '#ffd700', fontSize: 12, cursor: 'pointer', fontWeight: realEq === eq ? 700 : 400, display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+                                    <TeamFlag name={eq} size={14} />{eq}
                                   </button>
                                 )
                               })}
@@ -1037,7 +1097,9 @@ export default function Game() {
                               <div style={{ fontSize: 12, fontWeight: 700, color: ti === 0 ? '#ffd700' : ti === 1 ? '#c0c0c0' : '#2a4060', width: 16, textAlign: 'center' }}>
                                 {ti === 0 ? '🥇' : ti === 1 ? '🥈' : ti === 2 ? '🥉' : (ti + 1) + ''}
                               </div>
-                              <div style={{ flex: 1, fontSize: 13, fontWeight: ti < 2 ? 700 : 400, color: ti < 2 ? '#e8eaf0' : '#8a9ab0' }}>{t.name}</div>
+                              <div style={{ flex: 1, fontSize: 13, fontWeight: ti < 2 ? 700 : 400, color: ti < 2 ? '#e8eaf0' : '#8a9ab0', display: 'flex', alignItems: 'center', gap: 6 }}>
+                                <TeamFlag name={t.name} size={14} />{t.name}
+                              </div>
                               {vals.map(function(v, i) {
                                 return <div key={i} style={{ width: 22, textAlign: 'center', fontSize: 12, fontWeight: i === 6 ? 700 : 400, color: i === 6 ? (t.pts > 0 ? gc : '#2a4060') : '#4a6080' }}>{v}</div>
                               })}
@@ -1119,7 +1181,9 @@ export default function Game() {
                         const rv3 = (reales[m.id] && reales[m.id].v != null) ? reales[m.id].v : ''
                         return (
                           <div key={m.id} style={{ display: 'flex', alignItems: 'center', gap: 8, padding: '8px 12px', background: 'rgba(255,255,255,0.03)', borderRadius: 8 }}>
-                            <span style={{ flex: 1, fontSize: 12, textAlign: 'right', color: '#c8d8ea' }}>{m.local}</span>
+                            <span style={{ flex: 1, fontSize: 12, textAlign: 'right', color: '#c8d8ea', display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: 4 }}>
+                              {m.local}<TeamFlag name={m.local} size={14} />
+                            </span>
                             <input type="text" inputMode="numeric" maxLength={2} value={rl3} onChange={async function(e) {
                               const clean = e.target.value.replace(/\D/g,'').slice(0,2)
                               setReales(function(prev) { return Object.assign({}, prev, { [m.id]: Object.assign({}, prev[m.id]||{}, {l:clean}) }) })
@@ -1141,7 +1205,9 @@ export default function Game() {
                                 await supabase.from('results').upsert({ group_code: gc, match_id: m.id, goals_local: gl, goals_vis: clean!==''?parseInt(clean):null }, { onConflict: 'group_code,match_id' })
                               }
                             }} style={{ width: 34, height: 30, textAlign: 'center', fontSize: 14, fontWeight: 700, borderRadius: 6, border: '1.5px solid rgba(42,157,143,.4)', background: 'rgba(42,157,143,.12)', color: '#2a9d8f', outline: 'none' }} />
-                            <span style={{ flex: 1, fontSize: 12, color: '#c8d8ea' }}>{m.vis}</span>
+                            <span style={{ flex: 1, fontSize: 12, color: '#c8d8ea', display: 'flex', alignItems: 'center', gap: 4 }}>
+                              <TeamFlag name={m.vis} size={14} />{m.vis}
+                            </span>
                           </div>
                         )
                       })}
