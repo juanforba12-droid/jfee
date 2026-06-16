@@ -23,6 +23,9 @@ import EstimonOnline from './pages/EstimonOnline.jsx'
 import PlantillasHistoricasHome from './pages/PlantillasHistoricasHome.jsx'
 import PlantillasHistoricasIndividual from './pages/PlantillasHistoricasIndividual.jsx'
 import PlantillasHistoricasOnline from './pages/PlantillasHistoricasOnline.jsx'
+import GolazosHome from './pages/GolazosHome.jsx'
+import GolazosIndividual from './pages/GolazosIndividual.jsx'
+import GolazosOnline from './pages/GolazosOnline.jsx'
 import ResetPassword from './pages/ResetPassword.jsx'
 
 function ProtectedRoute({ children }) {
@@ -66,6 +69,9 @@ export default function App() {
       <Route path="/plantillas" element={<PlantillasHistoricasHome />} />
       <Route path="/plantillas/individual" element={<PlantillasHistoricasIndividual />} />
       <Route path="/plantillas/online" element={<PlantillasHistoricasOnline />} />
+      <Route path="/golazo" element={<GolazosHome />} />
+      <Route path="/golazo/individual" element={<GolazosIndividual />} />
+      <Route path="/golazo/online" element={<GolazosOnline />} />
       <Route path="*" element={<Navigate to="/" />} />
     </Routes>
   )
