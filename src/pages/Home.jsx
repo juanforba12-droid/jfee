@@ -179,7 +179,7 @@ export default function Home() {
         />
       </div>
 
-      {/* PLANTILLAS HISTÓRICAS — full width */}
+      {/* PLANTILLAS HISTÓRICAS */}
       <div style={{ width:'100%', maxWidth:540, marginTop:12 }}>
         <button onClick={() => nav('/plantillas')} style={{
           width:'100%',
@@ -198,7 +198,31 @@ export default function Home() {
             <div style={{ color:'rgba(255,255,255,0.4)', fontSize:12 }}>Adivina los 11 titulares de cada temporada</div>
           </div>
           <div style={{ display:'flex', gap:6, flexWrap:'wrap', justifyContent:'flex-end' }}>
-            {['10 equipos','242 temporadas','Online'].map(t => <span key={t} style={{ fontSize:10, color:'#f59e0b', background:'rgba(245,158,11,0.1)', padding:'2px 8px', borderRadius:20 }}>{t}</span>)}
+            {['19 clubes','474 plantillas','Online'].map(t => <span key={t} style={{ fontSize:10, color:'#f59e0b', background:'rgba(245,158,11,0.1)', padding:'2px 8px', borderRadius:20 }}>{t}</span>)}
+          </div>
+        </button>
+      </div>
+
+      {/* GOLAZO */}
+      <div style={{ width:'100%', maxWidth:540, marginTop:12 }}>
+        <button onClick={() => nav('/golazo')} style={{
+          width:'100%',
+          background:'linear-gradient(135deg,rgba(239,68,68,0.07) 0%,rgba(245,158,11,0.07) 100%)',
+          border:'1px solid rgba(239,68,68,0.3)',
+          borderRadius:20, padding:'18px 20px', cursor:'pointer', textAlign:'left', outline:'none',
+          display:'flex', alignItems:'center', gap:16,
+          transition:'transform 0.15s, border-color 0.15s',
+        }}
+          onMouseEnter={e => { e.currentTarget.style.transform='scale(1.01)'; e.currentTarget.style.borderColor='rgba(239,68,68,0.6)' }}
+          onMouseLeave={e => { e.currentTarget.style.transform='scale(1)'; e.currentTarget.style.borderColor='rgba(239,68,68,0.3)' }}
+        >
+          <div style={{ width:44, height:44, borderRadius:12, background:'rgba(239,68,68,0.18)', display:'flex', alignItems:'center', justifyContent:'center', fontSize:24, flexShrink:0 }}>🥅</div>
+          <div style={{ flex:1 }}>
+            <div style={{ color:'#ef4444', fontWeight:800, fontSize:16, letterSpacing:1 }}>GOLAZO</div>
+            <div style={{ color:'rgba(255,255,255,0.4)', fontSize:12 }}>Adivina los goleadores de partidos históricos</div>
+          </div>
+          <div style={{ display:'flex', gap:6, flexWrap:'wrap', justifyContent:'flex-end' }}>
+            {['1000+ partidos','Individual','Online'].map(t => <span key={t} style={{ fontSize:10, color:'#ef4444', background:'rgba(239,68,68,0.1)', padding:'2px 8px', borderRadius:20 }}>{t}</span>)}
           </div>
         </button>
       </div>
