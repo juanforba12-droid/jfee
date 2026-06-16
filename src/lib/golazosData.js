@@ -646,17 +646,9 @@ export const PARTIDOS = [
       { equipo: 'Ghana', minuto: 120, jugador: 'Mensah' },
     ]
   },
-]
 
-export function getFlag(equipo) {
-  return FLAG_MAP[equipo] || null
-}
+  // ── PARTIDOS EXTRA ──────────────────────────────────────────
 
-export function normalizarNombre(str) {
-  return str.toLowerCase()
-    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-    .replace(/[^a-z0-9 
-  // ── PARTIDOS EXTRA ─────────────────────────────────────────────────────────
   {
     id:'wc22_grC_fra_aus',
     local:'Francia', visitante:'Australia',
@@ -9868,7 +9860,15 @@ export function normalizarNombre(str) {
 { id:'sa_nap_mil_4_0_2023', local:'Nápoles', visitante:'AC Milan', resultado:'4-0', torneo:'Serie A 2022-23', fecha:'19 Feb 2023', tipo:'club', goles:[{equipo:'Nápoles',minuto:12,jugador:'Osimhen'},{equipo:'Nápoles',minuto:38,jugador:'Elmas'},{equipo:'Nápoles',minuto:62,jugador:'Politano'},{equipo:'Nápoles',minuto:83,jugador:'Osimhen'}] },
 { id:'sa_int_nap_3_1_2023', local:'Inter de Milán', visitante:'Nápoles', resultado:'3-1', torneo:'Serie A 2023-24', fecha:'26 Aug 2023', tipo:'club', goles:[{equipo:'Inter de Milán',minuto:2,jugador:'Marcus Thuram'},{equipo:'Inter de Milán',minuto:19,jugador:'Çalhanoğlu'},{equipo:'Nápoles',minuto:58,jugador:'Osimhen'},{equipo:'Inter de Milán',minuto:78,jugador:'Lautaro Martínez'}] },
 { id:'bund_lei_bay_3_4_2023', local:'Bayer Leverkusen', visitante:'Bayern Munich', resultado:'3-0', torneo:'Bundesliga 2023-24', fecha:'6 Abr 2024', tipo:'club', goles:[{equipo:'Bayer Leverkusen',minuto:23,jugador:'Granit Xhaka'},{equipo:'Bayer Leverkusen',minuto:45,jugador:'Florian Wirtz'},{equipo:'Bayer Leverkusen',minuto:82,jugador:'Jonas Hofmann'}] },
-]/g, '')
+
+export function getFlag(equipo) {
+  return FLAG_MAP[equipo] || null
+}
+
+export function normalizarNombre(str) {
+  return str.toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-z0-9 ]/g, '')
     .trim()
 }
 
