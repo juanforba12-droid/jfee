@@ -3,9 +3,20 @@ import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase.js'
 import { addPoints, getUserPoints } from '../lib/userPoints.js'
 import XPWidget from './XPWidget.jsx'
-import { PARTIDOS, getFlag, matchGoleador } from '../lib/golazosData.js'
+import { PARTIDOS, getFlag, normalizarNombre } from '../lib/golazosData.js'
 
-const TIPOS = ['todos', 'seleccion', 'club']
+// Matching mejorado: acepta cualquier parte del nombre/apellido
+function matchGoleador(input, nombre) {
+  if (!input || input.length < 2) return false
+  const inp = normalizarNombre(input)
+  const nom = normalizarNombre(nombre)
+  // Coincidencia exacta o parcial en cualquier parte
+  if (nom.includes(inp)) return true
+  // Cada palabra del input debe aparecer en el nombre
+  const partsInp = inp.split(' ').filter(Boolean)
+  const partsNom = nom.split(' ').filter(Boolean)
+  return partsInp.every(pi => partsNom.some(pn => pn.startsWith(pi) || pn.includes(pi)))
+}
 
 function PartidoCard({ p, onClick }) {
   const flagL = getFlag(p.local)
@@ -41,7 +52,7 @@ function PartidoCard({ p, onClick }) {
 
 export default function GolazosIndividual() {
   const nav = useNavigate()
-  const [pantalla, setPantalla] = useState('selector') // selector | juego
+  const [pantalla, setPantalla] = useState('selector')
   const [partido, setPartido] = useState(null)
   const [adivinados, setAdivinados] = useState(new Set())
   const [input, setInput] = useState('')
@@ -56,7 +67,6 @@ export default function GolazosIndividual() {
   const [xpLoaded, setXpLoaded] = useState(false)
   const inputRef = useRef(null)
 
-  // Guardar/restaurar partida en curso
   useEffect(() => {
     const saved = localStorage.getItem('golazo_individual')
     if (saved) {
@@ -102,6 +112,12 @@ export default function GolazosIndividual() {
     setTimeout(() => inputRef.current?.focus(), 100)
   }
 
+  const iniciarAleatorio = () => {
+    const lista = filtro === 'todos' ? PARTIDOS : PARTIDOS.filter(p => p.tipo === filtro)
+    const p = lista[Math.floor(Math.random() * lista.length)]
+    iniciarPartido(p)
+  }
+
   const saveProgress = useCallback((adv, rend) => {
     if (!partido) return
     localStorage.setItem('golazo_individual', JSON.stringify({
@@ -116,7 +132,7 @@ export default function GolazosIndividual() {
     if (!val || rendido || !partido) return
     let found = -1
     partido.goles.forEach((g, i) => {
-      if (!adivinados.has(i) && matchGoleador(val, g.jugador)) found = i
+      if (found === -1 && !adivinados.has(i) && matchGoleador(val, g.jugador)) found = i
     })
     if (found !== -1) {
       const nuevos = new Set([...adivinados, found])
@@ -126,7 +142,6 @@ export default function GolazosIndividual() {
       setInput('')
       grantXP(10)
       saveProgress(nuevos, false)
-      // Bonus si completa todos
       if (nuevos.size === partido.goles.length) {
         setTimeout(() => grantXP(20), 500)
       }
@@ -171,6 +186,18 @@ export default function GolazosIndividual() {
       </div>
 
       <div style={{ maxWidth:500, margin:'0 auto', padding:'16px 16px' }}>
+
+        {/* Botón aleatorio */}
+        <button onClick={iniciarAleatorio} style={{
+          width:'100%', padding:'16px', borderRadius:14, border:'none',
+          background:'linear-gradient(135deg,#f59e0b,#d97706)',
+          color:'#0a0a14', fontWeight:900, fontSize:16, cursor:'pointer',
+          marginBottom:14, fontFamily:'system-ui,sans-serif',
+          display:'flex', alignItems:'center', justifyContent:'center', gap:10,
+        }}>
+          🎲 Partido aleatorio
+        </button>
+
         {/* Filtros */}
         <div style={{ display:'flex', gap:8, marginBottom:12 }}>
           {[['todos','Todos'],['seleccion','🌍 Selecciones'],['club','🏟️ Clubes']].map(([k,l]) => (
@@ -191,7 +218,6 @@ export default function GolazosIndividual() {
           style={{ width:'100%', padding:'10px 14px', borderRadius:12, border:'1px solid rgba(255,255,255,0.1)', background:'rgba(255,255,255,0.05)', color:'#e8e0f0', fontSize:14, outline:'none', boxSizing:'border-box', marginBottom:16, fontFamily:'system-ui,sans-serif' }}
         />
 
-        {/* Lista partidos */}
         <div style={{ fontSize:11, color:'#4a3a6a', letterSpacing:2, marginBottom:10, textTransform:'uppercase' }}>
           {partidosFiltrados.length} partidos
         </div>
@@ -207,7 +233,6 @@ export default function GolazosIndividual() {
   return (
     <div style={{ minHeight:'100vh', background:'linear-gradient(160deg,#0f0c1a,#1a1030,#0c1520)', fontFamily:'system-ui,sans-serif', color:'#e8e0f0', paddingBottom:80 }}>
 
-      {/* Header */}
       <div style={{ background:'rgba(0,0,0,0.4)', borderBottom:'1px solid rgba(245,158,11,0.2)', padding:'12px 16px', display:'flex', alignItems:'center', gap:10 }}>
         <button onClick={volver} style={{ background:'none', border:'none', color:'#6a5a8a', cursor:'pointer', fontSize:20 }}>←</button>
         <div style={{ flex:1 }}>
@@ -227,12 +252,10 @@ export default function GolazosIndividual() {
 
       <div style={{ maxWidth:520, margin:'0 auto', padding:'16px 16px 0' }}>
 
-        {/* Progreso */}
         <div style={{ height:5, background:'rgba(255,255,255,0.08)', borderRadius:99, overflow:'hidden', marginBottom:16 }}>
           <div style={{ height:'100%', width:`${partido.goles.length > 0 ? (adivinados.size/partido.goles.length*100) : 0}%`, background: acabado && !rendido ? '#10b981' : '#f59e0b', borderRadius:99, transition:'width 0.4s' }} />
         </div>
 
-        {/* Input */}
         {!acabado && partido.goles.length > 0 && (
           <div style={{ display:'flex', gap:8, marginBottom:14 }}>
             <input
@@ -240,7 +263,7 @@ export default function GolazosIndividual() {
               value={input}
               onChange={e => setInput(e.target.value)}
               onKeyDown={e => e.key==='Enter' && tryGuess()}
-              placeholder="Nombre del goleador..."
+              placeholder="Nombre o apellido del goleador..."
               style={{ flex:1, padding:'12px 14px', borderRadius:12, border:`1px solid ${shake?'#ef4444':'rgba(255,255,255,0.1)'}`, background:'rgba(255,255,255,0.06)', color:'#e8e0f0', fontSize:15, outline:'none', fontFamily:'system-ui,sans-serif', animation:shake?'shake 0.45s':undefined }}
               autoComplete="off" autoCorrect="off" spellCheck={false}
             />
@@ -249,10 +272,9 @@ export default function GolazosIndividual() {
           </div>
         )}
 
-        {/* Banners */}
         {adivinados.size === partido.goles.length && partido.goles.length > 0 && (
           <div style={{ background:'rgba(16,185,129,0.12)', border:'1px solid rgba(16,185,129,0.3)', color:'#6ee7b7', borderRadius:12, padding:'12px 16px', textAlign:'center', fontWeight:700, fontSize:14, marginBottom:14 }}>
-            🏆 ¡Todos los goleadores! {user && '+10 XP bonus'}
+            🏆 ¡Todos los goleadores! {user && '+20 XP bonus'}
           </div>
         )}
         {rendido && (
@@ -262,11 +284,10 @@ export default function GolazosIndividual() {
         )}
         {partido.goles.length === 0 && (
           <div style={{ background:'rgba(255,255,255,0.05)', border:'1px solid rgba(255,255,255,0.1)', color:'#6a5a8a', borderRadius:12, padding:'16px', textAlign:'center', fontSize:13, marginBottom:14 }}>
-            Sin goles (empate 0-0 o penaltis sin goles en el tiempo reglamentario)
+            Sin goles (empate 0-0 o penaltis)
           </div>
         )}
 
-        {/* Columnas por equipo */}
         <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:16 }}>
           {[partido.local, partido.visitante].map((equipo, ei) => {
             const golesEquipo = partido.goles.map((g, i) => ({ ...g, idx: i })).filter(g => g.equipo === equipo)
@@ -309,15 +330,10 @@ export default function GolazosIndividual() {
           })}
         </div>
 
-        {/* Botones fin */}
         {acabado && (
           <div style={{ display:'flex', flexDirection:'column', gap:8 }}>
-            <button onClick={() => {
-              const mismoTipo = PARTIDOS.filter(p => p.tipo === partido.tipo && p.id !== partido.id)
-              const aleatorio = mismoTipo[Math.floor(Math.random() * mismoTipo.length)]
-              iniciarPartido(aleatorio || PARTIDOS[0])
-            }} style={{ border:'none', borderRadius:12, padding:13, fontWeight:900, fontSize:14, cursor:'pointer', color:'#0a0a14', background:'#f59e0b', width:'100%' }}>
-              🎲 Siguiente partido
+            <button onClick={iniciarAleatorio} style={{ border:'none', borderRadius:12, padding:13, fontWeight:900, fontSize:14, cursor:'pointer', color:'#0a0a14', background:'#f59e0b', width:'100%' }}>
+              🎲 Siguiente partido aleatorio
             </button>
             <button onClick={volver} style={{ background:'rgba(255,255,255,0.06)', color:'#6a5a8a', border:'1px solid rgba(255,255,255,0.1)', borderRadius:12, padding:11, fontSize:13, cursor:'pointer', width:'100%' }}>
               ← Volver al menú
