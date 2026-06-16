@@ -38,7 +38,7 @@ export const PARTIDOS = [
     resultado: '3-3 (p)', torneo: 'Final Mundial 2022', fecha: '18 Dic 2022',
     tipo: 'seleccion',
     goles: [
-      { equipo: 'Argentina', minuto: 23, jugador: 'Di María' },
+      { equipo: 'Argentina', minuto: 23, jugador: 'Ángel Di María' },
       { equipo: 'Argentina', minuto: 36, jugador: 'Lionel Messi' },
       { equipo: 'Francia', minuto: 80, jugador: 'Kylian Mbappé' },
       { equipo: 'Francia', minuto: 82, jugador: 'Kylian Mbappé' },
@@ -180,8 +180,8 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Portugal', minuto: 4, jugador: 'Cristiano Ronaldo' },
-      { equipo: 'España', minuto: 24, jugador: 'Costa' },
-      { equipo: 'España', minuto: 55, jugador: 'Costa' },
+      { equipo: 'España', minuto: 24, jugador: 'Diego Costa' },
+      { equipo: 'España', minuto: 55, jugador: 'Diego Costa' },
       { equipo: 'Portugal', minuto: 58, jugador: 'Cristiano Ronaldo' },
       { equipo: 'España', minuto: 58, jugador: 'Nacho Fernández' },
       { equipo: 'Portugal', minuto: 88, jugador: 'Cristiano Ronaldo' },
@@ -219,7 +219,7 @@ export const PARTIDOS = [
       { equipo: 'AC Milan', minuto: 39, jugador: 'Hernán Crespo' },
       { equipo: 'AC Milan', minuto: 44, jugador: 'Hernán Crespo' },
       { equipo: 'Liverpool', minuto: 54, jugador: 'Steven Gerrard' },
-      { equipo: 'Liverpool', minuto: 56, jugador: 'Smicer' },
+      { equipo: 'Liverpool', minuto: 56, jugador: 'Vladimír Šmicer' },
       { equipo: 'Liverpool', minuto: 60, jugador: 'Xabi Alonso' },
     ]
   },
@@ -341,7 +341,7 @@ export const PARTIDOS = [
     resultado: '0-1', torneo: 'Semifinal Champions 2019 (ida)', fecha: '30 Abr 2019',
     tipo: 'club',
     goles: [
-      { equipo: 'Ajax', minuto: 15, jugador: 'van de Beek' },
+      { equipo: 'Ajax', minuto: 15, jugador: 'Donny van de Beek' },
     ]
   },
   {
@@ -398,7 +398,7 @@ export const PARTIDOS = [
     tipo: 'club',
     goles: [
       { equipo: 'Real Madrid', minuto: 27, jugador: 'Lucas Vázquez' },
-      { equipo: 'Barcelona', minuto: 35, jugador: 'Arthur' },
+      { equipo: 'Barcelona', minuto: 35, jugador: 'Arthur Melo' },
       { equipo: 'Real Madrid', minuto: 71, jugador: 'Karim Benzema' },
       { equipo: 'Real Madrid', minuto: 78, jugador: 'Luka Modrić' },
     ]
@@ -428,8 +428,8 @@ export const PARTIDOS = [
       { equipo: 'Manchester United', minuto: 81, jugador: 'Darren Fletcher' },
       { equipo: 'Manchester City', minuto: 89, jugador: 'Sergio Agüero' },
       { equipo: 'Manchester City', minuto: 90, jugador: 'David Silva' },
-      { equipo: 'Manchester City', minuto: 90, jugador: 'Džeko' },
-      { equipo: 'Manchester City', minuto: 90, jugador: 'Džeko' },
+      { equipo: 'Manchester City', minuto: 90, jugador: 'Edin Džeko' },
+      { equipo: 'Manchester City', minuto: 90, jugador: 'Edin Džeko' },
     ]
   },
   {
@@ -441,7 +441,7 @@ export const PARTIDOS = [
       { equipo: 'QPR', minuto: 48, jugador: 'Papiss Cissé' },
       { equipo: 'QPR', minuto: 66, jugador: 'Jamie Mackie' },
       { equipo: 'Manchester City', minuto: 73, jugador: 'Pablo Zabaleta' },
-      { equipo: 'Manchester City', minuto: 90, jugador: 'Džeko' },
+      { equipo: 'Manchester City', minuto: 90, jugador: 'Edin Džeko' },
       { equipo: 'Manchester City', minuto: 94, jugador: 'Sergio Agüero' },
     ]
   },
@@ -462,9 +462,9 @@ export const PARTIDOS = [
     resultado: '1-2', torneo: 'Premier League 2011-12', fecha: '22 Ene 2012',
     tipo: 'club',
     goles: [
-      { equipo: 'Arsenal', minuto: 47, jugador: 'Van Persie' },
-      { equipo: 'Manchester United', minuto: 53, jugador: 'Van Persie' },
-      { equipo: 'Manchester United', minuto: 70, jugador: 'Park' },
+      { equipo: 'Arsenal', minuto: 47, jugador: 'Robin van Persie' },
+      { equipo: 'Manchester United', minuto: 53, jugador: 'Robin van Persie' },
+      { equipo: 'Manchester United', minuto: 70, jugador: 'Park Ji-sung' },
     ]
   },
 
@@ -504,7 +504,7 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Italia', minuto: 119, jugador: 'Fabio Grosso' },
-      { equipo: 'Italia', minuto: 120, jugador: 'Del Piero' },
+      { equipo: 'Italia', minuto: 120, jugador: 'Alessandro Del Piero' },
     ]
   },
   {
@@ -521,7 +521,7 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Japón', minuto: 48, jugador: 'Genki Haraguchi' },
-      { equipo: 'Japón', minuto: 52, jugador: 'Inui' },
+      { equipo: 'Japón', minuto: 52, jugador: 'Takashi Inui' },
       { equipo: 'Bélgica', minuto: 69, jugador: 'Jan Vertonghen' },
       { equipo: 'Bélgica', minuto: 74, jugador: 'Marouane Fellaini' },
       { equipo: 'Bélgica', minuto: 94, jugador: 'Nacer Chadli' },
@@ -533,7 +533,7 @@ export const PARTIDOS = [
     resultado: '1-0', torneo: 'Octavos Mundial 2014', fecha: '1 Jul 2014',
     tipo: 'seleccion',
     goles: [
-      { equipo: 'Argentina', minuto: 118, jugador: 'Di María' },
+      { equipo: 'Argentina', minuto: 118, jugador: 'Ángel Di María' },
     ]
   },
   {
@@ -601,7 +601,7 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Portugal', minuto: 17, jugador: 'Gonçalo Ramos' },
-      { equipo: 'Suiza', minuto: 58, jugador: 'Akanji' },
+      { equipo: 'Suiza', minuto: 58, jugador: 'Manuel Akanji' },
       { equipo: 'Portugal', minuto: 51, jugador: 'Gonçalo Ramos' },
       { equipo: 'Portugal', minuto: 55, jugador: 'Raphaël Guerreiro' },
       { equipo: 'Portugal', minuto: 67, jugador: 'Gonçalo Ramos' },
@@ -616,8 +616,8 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Francia', minuto: 13, jugador: 'Antoine Griezmann' },
-      { equipo: 'Argentina', minuto: 41, jugador: 'Mercado' },
-      { equipo: 'Argentina', minuto: 48, jugador: 'Pavón' },
+      { equipo: 'Argentina', minuto: 41, jugador: 'Gabriel Mercado' },
+      { equipo: 'Argentina', minuto: 48, jugador: 'Cristian Pavón' },
       { equipo: 'Francia', minuto: 57, jugador: 'Kylian Mbappé' },
       { equipo: 'Francia', minuto: 64, jugador: 'Kylian Mbappé' },
       { equipo: 'Argentina', minuto: 93, jugador: 'Sergio Agüero' },
@@ -633,7 +633,7 @@ export const PARTIDOS = [
       { equipo: 'España', minuto: 14, jugador: 'David Silva' },
       { equipo: 'España', minuto: 41, jugador: 'Jordi Alba' },
       { equipo: 'España', minuto: 84, jugador: 'Fernando Torres' },
-      { equipo: 'España', minuto: 88, jugador: 'Mata' },
+      { equipo: 'España', minuto: 88, jugador: 'Juan Mata' },
     ]
   },
   {
@@ -643,7 +643,7 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Uruguay', minuto: 55, jugador: 'Diego Forlán' },
-      { equipo: 'Ghana', minuto: 120, jugador: 'Mensah' },
+      { equipo: 'Ghana', minuto: 120, jugador: 'John Mensah' },
     ]
   },
 
@@ -9483,7 +9483,7 @@ export const PARTIDOS = [
       { equipo: 'Italia', minuto: 37, jugador: 'Roberto Boninsegna' },
       { equipo: 'Brasil', minuto: 66, jugador: 'Gérson' },
       { equipo: 'Brasil', minuto: 71, jugador: 'Jairzinho' },
-      { equipo: 'Brasil', minuto: 86, jugador: 'Alberto' },
+      { equipo: 'Brasil', minuto: 86, jugador: 'Carlos Alberto' },
     ]
   },
 {
@@ -9503,11 +9503,11 @@ export const PARTIDOS = [
     resultado: '3-2', torneo: 'Final Mundial 1986', fecha: '29 Jun 1986',
     tipo: 'seleccion',
     goles: [
-      { equipo: 'Argentina', minuto: 23, jugador: 'Brown' },
-      { equipo: 'Argentina', minuto: 55, jugador: 'Valdano' },
+      { equipo: 'Argentina', minuto: 23, jugador: 'José Luis Brown' },
+      { equipo: 'Argentina', minuto: 55, jugador: 'Jorge Valdano' },
       { equipo: 'Alemania Occ.', minuto: 74, jugador: 'Karl-Heinz Rummenigge' },
       { equipo: 'Alemania Occ.', minuto: 81, jugador: 'Rudi Völler' },
-      { equipo: 'Argentina', minuto: 83, jugador: 'Burruchaga' },
+      { equipo: 'Argentina', minuto: 83, jugador: 'Jorge Burruchaga' },
     ]
   },
 {
@@ -9552,10 +9552,10 @@ export const PARTIDOS = [
     resultado: '4-2', torneo: 'Final Mundial 1966', fecha: '30 Jul 1966',
     tipo: 'seleccion',
     goles: [
-      { equipo: 'Alemania Occ.', minuto: 12, jugador: 'Haller' },
+      { equipo: 'Alemania Occ.', minuto: 12, jugador: 'Helmut Haller' },
       { equipo: 'Inglaterra', minuto: 18, jugador: 'Geoff Hurst' },
       { equipo: 'Inglaterra', minuto: 78, jugador: 'Martin Peters' },
-      { equipo: 'Alemania Occ.', minuto: 90, jugador: 'Weber' },
+      { equipo: 'Alemania Occ.', minuto: 90, jugador: 'Wolfgang Weber' },
       { equipo: 'Inglaterra', minuto: 101, jugador: 'Geoff Hurst' },
       { equipo: 'Inglaterra', minuto: 120, jugador: 'Geoff Hurst' },
     ]
@@ -9592,7 +9592,7 @@ export const PARTIDOS = [
       { equipo: 'Brasil', minuto: 32, jugador: 'Vavá' },
       { equipo: 'Brasil', minuto: 55, jugador: 'Pelé' },
       { equipo: 'Suecia', minuto: 80, jugador: 'Agne Simonsson' },
-      { equipo: 'Brasil', minuto: 68, jugador: 'Zagallo' },
+      { equipo: 'Brasil', minuto: 68, jugador: 'Mário Zagallo' },
       { equipo: 'Brasil', minuto: 90, jugador: 'Pelé' },
     ]
   },
@@ -9629,7 +9629,7 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Uruguay', minuto: 55, jugador: 'Diego Forlán' },
-      { equipo: 'Ghana', minuto: 120, jugador: 'Mensah' },
+      { equipo: 'Ghana', minuto: 120, jugador: 'John Mensah' },
     ]
   },
 {
@@ -9645,7 +9645,7 @@ export const PARTIDOS = [
     resultado: '3-0', torneo: 'Fase Grupos Mundial 2018', fecha: '21 Jun 2018',
     tipo: 'seleccion',
     goles: [
-      { equipo: 'Croacia', minuto: 53, jugador: 'Rebić' },
+      { equipo: 'Croacia', minuto: 53, jugador: 'Ante Rebić' },
       { equipo: 'Croacia', minuto: 80, jugador: 'Luka Modrić' },
       { equipo: 'Croacia', minuto: 90, jugador: 'Ivan Rakitić' },
     ]
@@ -9657,7 +9657,7 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Brasil', minuto: 13, jugador: 'Fernandinho' },
-      { equipo: 'Bélgica', minuto: 31, jugador: 'De Bruyne' },
+      { equipo: 'Bélgica', minuto: 31, jugador: 'Kevin De Bruyne' },
       { equipo: 'Bélgica', minuto: 44, jugador: 'Nacer Chadli' },
     ]
   },
@@ -9668,7 +9668,7 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Brasil', minuto: 105, jugador: 'Neymar Jr' },
-      { equipo: 'Croacia', minuto: 117, jugador: 'Pašalić' },
+      { equipo: 'Croacia', minuto: 117, jugador: 'Mario Pašalić' },
     ]
   },
 {
@@ -9679,8 +9679,8 @@ export const PARTIDOS = [
     goles: [
       { equipo: 'Argentina', minuto: 35, jugador: 'Nahuel Molina' },
       { equipo: 'Argentina', minuto: 73, jugador: 'Lionel Messi' },
-      { equipo: 'Países Bajos', minuto: 83, jugador: 'Weghorst' },
-      { equipo: 'Países Bajos', minuto: 101, jugador: 'Weghorst' },
+      { equipo: 'Países Bajos', minuto: 83, jugador: 'Wout Weghorst' },
+      { equipo: 'Países Bajos', minuto: 101, jugador: 'Wout Weghorst' },
     ]
   },
 {
@@ -9690,7 +9690,7 @@ export const PARTIDOS = [
     tipo: 'seleccion',
     goles: [
       { equipo: 'Francia', minuto: 5, jugador: 'Théo Hernández' },
-      { equipo: 'Francia', minuto: 79, jugador: 'Kolo Muani' },
+      { equipo: 'Francia', minuto: 79, jugador: 'Randal Kolo Muani' },
     ]
   },
 { id:'euro2004_gre_por_final', local:'Grecia', visitante:'Portugal', resultado:'1-0', torneo:'Final Euro 2004', fecha:'4 Jul 2004', tipo:'seleccion', goles:[{equipo:'Grecia',minuto:57,jugador:'Charisteas'}] },
