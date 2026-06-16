@@ -3,7 +3,17 @@ import { useNavigate } from 'react-router-dom'
 import { supabase } from '../lib/supabase.js'
 import { addPoints, getUserPoints } from '../lib/userPoints.js'
 import XPWidget from './XPWidget.jsx'
-import { PARTIDOS, getFlag, matchGoleador } from '../lib/golazosData.js'
+import { PARTIDOS, getFlag, normalizarNombre } from '../lib/golazosData.js'
+
+function matchGoleador(input, nombre) {
+  if (!input || input.length < 2) return false
+  const inp = normalizarNombre(input)
+  const nom = normalizarNombre(nombre)
+  if (nom.includes(inp)) return true
+  const partsInp = inp.split(' ').filter(Boolean)
+  const partsNom = nom.split(' ').filter(Boolean)
+  return partsInp.every(pi => partsNom.some(pn => pn.startsWith(pi) || pn.includes(pi)))
+}
 
 function generateCode() {
   return Math.random().toString(36).substring(2, 8).toUpperCase()
@@ -231,6 +241,23 @@ export default function GolazosOnline() {
     setTimeout(() => inputRef.current?.focus(), 50)
   }
 
+  const votarRendirse = async () => {
+    const { data: fresh } = await supabase.from('golazo_sessions').select('*').eq('code', session.code).single()
+    if (!fresh || fresh.estado !== 'jugando') return
+    const partido = fresh.partido
+    const adiv = fresh.adivinados || {}
+    const jugadores = fresh.jugadores
+    const historial = [...(fresh.historial || []), {
+      partido: `${partido.local} ${partido.resultado} ${partido.visitante}`,
+      torneo: partido.torneo,
+      ranking: [...jugadores].sort((a,b) => b.puntos - a.puntos).map(j => ({ nombre: j.nombre, puntos: j.puntos }))
+    }]
+    await supabase.from('golazo_sessions').update({
+      estado: 'fin_ronda',
+      historial,
+    }).eq('code', fresh.code)
+  }
+
   const siguientePartido = async () => {
     // Host elige aleatorio
     const aleatorio = PARTIDOS[Math.floor(Math.random() * PARTIDOS.length)]
@@ -391,6 +418,7 @@ export default function GolazosOnline() {
                 autoComplete="off" autoCorrect="off" spellCheck={false}
               />
               <button onClick={handleSubmit} style={{ padding:'11px 16px', borderRadius:12, border:'none', background:'#f59e0b', color:'#0a0a14', fontSize:15, fontWeight:900, cursor:'pointer' }}>→</button>
+              <button onClick={votarRendirse} style={{ background:'rgba(239,68,68,0.08)', color:'#f87171', border:'1px solid rgba(239,68,68,0.2)', borderRadius:12, padding:'11px 14px', fontSize:12, cursor:'pointer', whiteSpace:'nowrap' }}>🏳️ Rendirse</button>
             </div>
           )}
 
