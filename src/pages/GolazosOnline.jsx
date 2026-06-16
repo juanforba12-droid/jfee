@@ -84,7 +84,7 @@ export default function GolazosOnline() {
     if (screen === 'jugando' && session?.estado === 'jugando') {
       setTimeout(() => inputRef.current?.focus(), 100)
     }
-  }, [screen, session?.estado, session?.turno_uid])
+  }, [screen, session?.estado])
 
   const upd = async (changes) => {
     if (!session) return
@@ -114,7 +114,6 @@ export default function GolazosOnline() {
       jugadores: [{ id: myUid, nombre: myName.trim(), puntos: 0 }],
       partido: null,
       adivinados: {},
-      turno_uid: myUid,
       historial: [],
     })
     if (err) { setError('Error: ' + err.message); setLoading(false); return }
@@ -155,13 +154,10 @@ export default function GolazosOnline() {
   const iniciarPartido = async (partidoId) => {
     const p = PARTIDOS.find(x => x.id === partidoId)
     if (!p) return
-    const { data: fresh } = await supabase.from('golazo_sessions').select('jugadores').eq('code', session.code).single()
-    const jugadores = fresh?.jugadores || session.jugadores
     await upd({
       estado: 'jugando',
       partido: p,
       adivinados: {},
-      turno_uid: jugadores[0]?.id || myUid,
     })
     setScreen('jugando')
   }
@@ -171,7 +167,6 @@ export default function GolazosOnline() {
     if (!val || !session?.partido) return
     const { data: fresh } = await supabase.from('golazo_sessions').select('*').eq('code', session.code).single()
     if (!fresh || fresh.estado !== 'jugando') return
-    if (fresh.turno_uid !== myUidRef.current) return
 
     const partido = fresh.partido
     const adiv = { ...(fresh.adivinados || {}) }
@@ -186,17 +181,14 @@ export default function GolazosOnline() {
     setInput('')
 
     if (foundIdx === -1) {
-      // Fallo — pasar turno
-      const currentIdx = jugadores.findIndex(j => j.id === fresh.turno_uid)
-      const nextIdx = (currentIdx + 1) % jugadores.length
-      setFeedback({ type: 'fail', text: `❌ "${val}" no marcó en este partido. Turno de ${jugadores[nextIdx]?.nombre}` })
-      await supabase.from('golazo_sessions').update({ turno_uid: jugadores[nextIdx]?.id }).eq('code', fresh.code)
+      // Fallo — solo feedback local, sin pasar turno
+      setFeedback({ type: 'fail', text: '❌ No marcó en este partido' })
+      setTimeout(() => inputRef.current?.focus(), 50)
       return
     }
 
-    // Acierto
+    // Acierto — reclamar el gol
     adiv[foundIdx] = myUidRef.current
-    const misAciertos = Object.values(adiv).filter(uid => uid === myUidRef.current).length
     const jugadoresActualizados = jugadores.map(j =>
       j.id === myUidRef.current ? { ...j, puntos: (j.puntos || 0) + 15 } : j
     )
@@ -210,17 +202,17 @@ export default function GolazosOnline() {
       setTimeout(() => setLastGained(0), 2500)
     }
 
-    setFeedback({ type: 'ok', text: `✅ ¡${partido.goles[foundIdx].jugador}!` })
+    setFeedback({ type: 'ok', text: '✅ ¡' + partido.goles[foundIdx].jugador + '!' })
 
     // ¿Completados todos?
     const totalAdiv = Object.keys(adiv).length
     if (totalAdiv === partido.goles.length) {
-      // Bonus al último
+      // Bonus al que complete el último
       const jugadoresConBonus = jugadoresActualizados.map(j =>
         j.id === myUidRef.current ? { ...j, puntos: (j.puntos || 0) + 5 } : j
       )
       const historial = [...(fresh.historial || []), {
-        partido: `${partido.local} ${partido.resultado} ${partido.visitante}`,
+        partido: partido.local + ' ' + partido.resultado + ' ' + partido.visitante,
         torneo: partido.torneo,
         ranking: [...jugadoresConBonus].sort((a,b) => b.puntos - a.puntos).map(j => ({ nombre: j.nombre, puntos: j.puntos }))
       }]
@@ -234,7 +226,6 @@ export default function GolazosOnline() {
       await supabase.from('golazo_sessions').update({
         adivinados: adiv,
         jugadores: jugadoresActualizados,
-        turno_uid: myUidRef.current, // sigue el mismo si acierta
       }).eq('code', fresh.code)
     }
 
@@ -245,10 +236,9 @@ export default function GolazosOnline() {
     const { data: fresh } = await supabase.from('golazo_sessions').select('*').eq('code', session.code).single()
     if (!fresh || fresh.estado !== 'jugando') return
     const partido = fresh.partido
-    const adiv = fresh.adivinados || {}
     const jugadores = fresh.jugadores
     const historial = [...(fresh.historial || []), {
-      partido: `${partido.local} ${partido.resultado} ${partido.visitante}`,
+      partido: partido.local + ' ' + partido.resultado + ' ' + partido.visitante,
       torneo: partido.torneo,
       ranking: [...jugadores].sort((a,b) => b.puntos - a.puntos).map(j => ({ nombre: j.nombre, puntos: j.puntos }))
     }]
@@ -259,7 +249,6 @@ export default function GolazosOnline() {
   }
 
   const siguientePartido = async () => {
-    // Host elige aleatorio
     const aleatorio = PARTIDOS[Math.floor(Math.random() * PARTIDOS.length)]
     await iniciarPartido(aleatorio.id)
   }
@@ -284,8 +273,6 @@ export default function GolazosOnline() {
   const partido = session?.partido
   const adiv = session?.adivinados || {}
   const finRonda = session?.estado === 'fin_ronda'
-  const esMiTurno = session?.turno_uid === myUid
-  const turnoNombre = session?.jugadores?.find(j => j.id === session?.turno_uid)?.nombre || ''
   const flagL = partido ? getFlag(partido.local) : null
   const flagV = partido ? getFlag(partido.visitante) : null
 
@@ -299,7 +286,7 @@ export default function GolazosOnline() {
         <div style={{ textAlign:'center', marginBottom:32 }}>
           <div style={{ fontSize:42, marginBottom:6 }}>🌐</div>
           <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:34, color:'#22c55e', letterSpacing:4 }}>GOLAZO ONLINE</div>
-          <div style={{ fontSize:12, color:'#6a5a8a', marginTop:6 }}>Por turnos · Acierta y sigue · Falla y pasa</div>
+          <div style={{ fontSize:12, color:'#6a5a8a', marginTop:6 }}>El que acierta primero se lleva el punto</div>
         </div>
 
         {sesionesGuardadas.length > 0 && (
@@ -395,18 +382,8 @@ export default function GolazosOnline() {
 
         <div style={{ maxWidth:520, margin:'0 auto', padding:'14px 14px 0' }}>
 
-          {/* Turno */}
+          {/* Input — siempre visible para todos */}
           {!finRonda && (
-            <div style={{ textAlign:'center', padding:'10px 16px', marginBottom:12, borderRadius:12, background: esMiTurno ? 'rgba(34,197,94,0.1)' : 'rgba(255,255,255,0.04)', border: `1px solid ${esMiTurno?'rgba(34,197,94,0.3)':'rgba(255,255,255,0.08)'}` }}>
-              {esMiTurno
-                ? <span style={{ color:'#22c55e', fontWeight:900, fontSize:14 }}>⚽ ¡Es tu turno!</span>
-                : <span style={{ color:'#6a5a8a', fontSize:13 }}>Turno de <span style={{ color:'#f59e0b', fontWeight:700 }}>{turnoNombre}</span></span>
-              }
-            </div>
-          )}
-
-          {/* Input */}
-          {!finRonda && esMiTurno && (
             <div style={{ display:'flex', gap:8, marginBottom:12 }}>
               <input
                 ref={inputRef}
@@ -418,27 +395,26 @@ export default function GolazosOnline() {
                 autoComplete="off" autoCorrect="off" spellCheck={false}
               />
               <button onClick={handleSubmit} style={{ padding:'11px 16px', borderRadius:12, border:'none', background:'#f59e0b', color:'#0a0a14', fontSize:15, fontWeight:900, cursor:'pointer' }}>→</button>
-              <button onClick={votarRendirse} style={{ background:'rgba(239,68,68,0.08)', color:'#f87171', border:'1px solid rgba(239,68,68,0.2)', borderRadius:12, padding:'11px 14px', fontSize:12, cursor:'pointer', whiteSpace:'nowrap' }}>🏳️ Rendirse</button>
+              <button onClick={votarRendirse} style={{ background:'rgba(239,68,68,0.08)', color:'#f87171', border:'1px solid rgba(239,68,68,0.2)', borderRadius:12, padding:'11px 14px', fontSize:12, cursor:'pointer', whiteSpace:'nowrap' }}>🏳️</button>
             </div>
           )}
 
           {/* Feedback */}
           <div style={{ minHeight:36, display:'flex', alignItems:'center', justifyContent:'center', marginBottom:10 }}>
             {feedback && (
-              <div style={{ fontSize:13, fontWeight:700, color:feedback.type==='ok'?'#22c55e':'#ef4444', background:`${feedback.type==='ok'?'#22c55e':'#ef4444'}18`, padding:'6px 16px', borderRadius:20, border:`1px solid ${feedback.type==='ok'?'#22c55e44':'#ef444444'}`, textAlign:'center' }}>
+              <div style={{ fontSize:13, fontWeight:700, color:feedback.type==='ok'?'#22c55e':'#ef4444', background:(feedback.type==='ok'?'#22c55e':'#ef4444')+'18', padding:'6px 16px', borderRadius:20, border:'1px solid '+(feedback.type==='ok'?'#22c55e44':'#ef444444'), textAlign:'center' }}>
                 {feedback.text}
               </div>
             )}
           </div>
 
-          {/* Ranking lateral simplificado */}
+          {/* Ranking */}
           <div style={{ display:'flex', gap:6, marginBottom:12, overflowX:'auto' }}>
             {[...session.jugadores].sort((a,b)=>(b.puntos||0)-(a.puntos||0)).map((j,i) => (
-              <div key={j.id} style={{ flexShrink:0, padding:'6px 12px', borderRadius:10, background: j.id===myUid?'rgba(245,158,11,0.15)':'rgba(255,255,255,0.04)', border:`1px solid ${j.id===myUid?'rgba(245,158,11,0.4)':'rgba(255,255,255,0.06)'}`, textAlign:'center' }}>
-                <div style={{ fontSize:10, color:'#6a5a8a' }}>{'🥇🥈🥉'[i]||`${i+1}º`}</div>
+              <div key={j.id} style={{ flexShrink:0, padding:'6px 12px', borderRadius:10, background: j.id===myUid?'rgba(245,158,11,0.15)':'rgba(255,255,255,0.04)', border:'1px solid '+(j.id===myUid?'rgba(245,158,11,0.4)':'rgba(255,255,255,0.06)'), textAlign:'center' }}>
+                <div style={{ fontSize:10, color:'#6a5a8a' }}>{'🥇🥈🥉'[i]||((i+1)+'º')}</div>
                 <div style={{ fontSize:11, fontWeight:700, color:j.id===myUid?'#f59e0b':'#c8d8ea' }}>{j.nombre}{j.id===myUid?' (tú)':''}</div>
                 <div style={{ fontSize:16, fontWeight:900, color:'#f59e0b' }}>{j.puntos||0}</div>
-                {session.turno_uid === j.id && !finRonda && <div style={{ fontSize:9, color:'#22c55e' }}>● turno</div>}
               </div>
             ))}
           </div>
@@ -446,7 +422,7 @@ export default function GolazosOnline() {
           {/* Progreso */}
           <div style={{ fontSize:11, color:'#6a5a8a', textAlign:'center', marginBottom:6 }}>{totalAdiv}/{totalGoles} goleadores</div>
           <div style={{ height:4, borderRadius:2, background:'rgba(255,255,255,0.08)', overflow:'hidden', marginBottom:14 }}>
-            <div style={{ height:'100%', width:`${totalGoles > 0 ? (totalAdiv/totalGoles*100) : 0}%`, background:'#f59e0b', borderRadius:2, transition:'width 0.4s' }} />
+            <div style={{ height:'100%', width:(totalGoles > 0 ? (totalAdiv/totalGoles*100) : 0)+'%', background:'#f59e0b', borderRadius:2, transition:'width 0.4s' }} />
           </div>
 
           {/* Goles por equipo */}
@@ -472,7 +448,7 @@ export default function GolazosOnline() {
                         display:'flex', alignItems:'center', gap:6,
                         padding:'7px 8px', borderRadius:7, marginBottom:4,
                         background: esMio?'rgba(245,158,11,0.12)':ok?'rgba(34,197,94,0.07)':noAdiv?'rgba(239,68,68,0.06)':'rgba(255,255,255,0.03)',
-                        border:`1px solid ${esMio?'rgba(245,158,11,0.4)':ok?'rgba(34,197,94,0.2)':noAdiv?'rgba(239,68,68,0.2)':'rgba(255,255,255,0.06)'}`,
+                        border:'1px solid '+(esMio?'rgba(245,158,11,0.4)':ok?'rgba(34,197,94,0.2)':noAdiv?'rgba(239,68,68,0.2)':'rgba(255,255,255,0.06)'),
                       }}>
                         <span style={{ fontSize:9, color:'#6a5a8a', minWidth:20, fontWeight:700 }}>{g.minuto}'</span>
                         <div style={{ flex:1 }}>
@@ -503,7 +479,7 @@ export default function GolazosOnline() {
               <div style={{ fontSize:16, fontWeight:900, color:'#f59e0b', marginBottom:12 }}>¡Ronda completada!</div>
               {[...session.jugadores].sort((a,b)=>(b.puntos||0)-(a.puntos||0)).map((j,i) => (
                 <div key={j.id} style={{ display:'flex', justifyContent:'space-between', padding:'6px 0', borderBottom:'1px solid rgba(255,255,255,0.05)', fontSize:13, color:j.id===myUid?'#f59e0b':'#e8e0f0' }}>
-                  <span>{'🥇🥈🥉'[i]||`${i+1}º`} {j.nombre}{j.id===myUid?' (tú)':''}</span>
+                  <span>{'🥇🥈🥉'[i]||((i+1)+'º')} {j.nombre}{j.id===myUid?' (tú)':''}</span>
                   <span style={{ fontWeight:900, color:'#f59e0b' }}>{j.puntos||0} pts</span>
                 </div>
               ))}
