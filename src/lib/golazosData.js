@@ -9874,9 +9874,11 @@ export function normalizarNombre(str) {
 }
 
 export function matchGoleador(input, nombre) {
+  if (!input || input.length < 2) return false
   const inp = normalizarNombre(input)
   const nom = normalizarNombre(nombre)
-  if (inp.length < 2) return false
-  const partes = nom.split(' ')
-  return partes.some(p => p.startsWith(inp)) || nom.includes(inp)
+  if (nom.includes(inp)) return true
+  const partsInp = inp.split(' ').filter(Boolean)
+  const partsNom = nom.split(' ').filter(Boolean)
+  return partsInp.every(pi => partsNom.some(pn => pn.startsWith(pi) || pn.includes(pi)))
 }
