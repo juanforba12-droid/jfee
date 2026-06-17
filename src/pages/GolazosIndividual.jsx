@@ -118,13 +118,13 @@ export default function GolazosIndividual() {
     iniciarPartido(p)
   }
   const COMPETICIONES = [
-    { key: 'mundial',     emoji: '🌍', nombre: 'Mundial',          match: t => t.includes('Mundial') },
-    { key: 'champions',   emoji: '⭐', nombre: 'Champions League', match: t => t.includes('Champions') },
-    { key: 'eurocopa',    emoji: '🇪🇺', nombre: 'Eurocopa',         match: t => t.includes('Euro') },
-    { key: 'laliga',      emoji: '🇪🇸', nombre: 'LaLiga',           match: t => t.includes('LaLiga') },
-    { key: 'premier',     emoji: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', nombre: 'Premier League',   match: t => t.includes('Premier') },
-    { key: 'seriea',      emoji: '🇮🇹', nombre: 'Serie A',          match: t => t.includes('Serie A') },
-    { key: 'bundesliga',  emoji: '🇩🇪', nombre: 'Bundesliga',       match: t => t.includes('Bundesliga') },
+    { key: 'mundial',     img: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/FIFA_World_Cup_2022_official_emblem.svg/150px-FIFA_World_Cup_2022_official_emblem.svg.png', emoji: '🌍', nombre: 'Mundial',          match: t => t.includes('Mundial') },
+    { key: 'champions',   img: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/UEFA_Champions_League.svg/150px-UEFA_Champions_League.svg.png', emoji: '⭐', nombre: 'Champions League', match: t => t.includes('Champions') },
+    { key: 'eurocopa',    img: 'https://flagcdn.com/w40/eu.png', emoji: '🏆', nombre: 'Eurocopa',         match: t => t.includes('Euro') },
+    { key: 'laliga',      img: 'https://flagcdn.com/w40/es.png', emoji: '🇪🇸', nombre: 'LaLiga',           match: t => t.includes('LaLiga') },
+    { key: 'premier',     img: 'https://flagcdn.com/w40/gb-eng.png', emoji: '🏴', nombre: 'Premier League',   match: t => t.includes('Premier') },
+    { key: 'seriea',      img: 'https://flagcdn.com/w40/it.png', emoji: '🇮🇹', nombre: 'Serie A',          match: t => t.includes('Serie A') },
+    { key: 'bundesliga',  img: 'https://flagcdn.com/w40/de.png', emoji: '🇩🇪', nombre: 'Bundesliga',       match: t => t.includes('Bundesliga') },
   ]
   const iniciarDeCompeticion = (comp) => {
     const lista = PARTIDOS.filter(p => comp.match(p.torneo))
@@ -218,7 +218,7 @@ export default function GolazosIndividual() {
                 onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(245,158,11,0.5)'; e.currentTarget.style.background='rgba(245,158,11,0.1)' }}
                 onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(245,158,11,0.2)'; e.currentTarget.style.background='rgba(245,158,11,0.05)' }}
               >
-                <span style={{ fontSize:32 }}>{comp.emoji}</span>
+                <img src={comp.img} style={{ height:32, objectFit:'contain' }} onError={e => { e.target.style.display='none' }} />
                 <span style={{ fontWeight:800, fontSize:13, color:'#e8e0f0' }}>{comp.nombre}</span>
                 <span style={{ fontSize:11, color:'#6a5a8a' }}>{count} partidos</span>
               </button>

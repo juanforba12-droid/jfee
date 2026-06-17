@@ -341,13 +341,13 @@ export default function GolazosOnline() {
         </div>
         {esHost && (() => {
           const COMPETICIONES = [
-            { key: 'mundial',    emoji: '🌍', nombre: 'Mundial',          match: t => t.includes('Mundial') },
-            { key: 'champions',  emoji: '⭐', nombre: 'Champions',        match: t => t.includes('Champions') },
-            { key: 'eurocopa',   emoji: '🇪🇺', nombre: 'Eurocopa',         match: t => t.includes('Euro') },
-            { key: 'laliga',     emoji: '🇪🇸', nombre: 'LaLiga',           match: t => t.includes('LaLiga') },
-            { key: 'premier',    emoji: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', nombre: 'Premier',          match: t => t.includes('Premier') },
-            { key: 'seriea',     emoji: '🇮🇹', nombre: 'Serie A',          match: t => t.includes('Serie A') },
-            { key: 'bundesliga', emoji: '🇩🇪', nombre: 'Bundesliga',       match: t => t.includes('Bundesliga') },
+            { key: 'mundial',    img: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f3/FIFA_World_Cup_2022_official_emblem.svg/150px-FIFA_World_Cup_2022_official_emblem.svg.png', nombre: 'Mundial',          match: t => t.includes('Mundial') },
+            { key: 'champions',  img: 'https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/UEFA_Champions_League.svg/150px-UEFA_Champions_League.svg.png', nombre: 'Champions',        match: t => t.includes('Champions') },
+            { key: 'eurocopa',   img: 'https://flagcdn.com/w40/eu.png', nombre: 'Eurocopa',         match: t => t.includes('Euro') },
+            { key: 'laliga',     img: 'https://flagcdn.com/w40/es.png', nombre: 'LaLiga',           match: t => t.includes('LaLiga') },
+            { key: 'premier',    img: 'https://flagcdn.com/w40/gb-eng.png', nombre: 'Premier',          match: t => t.includes('Premier') },
+            { key: 'seriea',     img: 'https://flagcdn.com/w40/it.png', nombre: 'Serie A',          match: t => t.includes('Serie A') },
+            { key: 'bundesliga', img: 'https://flagcdn.com/w40/de.png', nombre: 'Bundesliga',       match: t => t.includes('Bundesliga') },
           ]
           const disabled = (session.jugadores?.length||0) < 2
           return (
@@ -374,7 +374,7 @@ export default function GolazosOnline() {
                         onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(34,197,94,0.5)'; e.currentTarget.style.background='rgba(34,197,94,0.1)' }}
                         onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(34,197,94,0.2)'; e.currentTarget.style.background='rgba(34,197,94,0.05)' }}
                       >
-                        <span style={{ fontSize:22 }}>{comp.emoji}</span>
+                        <img src={comp.img} style={{ height:28, objectFit:'contain' }} onError={e => { e.target.style.display='none' }} />
                         <span style={{ fontSize:11, fontWeight:700, color:'#e8e0f0' }}>{comp.nombre}</span>
                       </button>
                     ))}
