@@ -339,15 +339,60 @@ export default function GolazosOnline() {
             </div>
           ))}
         </div>
-        {esHost && (
-          <button onClick={() => {
-            const aleatorio = PARTIDOS[Math.floor(Math.random() * PARTIDOS.length)]
-            iniciarPartido(aleatorio.id)
-          }} disabled={(session.jugadores?.length||0) < 2}
-            style={{ width:'100%', padding:14, borderRadius:12, border:'none', background:(session.jugadores?.length||0)<2?'rgba(255,255,255,0.1)':'linear-gradient(135deg,#22c55e,#16a34a)', color:(session.jugadores?.length||0)<2?'#4a4a6a':'#0a0a14', fontSize:15, fontWeight:900, cursor:(session.jugadores?.length||0)<2?'not-allowed':'pointer', marginBottom:10, fontFamily:'system-ui,sans-serif' }}>
-            {(session.jugadores?.length||0) < 2 ? 'Esperando jugadores...' : '⚽ ¡Empezar!'}
-          </button>
-        )}
+        {esHost && (() => {
+          const COMPETICIONES = [
+            { key: 'mundial',    emoji: '🌍', nombre: 'Mundial',          match: t => t.includes('Mundial') },
+            { key: 'champions',  emoji: '⭐', nombre: 'Champions',        match: t => t.includes('Champions') },
+            { key: 'eurocopa',   emoji: '🇪🇺', nombre: 'Eurocopa',         match: t => t.includes('Euro') },
+            { key: 'laliga',     emoji: '🇪🇸', nombre: 'LaLiga',           match: t => t.includes('LaLiga') },
+            { key: 'premier',    emoji: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', nombre: 'Premier',          match: t => t.includes('Premier') },
+            { key: 'seriea',     emoji: '🇮🇹', nombre: 'Serie A',          match: t => t.includes('Serie A') },
+            { key: 'bundesliga', emoji: '🇩🇪', nombre: 'Bundesliga',       match: t => t.includes('Bundesliga') },
+          ]
+          const disabled = (session.jugadores?.length||0) < 2
+          return (
+            <div style={{ marginBottom:10 }}>
+              {disabled
+                ? <div style={{ padding:14, borderRadius:12, background:'rgba(255,255,255,0.06)', color:'#4a4a6a', fontSize:14, fontWeight:700, marginBottom:10 }}>⏳ Esperando jugadores...</div>
+                : <>
+                  <div style={{ fontSize:11, color:'#6a5a8a', letterSpacing:2, textTransform:'uppercase', marginBottom:8 }}>Elige competición</div>
+                  <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:8, marginBottom:8 }}>
+                    {COMPETICIONES.map(comp => (
+                      <button key={comp.key} onClick={() => {
+                        const lista = PARTIDOS.filter(p => comp.match(p.torneo))
+                        if (!lista.length) return
+                        const p = lista[Math.floor(Math.random() * lista.length)]
+                        iniciarPartido(p.id)
+                      }} style={{
+                        padding:'12px 8px', borderRadius:12,
+                        border:'1px solid rgba(34,197,94,0.2)',
+                        background:'rgba(34,197,94,0.05)',
+                        cursor:'pointer', textAlign:'center',
+                        display:'flex', flexDirection:'column', alignItems:'center', gap:4,
+                        transition:'all 0.15s',
+                      }}
+                        onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(34,197,94,0.5)'; e.currentTarget.style.background='rgba(34,197,94,0.1)' }}
+                        onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(34,197,94,0.2)'; e.currentTarget.style.background='rgba(34,197,94,0.05)' }}
+                      >
+                        <span style={{ fontSize:22 }}>{comp.emoji}</span>
+                        <span style={{ fontSize:11, fontWeight:700, color:'#e8e0f0' }}>{comp.nombre}</span>
+                      </button>
+                    ))}
+                  </div>
+                  <button onClick={() => {
+                    const p = PARTIDOS[Math.floor(Math.random() * PARTIDOS.length)]
+                    iniciarPartido(p.id)
+                  }} style={{
+                    width:'100%', padding:12, borderRadius:12, border:'none',
+                    background:'linear-gradient(135deg,#22c55e,#16a34a)',
+                    color:'#0a0a14', fontSize:14, fontWeight:900, cursor:'pointer',
+                    fontFamily:'system-ui,sans-serif',
+                  }}>🎲 Aleatorio de todos</button>
+                </>
+              }
+            </div>
+          )
+        })()}
         {!esHost && <div style={{ fontSize:13, color:'#6a5a8a', marginBottom:10 }}>Esperando al host...</div>}
         <button onClick={salir} style={{ width:'100%', padding:10, borderRadius:10, border:'1px solid rgba(255,255,255,0.08)', background:'none', color:'#6a5a8a', fontSize:13, cursor:'pointer', marginBottom:8, fontFamily:'system-ui,sans-serif' }}>← Salir al menú</button>
         <button onClick={abandonar} style={{ width:'100%', padding:10, borderRadius:10, border:'1px solid rgba(239,68,68,0.2)', background:'none', color:'#f87171', fontSize:12, cursor:'pointer', fontFamily:'system-ui,sans-serif' }}>Abandonar partida</button>
