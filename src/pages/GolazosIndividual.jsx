@@ -52,7 +52,7 @@ function PartidoCard({ p, onClick }) {
 
 export default function GolazosIndividual() {
   const nav = useNavigate()
-  const [pantalla, setPantalla] = useState('selector')
+  const [pantalla, setPantalla] = useState('competicion')
   const [partido, setPartido] = useState(null)
   const [adivinados, setAdivinados] = useState(new Set())
   const [input, setInput] = useState('')
@@ -117,6 +117,21 @@ export default function GolazosIndividual() {
     const p = lista[Math.floor(Math.random() * lista.length)]
     iniciarPartido(p)
   }
+  const COMPETICIONES = [
+    { key: 'mundial',     emoji: '🌍', nombre: 'Mundial',          match: t => t.includes('Mundial') },
+    { key: 'champions',   emoji: '⭐', nombre: 'Champions League', match: t => t.includes('Champions') },
+    { key: 'eurocopa',    emoji: '🇪🇺', nombre: 'Eurocopa',         match: t => t.includes('Euro') },
+    { key: 'laliga',      emoji: '🇪🇸', nombre: 'LaLiga',           match: t => t.includes('LaLiga') },
+    { key: 'premier',     emoji: '🏴󠁧󠁢󠁥󠁮󠁧󠁿', nombre: 'Premier League',   match: t => t.includes('Premier') },
+    { key: 'seriea',      emoji: '🇮🇹', nombre: 'Serie A',          match: t => t.includes('Serie A') },
+    { key: 'bundesliga',  emoji: '🇩🇪', nombre: 'Bundesliga',       match: t => t.includes('Bundesliga') },
+  ]
+  const iniciarDeCompeticion = (comp) => {
+    const lista = PARTIDOS.filter(p => comp.match(p.torneo))
+    if (!lista.length) return
+    const p = lista[Math.floor(Math.random() * lista.length)]
+    iniciarPartido(p)
+  }
 
   const saveProgress = useCallback((adv, rend) => {
     if (!partido) return
@@ -157,7 +172,7 @@ export default function GolazosIndividual() {
   }
 
   const volver = () => {
-    setPantalla('selector')
+    setPantalla('competicion')
     localStorage.removeItem('golazo_individual')
   }
 
@@ -174,6 +189,63 @@ export default function GolazosIndividual() {
   const flagL = partido ? getFlag(partido.local) : null
   const flagV = partido ? getFlag(partido.visitante) : null
 
+  // ── COMPETICIONES ──
+  if (pantalla === 'competicion') return (
+    <div style={{ minHeight:'100vh', background:'linear-gradient(160deg,#0f0c1a,#1a1030,#0c1520)', fontFamily:'system-ui,sans-serif', color:'#e8e0f0', paddingBottom:80 }}>
+      <div style={{ position:'sticky', top:0, zIndex:10, background:'rgba(15,12,26,0.95)', backdropFilter:'blur(10px)', padding:'12px 16px', borderBottom:'1px solid rgba(255,255,255,0.06)' }}>
+        <div style={{ maxWidth:500, margin:'0 auto', display:'flex', alignItems:'center', gap:10 }}>
+          <button onClick={() => nav('/golazo')} style={{ background:'none', border:'none', color:'#6a5a8a', cursor:'pointer', fontSize:20 }}>←</button>
+          <div style={{ fontFamily:"'Bebas Neue',sans-serif", fontSize:24, color:'#f59e0b', letterSpacing:3 }}>GOLAZO</div>
+        </div>
+      </div>
+      <div style={{ maxWidth:500, margin:'0 auto', padding:'24px 16px' }}>
+        <div style={{ textAlign:'center', marginBottom:24 }}>
+          <div style={{ fontSize:13, color:'#6a5a8a', letterSpacing:2, textTransform:'uppercase', marginBottom:6 }}>Elige una competición</div>
+          <div style={{ fontSize:12, color:'#4a3a6a' }}>Se lanzará un partido aleatorio de esa comp</div>
+        </div>
+        <div style={{ display:'grid', gridTemplateColumns:'1fr 1fr', gap:12, marginBottom:16 }}>
+          {COMPETICIONES.map(comp => {
+            const count = PARTIDOS.filter(p => comp.match(p.torneo)).length
+            return (
+              <button key={comp.key} onClick={() => iniciarDeCompeticion(comp)} style={{
+                padding:'20px 12px', borderRadius:16,
+                border:'1px solid rgba(245,158,11,0.2)',
+                background:'rgba(245,158,11,0.05)',
+                cursor:'pointer', textAlign:'center',
+                transition:'all 0.15s',
+                display:'flex', flexDirection:'column', alignItems:'center', gap:8,
+              }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor='rgba(245,158,11,0.5)'; e.currentTarget.style.background='rgba(245,158,11,0.1)' }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor='rgba(245,158,11,0.2)'; e.currentTarget.style.background='rgba(245,158,11,0.05)' }}
+              >
+                <span style={{ fontSize:32 }}>{comp.emoji}</span>
+                <span style={{ fontWeight:800, fontSize:13, color:'#e8e0f0' }}>{comp.nombre}</span>
+                <span style={{ fontSize:11, color:'#6a5a8a' }}>{count} partidos</span>
+              </button>
+            )
+          })}
+        </div>
+        <button onClick={() => iniciarAleatorio()} style={{
+          width:'100%', padding:'16px', borderRadius:14, border:'none',
+          background:'linear-gradient(135deg,#f59e0b,#d97706)',
+          color:'#0a0a14', fontWeight:900, fontSize:16, cursor:'pointer',
+          display:'flex', alignItems:'center', justifyContent:'center', gap:10,
+          marginBottom:12,
+        }}>
+          🎲 Aleatorio de todos
+        </button>
+        <button onClick={() => setPantalla('selector')} style={{
+          width:'100%', padding:'12px', borderRadius:14,
+          border:'1px solid rgba(255,255,255,0.1)',
+          background:'rgba(255,255,255,0.04)',
+          color:'#6a5a8a', fontWeight:700, fontSize:13, cursor:'pointer',
+        }}>
+          🔍 Elegir partido manualmente
+        </button>
+      </div>
+      {xpLoaded && <XPWidget user={user} totalXP={totalXP} lastGained={lastGained} />}
+    </div>
+  )
   // ── SELECTOR ──
   if (pantalla === 'selector') return (
     <div style={{ minHeight:'100vh', background:'linear-gradient(160deg,#0f0c1a,#1a1030,#0c1520)', fontFamily:'system-ui,sans-serif', color:'#e8e0f0', paddingBottom:80 }}>
