@@ -444,7 +444,7 @@ export default function Game() {
       clearTimeout(clasifTimer.current)
       clasifTimer.current = setTimeout(async function() {
         if (!myPlayer || !myPlayer.id) return
-        await supabase.from('players').update({ extras_pred: newExtras }).eq('group_code', code).eq('name', myPlayer.name)
+        await supabase.from('players').update({ extras_pred: newExtras }).eq('id', myPlayer.id)
       }, 600)
       return newExtras
     })
@@ -466,7 +466,7 @@ export default function Game() {
     clearTimeout(extrasTimer.current)
     extrasTimer.current = setTimeout(async function() {
       if (!myPlayer || !myPlayer.id) return
-      await supabase.from('players').update({ extras_pred: newExtras }).eq('group_code', code).eq('name', myPlayer.name)
+      await supabase.from('players').update({ extras_pred: newExtras }).eq('id', myPlayer.id)
     }, 200)
   }
 
@@ -1216,6 +1216,75 @@ export default function Game() {
                 )
               })}
             </div>
+
+            {/* PANEL ELIMINATORIAS SUPERADMIN */}
+            <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: 16 }}>
+              <div style={{ fontWeight: 700, fontSize: 15, color: '#e8eaf0', marginBottom: 6 }}>Clasificados eliminatorias (todos los grupos)</div>
+              <div style={{ fontSize: 12, color: '#f4a261', marginBottom: 14 }}>Marca quién pasa en cada partido. Se guarda en TODOS los grupos a la vez.</div>
+              {[
+                { label: 'DIECISEISAVOS', partidos: PARTIDOS_ELIMINATORIAS.filter(function(m){ return m.fase === 'dieciseisavos' }) },
+                { label: 'OCTAVOS', partidos: PARTIDOS_ELIMINATORIAS.filter(function(m){ return m.fase === 'octavos' }) },
+                { label: 'CUARTOS', partidos: PARTIDOS_ELIMINATORIAS.filter(function(m){ return m.fase === 'cuartos' }) },
+                { label: 'SEMIFINALES', partidos: PARTIDOS_ELIMINATORIAS.filter(function(m){ return m.fase === 'semis' }) },
+                { label: 'FINAL', partidos: PARTIDOS_ELIMINATORIAS.filter(function(m){ return m.fase === 'final' }) },
+              ].map(function(ronda) {
+                return (
+                  <div key={ronda.label} style={{ marginBottom: 18 }}>
+                    <div style={{ fontSize: 11, color: '#ffd700', fontWeight: 700, letterSpacing: 2, marginBottom: 8 }}>{ronda.label}</div>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                      {ronda.partidos.map(function(m) {
+                        const localReal = resolverPlaceholder(m.local, realClasif, standingsVivo)
+                        const visRealBase = resolverPlaceholder(m.vis, realClasif, standingsVivo)
+                        const visReal = (m.tercero && m.vis === '3?')
+                          ? (mejoresTerceros[[113,114,115,116,117,118,119,120].indexOf(Number(m.id))] || '3o pendiente')
+                          : visRealBase
+                        const localOk = !esPlaceholder(localReal)
+                        const visOk = !esPlaceholder(visReal)
+                        const equipos = localOk && visOk ? [localReal, visReal] : []
+                        const seleccionado = realClasif[m.id] || ''
+                        return (
+                          <div key={m.id} style={{ background: 'rgba(255,215,0,0.04)', border: '1px solid rgba(255,215,0,0.12)', borderRadius: 10, padding: '10px 12px' }}>
+                            <div style={{ fontSize: 11, color: '#2a4060', marginBottom: 6 }}>{m.fecha} · {localOk ? localReal : m.local} vs {visOk ? visReal : m.vis}</div>
+                            {equipos.length > 0 ? (
+                              <div style={{ display: 'flex', gap: 6 }}>
+                                {equipos.map(function(eq) {
+                                  const activo = seleccionado === eq
+                                  return (
+                                    <button key={eq} onClick={async function() {
+                                      const nuevo = activo ? '' : eq
+                                      const nextClasif = Object.assign({}, realClasif, { [m.id]: nuevo })
+                                      setRealClasif(nextClasif)
+                                      const newExtrasReal = Object.assign({}, extrasReal, { clasif_elim: nextClasif })
+                                      setExtrasReal(newExtrasReal)
+                                      const { data: allGrps } = await supabase.from('groups').select('code')
+                                      const allGroups = (allGrps || []).map(function(g){ return g.code })
+                                      for (const gc of allGroups) {
+                                        const { data: grpData } = await supabase.from('groups').select('extras_real').eq('code', gc).single()
+                                        const prevER = (grpData && grpData.extras_real) || {}
+                                        const merged = Object.assign({}, prevER, { clasif_elim: Object.assign({}, prevER.clasif_elim || {}, { [m.id]: nuevo }) })
+                                        await supabase.from('groups').update({ extras_real: merged }).eq('code', gc)
+                                      }
+                                    }}
+                                    style={{ flex: 1, padding: '8px 6px', borderRadius: 8, border: '2px solid ' + (activo ? '#2a9d8f' : 'rgba(255,215,0,0.2)'), background: activo ? 'rgba(42,157,143,0.2)' : 'rgba(255,215,0,0.04)', color: activo ? '#2a9d8f' : '#ffd700', fontWeight: activo ? 700 : 400, fontSize: 12, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 4 }}>
+                                      <TeamFlag name={eq} size={14} />{eq}
+                                    </button>
+                                  )
+                                })}
+                              </div>
+                            ) : (
+                              <div style={{ fontSize: 11, color: '#2a4060', fontStyle: 'italic' }}>
+                                {seleccionado ? <span style={{ color: '#2a9d8f', fontWeight: 700 }}>✓ {seleccionado}</span> : 'Pendiente — equipos sin resolver aún'}
+                              </div>
+                            )}
+                          </div>
+                        )
+                      })}
+                    </div>
+                  </div>
+                )
+              })}
+            </div>
+
           </div>
         )}
 
