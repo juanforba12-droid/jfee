@@ -17,7 +17,7 @@ export const GRUPOS = {
 // J2, J3 y eliminatorias se bloquean el 18 Jun a las 17:00h España
 const J2_LOCK = '2026-06-18T17:00:00+02:00'
 const LOCK_101 = '2026-06-28T20:45:00+02:00'
-const LOCK_102 = '2026-06-29T00:00:00+02:00'
+const LOCK_102 = '2026-06-29T19:00:00+02:00'
 const LOCK_103 = '2026-06-29T21:00:00+02:00'
 const LOCK_104 = '2026-06-30T00:00:00+02:00'
 const LOCK_105 = '2026-06-30T21:00:00+02:00'
