@@ -16,6 +16,26 @@ export const GRUPOS = {
 // lockTime = hora de inicio del partido en hora española (CEST = UTC+2)
 // J2, J3 y eliminatorias se bloquean el 18 Jun a las 17:00h España
 const J2_LOCK = '2026-06-18T17:00:00+02:00'
+const LOCK_101 = '2026-06-28T21:00:00+02:00'
+const LOCK_102 = '2026-06-29T00:00:00+02:00'
+const LOCK_103 = '2026-06-29T21:00:00+02:00'
+const LOCK_104 = '2026-06-30T00:00:00+02:00'
+const LOCK_105 = '2026-06-30T21:00:00+02:00'
+const LOCK_106 = '2026-07-01T00:00:00+02:00'
+const LOCK_107 = '2026-07-01T21:00:00+02:00'
+const LOCK_108 = '2026-07-02T00:00:00+02:00'
+const LOCK_113 = '2026-07-02T21:00:00+02:00'
+const LOCK_114 = '2026-07-03T00:00:00+02:00'
+const LOCK_115 = '2026-07-03T21:00:00+02:00'
+const LOCK_116 = '2026-07-04T00:00:00+02:00'
+const LOCK_117 = '2026-07-04T21:00:00+02:00'
+const LOCK_118 = '2026-07-05T00:00:00+02:00'
+const LOCK_119 = '2026-07-05T21:00:00+02:00'
+const LOCK_120 = '2026-07-06T00:00:00+02:00'
+const LOCK_OCT = '2026-07-08T21:00:00+02:00'
+const LOCK_CUA = '2026-07-15T21:00:00+02:00'
+const LOCK_SEM = '2026-07-22T21:00:00+02:00'
+const LOCK_FIN = '2026-07-27T21:00:00+02:00'
 
 export const PARTIDOS_GRUPOS = [
   // J1 - bloqueo partido a partido
@@ -105,38 +125,38 @@ export const PTS_CLASIFICADO = {
 }
 
 export const PARTIDOS_ELIMINATORIAS = [
-  {id:101, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Sáb 28 Jun', local:'2A', vis:'2B',  lockTime:J2_LOCK},
-  {id:102, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Sáb 28 Jun', local:'1C', vis:'2F',  lockTime:J2_LOCK},
-  {id:103, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Dom 29 Jun', local:'1F', vis:'2C',  lockTime:J2_LOCK},
-  {id:104, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Dom 29 Jun', local:'2E', vis:'2I',  lockTime:J2_LOCK},
-  {id:105, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Lun 30 Jun', local:'2K', vis:'2L',  lockTime:J2_LOCK},
-  {id:106, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Lun 30 Jun', local:'1H', vis:'2J',  lockTime:J2_LOCK},
-  {id:107, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Mar 1 Jul',  local:'1J', vis:'2H',  lockTime:J2_LOCK},
-  {id:108, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Mar 1 Jul',  local:'2D', vis:'2G',  lockTime:J2_LOCK},
-  {id:113, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Mié 2 Jul',  local:'1E', vis:'3?',  tercero:true, lockTime:J2_LOCK},
-  {id:114, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Mié 2 Jul',  local:'1I', vis:'3?',  tercero:true, lockTime:J2_LOCK},
-  {id:115, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Jue 3 Jul',  local:'1A', vis:'3?',  tercero:true, lockTime:J2_LOCK},
-  {id:116, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Jue 3 Jul',  local:'1L', vis:'3?',  tercero:true, lockTime:J2_LOCK},
-  {id:117, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Vie 4 Jul',  local:'1D', vis:'3?',  tercero:true, lockTime:J2_LOCK},
-  {id:118, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Vie 4 Jul',  local:'1G', vis:'3?',  tercero:true, lockTime:J2_LOCK},
-  {id:119, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Sáb 5 Jul',  local:'1B', vis:'3?',  tercero:true, lockTime:J2_LOCK},
-  {id:120, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Sáb 5 Jul',  local:'1K', vis:'3?',  tercero:true, lockTime:J2_LOCK},
-  {id:201, fase:'octavos', jornada:'Octavos', fecha:'Mar 8 Jul',  local:'G1',  vis:'G2',  lockTime:J2_LOCK},
-  {id:202, fase:'octavos', jornada:'Octavos', fecha:'Mar 8 Jul',  local:'G3',  vis:'G4',  lockTime:J2_LOCK},
-  {id:203, fase:'octavos', jornada:'Octavos', fecha:'Mié 9 Jul',  local:'G5',  vis:'G6',  lockTime:J2_LOCK},
-  {id:204, fase:'octavos', jornada:'Octavos', fecha:'Mié 9 Jul',  local:'G7',  vis:'G8',  lockTime:J2_LOCK},
-  {id:205, fase:'octavos', jornada:'Octavos', fecha:'Jue 10 Jul', local:'G9',  vis:'G10', lockTime:J2_LOCK},
-  {id:206, fase:'octavos', jornada:'Octavos', fecha:'Jue 10 Jul', local:'G11', vis:'G12', lockTime:J2_LOCK},
-  {id:207, fase:'octavos', jornada:'Octavos', fecha:'Vie 11 Jul', local:'G13', vis:'G14', lockTime:J2_LOCK},
-  {id:208, fase:'octavos', jornada:'Octavos', fecha:'Vie 11 Jul', local:'G15', vis:'G16', lockTime:J2_LOCK},
-  {id:301, fase:'cuartos', jornada:'Cuartos', fecha:'Mar 15 Jul', local:'C1',  vis:'C2',  lockTime:J2_LOCK},
-  {id:302, fase:'cuartos', jornada:'Cuartos', fecha:'Mar 15 Jul', local:'C3',  vis:'C4',  lockTime:J2_LOCK},
-  {id:303, fase:'cuartos', jornada:'Cuartos', fecha:'Mié 16 Jul', local:'C5',  vis:'C6',  lockTime:J2_LOCK},
-  {id:304, fase:'cuartos', jornada:'Cuartos', fecha:'Mié 16 Jul', local:'C7',  vis:'C8',  lockTime:J2_LOCK},
-  {id:401, fase:'semis', jornada:'Semifinales', fecha:'Mar 22 Jul', local:'S1', vis:'S2',  lockTime:J2_LOCK},
-  {id:402, fase:'semis', jornada:'Semifinales', fecha:'Mié 23 Jul', local:'S3', vis:'S4',  lockTime:J2_LOCK},
-  {id:501, fase:'tercero', jornada:'3er Puesto', fecha:'Sáb 26 Jul', local:'Perdedor SF1', vis:'Perdedor SF2', lockTime:J2_LOCK},
-  {id:601, fase:'final', jornada:'Final', fecha:'Dom 27 Jul', local:'Ganador SF1', vis:'Ganador SF2', lockTime:J2_LOCK},
+  {id:101, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Sáb 28 Jun', local:'2A', vis:'2B',  lockTime:LOCK_101},
+  {id:102, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Sáb 28 Jun', local:'1C', vis:'2F',  lockTime:LOCK_102},
+  {id:103, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Dom 29 Jun', local:'1F', vis:'2C',  lockTime:LOCK_103},
+  {id:104, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Dom 29 Jun', local:'2E', vis:'2I',  lockTime:LOCK_104},
+  {id:105, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Lun 30 Jun', local:'2K', vis:'2L',  lockTime:LOCK_105},
+  {id:106, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Lun 30 Jun', local:'1H', vis:'2J',  lockTime:LOCK_106},
+  {id:107, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Mar 1 Jul',  local:'1J', vis:'2H',  lockTime:LOCK_107},
+  {id:108, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Mar 1 Jul',  local:'2D', vis:'2G',  lockTime:LOCK_108},
+  {id:113, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Mié 2 Jul',  local:'1E', vis:'3?',  tercero:true, lockTime:LOCK_113},
+  {id:114, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Mié 2 Jul',  local:'1I', vis:'3?',  tercero:true, lockTime:LOCK_114},
+  {id:115, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Jue 3 Jul',  local:'1A', vis:'3?',  tercero:true, lockTime:LOCK_115},
+  {id:116, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Jue 3 Jul',  local:'1L', vis:'3?',  tercero:true, lockTime:LOCK_116},
+  {id:117, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Vie 4 Jul',  local:'1D', vis:'3?',  tercero:true, lockTime:LOCK_117},
+  {id:118, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Vie 4 Jul',  local:'1G', vis:'3?',  tercero:true, lockTime:LOCK_118},
+  {id:119, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Sáb 5 Jul',  local:'1B', vis:'3?',  tercero:true, lockTime:LOCK_119},
+  {id:120, fase:'dieciseisavos', jornada:'Dieciseisavos', fecha:'Sáb 5 Jul',  local:'1K', vis:'3?',  tercero:true, lockTime:LOCK_120},
+  {id:201, fase:'octavos', jornada:'Octavos', fecha:'Mar 8 Jul',  local:'G1',  vis:'G2',  lockTime:LOCK_OCT},
+  {id:202, fase:'octavos', jornada:'Octavos', fecha:'Mar 8 Jul',  local:'G3',  vis:'G4',  lockTime:LOCK_OCT},
+  {id:203, fase:'octavos', jornada:'Octavos', fecha:'Mié 9 Jul',  local:'G5',  vis:'G6',  lockTime:LOCK_OCT},
+  {id:204, fase:'octavos', jornada:'Octavos', fecha:'Mié 9 Jul',  local:'G7',  vis:'G8',  lockTime:LOCK_OCT},
+  {id:205, fase:'octavos', jornada:'Octavos', fecha:'Jue 10 Jul', local:'G9',  vis:'G10', lockTime:LOCK_OCT},
+  {id:206, fase:'octavos', jornada:'Octavos', fecha:'Jue 10 Jul', local:'G11', vis:'G12', lockTime:LOCK_OCT},
+  {id:207, fase:'octavos', jornada:'Octavos', fecha:'Vie 11 Jul', local:'G13', vis:'G14', lockTime:LOCK_OCT},
+  {id:208, fase:'octavos', jornada:'Octavos', fecha:'Vie 11 Jul', local:'G15', vis:'G16', lockTime:LOCK_OCT},
+  {id:301, fase:'cuartos', jornada:'Cuartos', fecha:'Mar 15 Jul', local:'C1',  vis:'C2',  lockTime:LOCK_CUA},
+  {id:302, fase:'cuartos', jornada:'Cuartos', fecha:'Mar 15 Jul', local:'C3',  vis:'C4',  lockTime:LOCK_CUA},
+  {id:303, fase:'cuartos', jornada:'Cuartos', fecha:'Mié 16 Jul', local:'C5',  vis:'C6',  lockTime:LOCK_CUA},
+  {id:304, fase:'cuartos', jornada:'Cuartos', fecha:'Mié 16 Jul', local:'C7',  vis:'C8',  lockTime:LOCK_CUA},
+  {id:401, fase:'semis', jornada:'Semifinales', fecha:'Mar 22 Jul', local:'S1', vis:'S2',  lockTime:LOCK_SEM},
+  {id:402, fase:'semis', jornada:'Semifinales', fecha:'Mié 23 Jul', local:'S3', vis:'S4',  lockTime:LOCK_SEM},
+  {id:501, fase:'tercero', jornada:'3er Puesto', fecha:'Sáb 26 Jul', local:'Perdedor SF1', vis:'Perdedor SF2', lockTime:LOCK_FIN},
+  {id:601, fase:'final', jornada:'Final', fecha:'Dom 27 Jul', local:'Ganador SF1', vis:'Ganador SF2', lockTime:LOCK_FIN},
 ]
 
 export const TODAS_LAS_FASES = [
