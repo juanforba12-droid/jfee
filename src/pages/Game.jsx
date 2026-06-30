@@ -1219,10 +1219,27 @@ export default function Game() {
 
             {/* PANEL ELIMINATORIAS SUPERADMIN */}
             <div style={{ background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 14, padding: 16 }}>
-              <div style={{ fontWeight: 700, fontSize: 15, color: '#e8eaf0', marginBottom: 6 }}>Clasificados eliminatorias (todos los grupos)</div>
-              <div style={{ fontSize: 12, color: '#f4a261', marginBottom: 14 }}>Marca quién pasa en cada partido. Se guarda en TODOS los grupos a la vez.</div>
+              <div style={{ fontWeight: 700, fontSize: 15, color: '#e8eaf0', marginBottom: 6 }}>Resultados eliminatorias reales</div>
+              <div style={{ fontSize: 12, color: '#f4a261', marginBottom: 14 }}>Marca quién ganó cada partido REAL del Mundial. Se guarda en TODOS los grupos a la vez.</div>
               {[
-                { label: 'DIECISEISAVOS', partidos: PARTIDOS_ELIMINATORIAS.filter(function(m){ return m.fase === 'dieciseisavos' }) },
+                { label: 'DIECISEISAVOS', partidos: [
+                  { id:101, fecha:'Sáb 28 Jun', local:'Sudáfrica', vis:'Canadá' },
+                  { id:102, fecha:'Sáb 28 Jun', local:'Brasil', vis:'Japón' },
+                  { id:103, fecha:'Dom 29 Jun', local:'Alemania', vis:'Paraguay' },
+                  { id:104, fecha:'Dom 29 Jun', local:'C. de Marfil', vis:'Noruega' },
+                  { id:105, fecha:'Lun 30 Jun', local:'Francia', vis:'Suecia' },
+                  { id:106, fecha:'Lun 30 Jun', local:'Países Bajos', vis:'Marruecos' },
+                  { id:107, fecha:'Mié 1 Jul', local:'México', vis:'Ecuador' },
+                  { id:108, fecha:'Mié 1 Jul', local:'Inglaterra', vis:'RD Congo' },
+                  { id:113, fecha:'Mié 1 Jul', local:'Bélgica', vis:'Senegal' },
+                  { id:114, fecha:'Mié 1 Jul', local:'Estados Unidos', vis:'Bosnia-Herz.' },
+                  { id:115, fecha:'Jue 2 Jul', local:'España', vis:'Austria' },
+                  { id:116, fecha:'Jue 2 Jul', local:'Portugal', vis:'Croacia' },
+                  { id:117, fecha:'Jue 2 Jul', local:'Suiza', vis:'Argelia' },
+                  { id:118, fecha:'Vie 3 Jul', local:'Australia', vis:'Egipto' },
+                  { id:119, fecha:'Vie 3 Jul', local:'Argentina', vis:'Cabo Verde' },
+                  { id:120, fecha:'Vie 3 Jul', local:'Colombia', vis:'Ghana' },
+                ] },
                 { label: 'OCTAVOS', partidos: PARTIDOS_ELIMINATORIAS.filter(function(m){ return m.fase === 'octavos' }) },
                 { label: 'CUARTOS', partidos: PARTIDOS_ELIMINATORIAS.filter(function(m){ return m.fase === 'cuartos' }) },
                 { label: 'SEMIFINALES', partidos: PARTIDOS_ELIMINATORIAS.filter(function(m){ return m.fase === 'semis' }) },
@@ -1233,13 +1250,14 @@ export default function Game() {
                     <div style={{ fontSize: 11, color: '#ffd700', fontWeight: 700, letterSpacing: 2, marginBottom: 8 }}>{ronda.label}</div>
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                       {ronda.partidos.map(function(m) {
-                        const localReal = resolverPlaceholder(m.local, realClasif, standingsVivo)
-                        const visRealBase = resolverPlaceholder(m.vis, realClasif, standingsVivo)
-                        const visReal = (m.tercero && m.vis === '3?')
+                        const esDieciseisavosFijo = ronda.label === 'DIECISEISAVOS'
+                        const localReal = esDieciseisavosFijo ? m.local : resolverPlaceholder(m.local, realClasif, standingsVivo)
+                        const visRealBase = esDieciseisavosFijo ? m.vis : resolverPlaceholder(m.vis, realClasif, standingsVivo)
+                        const visReal = (!esDieciseisavosFijo && m.tercero && m.vis === '3?')
                           ? (mejoresTerceros[[113,114,115,116,117,118,119,120].indexOf(Number(m.id))] || '3o pendiente')
                           : visRealBase
-                        const localOk = !esPlaceholder(localReal)
-                        const visOk = !esPlaceholder(visReal)
+                        const localOk = esDieciseisavosFijo ? true : !esPlaceholder(localReal)
+                        const visOk = esDieciseisavosFijo ? true : !esPlaceholder(visReal)
                         const equipos = localOk && visOk ? [localReal, visReal] : []
                         const seleccionado = realClasif[m.id] || ''
                         return (
