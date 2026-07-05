@@ -479,10 +479,11 @@ export default function Game() {
     if (loadingGlobal) return
     setLoadingGlobal(true)
     try {
-      const [predsRes, realesRes, playersRes] = await Promise.all([
+      const [predsRes, realesRes, playersRes, groupsRes] = await Promise.all([
         supabase.from('predictions').select('player_id, match_id, goals_local, goals_vis, group_code').limit(10000),
         supabase.from('results').select('match_id, goals_local, goals_vis, group_code'),
-        supabase.from('players').select('id, name, avatar, color, group_code'),
+        supabase.from('players').select('id, name, avatar, color, group_code, extras_pred'),
+        supabase.from('groups').select('code, extras_real').limit(10000),
       ])
       if (!predsRes.data || !realesRes.data || !playersRes.data) { setLoadingGlobal(false); return }
       const realesMap = {}
@@ -490,6 +491,10 @@ export default function Game() {
         if (!realesMap[r.group_code]) realesMap[r.group_code] = {}
         realesMap[r.group_code][r.match_id] = { l: r.goals_local != null ? r.goals_local : '', v: r.goals_vis != null ? r.goals_vis : '' }
       })
+      const groupsER = {}
+      if (groupsRes.data) {
+        groupsRes.data.forEach(function(g) { groupsER[g.code] = g.extras_real || {} })
+      }
       const predsMap = {}
       predsRes.data.forEach(function(p) {
         if (!predsMap[p.player_id]) predsMap[p.player_id] = {}
@@ -505,6 +510,33 @@ export default function Game() {
           const p = calcPts(pr.l != null ? pr.l : '', pr.v != null ? pr.v : '', re.l != null ? re.l : '', re.v != null ? re.v : '')
           if (p === 5) { pts += 5; exact++ }
           else if (p === 1) { pts += 1; result++ }
+        })
+        const er = groupsER[pl.group_code] || {}
+        const rc = er.clasif_elim || {}
+        const ep = pl.extras_pred || {}
+        const pc = ep.clasif_elim || {}
+        PARTIDOS_ELIMINATORIAS.forEach(function(m) {
+          if (m.tercero && m.vis === '3?') return
+          const predEq = pc[m.id] || ''
+          const realEq = rc[m.id] || ''
+          const p = calcPtsClasificado(predEq, realEq, m.fase)
+          if (p > 0) { pts += p }
+        })
+        if (er.balon && ep.balon && ep.balon.toLowerCase() === er.balon.toLowerCase()) pts += 10
+        if (er.bota && ep.bota && ep.bota.toLowerCase() === er.bota.toLowerCase()) pts += 10
+        if (er.portero && ep.portero && ep.portero.toLowerCase() === er.portero.toLowerCase()) pts += 10
+        if (er.joven && ep.joven && ep.joven.toLowerCase() === er.joven.toLowerCase()) pts += 10
+        const grpKeys = Object.keys(GRUPOS)
+        for (let gi = 0; gi < grpKeys.length; gi++) {
+          const grp = grpKeys[gi]
+          if (er['1_' + grp] && ep['1_' + grp] && ep['1_' + grp].toLowerCase() === er['1_' + grp].toLowerCase()) pts += 2
+          if (er['2_' + grp] && ep['2_' + grp] && ep['2_' + grp].toLowerCase() === er['2_' + grp].toLowerCase()) pts += 1
+        }
+        const realTerc = er.mejores_terceros || []
+        const predTerc = ep.mejores_terceros || []
+        predTerc.forEach(function(eq) {
+          const lower = realTerc.map(function(e) { return e.toLowerCase() })
+          if (lower.indexOf(eq.toLowerCase()) >= 0) pts += 1
         })
         return Object.assign({}, pl, { pts: pts, exact: exact, result: result })
       })
